@@ -1,0 +1,288 @@
+02-11 11:54 root  INFO  installPath C:\Users\FernandI\AppData\Local\Temp\_MEI224722
+02-11 11:54 root  INFO  executablePath C:\Users\FernandI\Desktop\Isidro\tools\Singular
+02-11 11:54 root  INFO  debugsPath C:\Users\FernandI\Desktop\Isidro\tools\Singular\output\debugs
+02-11 11:54 root  INFO  logFileName Nautilus_20200211-115455.log
+02-11 11:54 root  INFO  logFilePath C:\Users\FernandI\Desktop\Isidro\tools\Singular\output\debugs\Nautilus_20200211-115455.log
+02-11 11:54 root  INFO  schema pathC:\Users\FernandI\AppData\Local\Temp\_MEI224722\schema
+02-11 11:54 root  INFO  Logging initializated
+02-11 11:54 root  INFO  Executing
+02-11 11:54 werkzeug INFO   * Running on http://localhost:10060/ (Press CTRL+C to quit)
+02-11 11:54 root  INFO  YAML command file not found, copying it to script path
+02-11 11:54 root  INFO  Openning YAML command file in directoryC:\Users\FernandI\Desktop\Isidro\tools\Singular\list_of_commands.yaml
+02-11 11:54 root  INFO  Multithreading with maximum 1 threads
+02-11 11:56 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 11:56 root  INFO  Validating commands...
+02-11 11:56 root  INFO  List of commands validated successfully
+02-11 11:56 root  INFO  current command: show config()
+02-11 11:56 root  INFO  show config() command matched
+02-11 11:56 axapi INFO  Got response 200 for show config() in 10.18.8.124
+02-11 11:56 root  INFO  treating command
+02-11 11:56 root  INFO  execution time: 0.58
+02-11 11:56 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 13:57 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 13:57 root  INFO  Validating commands...
+02-11 13:57 root  INFO  List of commands validated successfully
+02-11 13:57 root  INFO  current command: show status()
+02-11 13:57 root  INFO  show status() command matched
+02-11 13:57 axapi INFO  Got response 200 for show status() in 10.18.8.124
+02-11 13:57 root  INFO  treating command
+02-11 13:57 root  INFO  execution time: 1.06
+02-11 13:57 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 14:29 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 14:29 root  INFO  Validating commands...
+02-11 14:29 root  INFO  List of commands validated successfully
+02-11 14:29 root  INFO  current command: show config()
+02-11 14:29 root  INFO  show config() command matched
+02-11 14:29 axapi INFO  Got response 200 for show config() in 10.18.8.124
+02-11 14:29 root  INFO  treating command
+02-11 14:29 root  INFO  execution time: 0.99
+02-11 14:29 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 14:41 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 14:41 root  INFO  Validating commands...
+02-11 14:41 root  INFO  List of commands validated successfully
+02-11 14:41 root  INFO  current command: show config()
+02-11 14:41 root  INFO  show config() command matched
+02-11 14:41 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-11 14:41 root  INFO  treating command
+02-11 14:41 root  INFO  execution time: 0.40
+02-11 14:41 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 14:42 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 14:42 root  INFO  Validating commands...
+02-11 14:42 root  INFO  List of commands validated successfully
+02-11 14:42 root  INFO  current command: set config("Configuration.Audio.DefaultVolume": "40")
+02-11 14:42 root  INFO  set config(<value>) command matched
+02-11 14:42 axapi INFO  Got response 200 for set config() in 10.18.8.254
+02-11 14:42 root  INFO  treating command
+02-11 14:42 root  INFO  execution time: 0.32
+02-11 14:42 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 14:42 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 14:42 root  INFO  Validating commands...
+02-11 14:42 root  INFO  List of commands validated successfully
+02-11 14:42 root  INFO  current command: set config("Configuration.Audio.DefaultVolume": "50")
+02-11 14:42 root  INFO  set config(<value>) command matched
+02-11 14:42 axapi INFO  Got response 200 for set config() in 10.18.8.254
+02-11 14:42 root  INFO  treating command
+02-11 14:42 root  INFO  execution time: 0.33
+02-11 14:42 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 14:46 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 14:46 root  INFO  Validating commands...
+02-11 14:46 root  INFO  List of commands validated successfully
+02-11 14:46 root  INFO  current command: help()
+02-11 14:46 root  INFO  execution time: 0.00
+02-11 14:46 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 14:48 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 14:48 root  INFO  Validating commands...
+02-11 14:48 root  INFO  List of commands validated successfully
+02-11 14:48 root  INFO  current command: show config()
+02-11 14:48 root  INFO  show config() command matched
+02-11 14:48 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-11 14:48 root  INFO  treating command
+02-11 14:48 root  INFO  execution time: 0.33
+02-11 14:48 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 14:48 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 14:48 root  INFO  Validating commands...
+02-11 14:48 root  INFO  List of commands validated successfully
+02-11 14:48 root  INFO  current command: show config(Custom)
+02-11 14:48 root  INFO  show config() command matched
+02-11 14:48 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-11 14:48 root  INFO  treating command
+02-11 14:48 root  INFO  execution time: 0.91
+02-11 14:48 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 14:49 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 14:49 root  INFO  Validating commands...
+02-11 14:49 root  INFO  List of commands validated successfully
+02-11 14:49 root  INFO  current command: set config("Configuration.UserInterface.CustomMessage": "")
+02-11 14:49 root  INFO  set config(<value>) command matched
+02-11 14:49 axapi INFO  Got response 200 for set config() in 10.18.8.254
+02-11 14:49 root  INFO  treating command
+02-11 14:49 root  INFO  execution time: 0.26
+02-11 14:49 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 15:04 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 15:04 root  INFO  Validating commands...
+02-11 15:04 root  INFO  List of commands validated successfully
+02-11 15:04 root  INFO  current command: show config(olume)
+02-11 15:04 root  INFO  show config() command matched
+02-11 15:04 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-11 15:04 root  INFO  treating command
+02-11 15:04 root  INFO  execution time: 0.42
+02-11 15:04 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 15:09 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 15:09 root  INFO  Validating commands...
+02-11 15:09 root  INFO  List of commands validated successfully
+02-11 15:09 root  INFO  current command: show config(olume)
+02-11 15:09 root  INFO  show config() command matched
+02-11 15:09 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-11 15:09 root  INFO  treating command
+02-11 15:09 root  INFO  execution time: 0.29
+02-11 15:09 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 15:09 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 15:09 root  INFO  Validating commands...
+02-11 15:09 root  INFO  List of commands validated successfully
+02-11 15:09 root  INFO  current command: show config(olume)
+02-11 15:09 root  INFO  show config() command matched
+02-11 15:09 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-11 15:09 root  INFO  treating command
+02-11 15:09 root  INFO  execution time: 0.29
+02-11 15:09 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 15:09 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 15:09 root  INFO  Validating commands...
+02-11 15:09 root  INFO  List of commands validated successfully
+02-11 15:09 root  INFO  current command: show status(olume)
+02-11 15:09 root  INFO  show status() command matched
+02-11 15:09 axapi INFO  Got response 200 for show status() in 10.18.8.254
+02-11 15:09 root  INFO  treating command
+02-11 15:09 root  INFO  execution time: 0.21
+02-11 15:09 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 15:11 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 15:11 root  INFO  Validating commands...
+02-11 15:11 root  INFO  List of commands validated successfully
+02-11 15:11 root  INFO  current command: show status(olume)
+02-11 15:11 root  INFO  show status() command matched
+02-11 15:11 axapi INFO  Got response 200 for show status() in 10.18.8.254
+02-11 15:11 root  INFO  treating command
+02-11 15:11 root  INFO  execution time: 0.23
+02-11 15:11 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 15:14 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 15:14 root  INFO  Validating commands...
+02-11 15:14 root  INFO  List of commands validated successfully
+02-11 15:14 root  INFO  current command: show config(olume)
+02-11 15:14 root  INFO  show config() command matched
+02-11 15:14 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-11 15:14 root  INFO  treating command
+02-11 15:14 root  INFO  execution time: 0.32
+02-11 15:14 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 15:16 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 15:16 root  INFO  Validating commands...
+02-11 15:16 root  INFO  List of commands validated successfully
+02-11 15:16 root  INFO  current command: show config(Costum)
+02-11 15:16 root  INFO  show config() command matched
+02-11 15:16 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-11 15:16 root  INFO  treating command
+02-11 15:16 root  INFO  execution time: 0.32
+02-11 15:16 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 15:18 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 15:18 root  INFO  Validating commands...
+02-11 15:18 root  INFO  List of commands validated successfully
+02-11 15:18 root  INFO  current command: show config(CustomMessage)
+02-11 15:18 root  INFO  show config() command matched
+02-11 15:18 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-11 15:18 root  INFO  treating command
+02-11 15:18 root  INFO  execution time: 0.32
+02-11 15:18 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 15:18 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 15:18 root  INFO  Validating commands...
+02-11 15:18 root  INFO  List of commands validated successfully
+02-11 15:18 root  INFO  current command: show config(CustomMessage)
+02-11 15:18 root  INFO  show config() command matched
+02-11 15:18 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-11 15:18 root  INFO  treating command
+02-11 15:18 root  INFO  execution time: 0.32
+02-11 15:18 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 15:18 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 15:18 root  INFO  Validating commands...
+02-11 15:18 root  INFO  List of commands validated successfully
+02-11 15:18 root  INFO  current command: show config(CustomMessage)
+02-11 15:18 root  INFO  show config() command matched
+02-11 15:18 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-11 15:18 root  INFO  treating command
+02-11 15:18 root  INFO  execution time: 0.34
+02-11 15:18 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 15:46 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 15:46 root  INFO  Validating commands...
+02-11 15:46 root  INFO  List of commands validated successfully
+02-11 15:46 root  INFO  current command: help()
+02-11 15:46 root  INFO  execution time: 0.02
+02-11 15:46 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 16:53 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 16:53 root  INFO  Validating commands...
+02-11 16:53 root  INFO  List of commands validated successfully
+02-11 16:53 root  INFO  current command: disable macro(Untitled1)
+02-11 16:53 root  INFO  disable macro() command matched
+02-11 16:53 root  INFO  Discovering sw versions
+02-11 16:53 axapi INFO  Got response 200 for init sw() in 10.18.8.254
+02-11 16:53 root  INFO  treating command
+02-11 16:53 axapi INFO  Got response 200 for disable macro() in 10.18.8.254
+02-11 16:53 root  INFO  treating command
+02-11 16:53 root  INFO  execution time: 1.50
+02-11 16:53 root  INFO  ###### EXECUTION COMPLETED ######
+02-11 16:54 root  INFO  Pressed "run commands" under Telepresence tab
+02-11 16:54 root  INFO  Validating commands...
+02-11 16:54 root  INFO  List of commands validated successfully
+02-11 16:54 root  INFO  current command: enable macro(Untitled1)
+02-11 16:54 root  INFO  enable_macro() command matched
+02-11 16:54 root  INFO  Discovering sw versions
+02-11 16:54 axapi INFO  Got response 200 for init sw() in 10.18.8.254
+02-11 16:54 root  INFO  treating command
+02-11 16:54 axapi INFO  Got response 200 for enable macro() in 10.18.8.254
+02-11 16:54 root  INFO  treating command
+02-11 16:54 axapi INFO  Got response 200 for enable macro() in 10.18.8.254
+02-11 16:54 root  INFO  treating command
+02-11 16:54 root  INFO  restarting macro
+02-11 16:54 axapi INFO  Got response 200 for restart macroRuntime() in 10.18.8.254
+02-11 16:54 root  INFO  treating command
+02-11 16:54 root  INFO  execution time: 3.33
+02-11 16:54 root  INFO  ###### EXECUTION COMPLETED ######
+02-12 17:30 root  INFO  Pressed "run commands" under Telepresence tab
+02-12 17:30 root  INFO  Validating commands...
+02-12 17:30 root  INFO  List of commands validated successfully
+02-12 17:30 root  INFO  current command: show status()
+02-12 17:30 root  INFO  show status() command matched
+02-12 17:30 axapi INFO  Got response 200 for show status() in 10.18.8.254
+02-12 17:30 root  INFO  treating command
+02-12 17:30 root  INFO  execution time: 0.41
+02-12 17:30 root  INFO  ###### EXECUTION COMPLETED ######
+02-13 09:57 root  INFO  Pressed "run commands" under Telepresence tab
+02-13 09:57 root  INFO  Validating commands...
+02-13 09:57 root  INFO  List of commands validated successfully
+02-13 09:57 root  INFO  current command: show status()
+02-13 09:57 root  INFO  show status() command matched
+02-13 09:57 axapi INFO  Got response 200 for show status() in 10.18.8.254
+02-13 09:57 root  INFO  treating command
+02-13 09:57 root  INFO  execution time: 0.63
+02-13 09:57 root  INFO  ###### EXECUTION COMPLETED ######
+02-13 10:33 root  INFO  Pressed "run commands" under Telepresence tab
+02-13 10:33 root  INFO  Validating commands...
+02-13 10:33 root  INFO  List of commands validated successfully
+02-13 10:33 root  INFO  current command: show config()
+02-13 10:33 root  INFO  show config() command matched
+02-13 10:33 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-13 10:33 root  INFO  treating command
+02-13 10:33 root  INFO  execution time: 0.36
+02-13 10:33 root  INFO  ###### EXECUTION COMPLETED ######
+02-13 10:34 root  INFO  Pressed "run commands" under Telepresence tab
+02-13 10:34 root  INFO  Validating commands...
+02-13 10:34 root  INFO  List of commands validated successfully
+02-13 10:34 root  INFO  current command: show config(Network)
+02-13 10:34 root  INFO  show config() command matched
+02-13 10:34 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-13 10:34 root  INFO  treating command
+02-13 10:34 root  INFO  execution time: 0.34
+02-13 10:34 root  INFO  ###### EXECUTION COMPLETED ######
+02-13 10:36 root  INFO  Pressed "run commands" under Telepresence tab
+02-13 10:36 root  INFO  Validating commands...
+02-13 10:36 root  INFO  List of commands validated successfully
+02-13 10:36 root  INFO  set config(<value>) command matched
+02-13 10:36 root  ERROR Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+02-13 10:36 axapi ERROR Got response Error None for set config() in 10.18.8.254
+02-13 10:36 root  INFO  treating command
+02-13 10:36 root  INFO  execution time: 0.33
+02-13 10:36 root  INFO  ###### EXECUTION COMPLETED ######
+02-13 10:36 root  INFO  Pressed "run commands" under Telepresence tab
+02-13 10:36 root  INFO  Validating commands...
+02-13 10:36 root  INFO  List of commands validated successfully
+02-13 10:36 root  INFO  current command: show config(Audio)
+02-13 10:36 root  INFO  show config() command matched
+02-13 10:36 axapi INFO  Got response 200 for show config() in 10.18.8.254
+02-13 10:36 root  INFO  treating command
+02-13 10:36 root  INFO  execution time: 0.32
+02-13 10:36 root  INFO  ###### EXECUTION COMPLETED ######
+02-13 10:37 root  INFO  Pressed "run commands" under Telepresence tab
+02-13 10:37 root  INFO  Validating commands...
+02-13 10:37 root  INFO  List of commands validated successfully
+02-13 10:37 root  INFO  current command: set config(Configuration.Audio.DefaultVolume": "40")
+02-13 10:37 root  INFO  set config(<value>) command matched
+02-13 10:37 root  ERROR Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+02-13 10:37 axapi ERROR Got response Error None for set config() in 10.18.8.254
+02-13 10:37 root  INFO  treating command
+02-13 10:37 root  INFO  execution time: 0.22
+02-13 10:37 root  INFO  ###### EXECUTION COMPLETED ######

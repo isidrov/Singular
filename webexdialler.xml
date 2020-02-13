@@ -1,0 +1,9 @@
+<Extensions><Version>1.5</Version><Panel>
+    <PanelId>webexdialler</PanelId>
+    <Type>Home</Type>
+    <Icon>Webex</Icon>
+    <Order>3</Order>
+    <Color>#30D557</Color>
+    <Name>Join Webex</Name>
+  </Panel>
+  </Extensions>

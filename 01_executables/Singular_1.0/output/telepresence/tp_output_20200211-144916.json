@@ -1,0 +1,18 @@
+[
+    {
+        "number of endpoints": "1",
+        "execution time": "0.26"
+    },
+    {
+        "10.18.8.254": {
+            "set config(\"Configuration.UserInterface.CustomMessage\": \"\")": {
+                "status": 200,
+                "response": {
+                    "Configuration": {
+                        "Success": null
+                    }
+                }
+            }
+        }
+    }
+]

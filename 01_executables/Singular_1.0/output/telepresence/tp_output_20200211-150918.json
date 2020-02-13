@@ -1,0 +1,19 @@
+[
+    {
+        "number of endpoints": "1",
+        "execution time": "0.29"
+    },
+    {
+        "10.18.8.254": {
+            "show config(olume)": {
+                "status": 200,
+                "response": {
+                    "Configuration.Audio.DefaultVolume": "50",
+                    "Configuration.Audio.SoundsAndAlerts.RingVolume": "50",
+                    "Configuration.Audio.Ultrasound.MaxVolume": "70",
+                    "Configuration.Experimental.Audio.Ultrasound.MotionDetectorSignalVolume": "70"
+                }
+            }
+        }
+    }
+]

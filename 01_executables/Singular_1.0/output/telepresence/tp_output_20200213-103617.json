@@ -1,0 +1,14 @@
+[
+    {
+        "number of endpoints": "1",
+        "execution time": "0.33"
+    },
+    {
+        "10.18.8.254": {
+            "set config()": {
+                "status": "ERROR",
+                "response": "Error None"
+            }
+        }
+    }
+]

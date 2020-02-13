@@ -1,0 +1,71 @@
+[
+    {
+        "number of endpoints": "1",
+        "execution time": "0.34"
+    },
+    {
+        "10.18.8.254": {
+            "show config(Network)": {
+                "status": 200,
+                "response": {
+                    "Configuration.Network.DNS.DNSSEC.Mode": "Off",
+                    "Configuration.Network.IEEE8021X.Eap.Md5": "On",
+                    "Configuration.Network.IEEE8021X.Eap.Peap": "On",
+                    "Configuration.Network.IEEE8021X.Eap.Tls": "On",
+                    "Configuration.Network.IEEE8021X.Eap.Ttls": "On",
+                    "Configuration.Network.IEEE8021X.Mode": "Off",
+                    "Configuration.Network.IEEE8021X.Password": "***",
+                    "Configuration.Network.IEEE8021X.TlsVerify": "Off",
+                    "Configuration.Network.IEEE8021X.UseClientCertificate": "Off",
+                    "Configuration.Network.IPStack": "IPv4",
+                    "Configuration.Network.IPv4.Assignment": "DHCP",
+                    "Configuration.Network.IPv6.Assignment": "Autoconf",
+                    "Configuration.Network.IPv6.DHCPOptions": "On",
+                    "Configuration.Network.MTU": "1500",
+                    "Configuration.Network.QoS.Diffserv.Audio": "0",
+                    "Configuration.Network.QoS.Diffserv.Data": "0",
+                    "Configuration.Network.QoS.Diffserv.ICMPv6": "0",
+                    "Configuration.Network.QoS.Diffserv.NTP": "0",
+                    "Configuration.Network.QoS.Diffserv.Signalling": "0",
+                    "Configuration.Network.QoS.Diffserv.Video": "0",
+                    "Configuration.Network.QoS.Mode": "Diffserv",
+                    "Configuration.Network.Speed": "Auto",
+                    "Configuration.Network.TrafficControl.Mode": "On",
+                    "Configuration.Network.VLAN.Voice.Mode": "Auto",
+                    "Configuration.Network.VLAN.Voice.VlanId": "1",
+                    "Configuration.NetworkServices.CDP.Mode": "On",
+                    "Configuration.NetworkServices.H323.Mode": "Off",
+                    "Configuration.NetworkServices.HTTP.Mode": "HTTPS",
+                    "Configuration.NetworkServices.HTTP.Proxy.Mode": "WPAD",
+                    "Configuration.NetworkServices.HTTP.Proxy.Password": "***",
+                    "Configuration.NetworkServices.HTTPS.OCSP.Mode": "Off",
+                    "Configuration.NetworkServices.HTTPS.Server.MinimumTLSVersion": "TLSv1.1",
+                    "Configuration.NetworkServices.HTTPS.StrictTransportSecurity": "Off",
+                    "Configuration.NetworkServices.HTTPS.VerifyClientCertificate": "Off",
+                    "Configuration.NetworkServices.NTP.Mode": "Manual",
+                    "Configuration.NetworkServices.NTP.Server.1.Address": "ntps-kedc.pwgsc.gc.ca",
+                    "Configuration.NetworkServices.NTP.Server.1.Key": "***",
+                    "Configuration.NetworkServices.NTP.Server.1.KeyAlgorithm": "SHA256",
+                    "Configuration.NetworkServices.NTP.Server.2.Key": "***",
+                    "Configuration.NetworkServices.NTP.Server.2.KeyAlgorithm": "SHA256",
+                    "Configuration.NetworkServices.NTP.Server.3.Key": "***",
+                    "Configuration.NetworkServices.NTP.Server.3.KeyAlgorithm": "SHA256",
+                    "Configuration.NetworkServices.SIP.Mode": "On",
+                    "Configuration.NetworkServices.SNMP.CommunityName": "public",
+                    "Configuration.NetworkServices.SNMP.Mode": "Off",
+                    "Configuration.NetworkServices.SSH.AllowPublicKey": "On",
+                    "Configuration.NetworkServices.SSH.HostKeyAlgorithm": "RSA",
+                    "Configuration.NetworkServices.SSH.Mode": "On",
+                    "Configuration.NetworkServices.UPnP.Mode": "On",
+                    "Configuration.NetworkServices.UPnP.Timeout": "600",
+                    "Configuration.NetworkServices.Websocket": "Off",
+                    "Configuration.NetworkServices.WelcomeText": "Off",
+                    "Configuration.NetworkServices.Wifi.Allowed": "True",
+                    "Configuration.NetworkServices.Wifi.CARequired": "False",
+                    "Configuration.NetworkServices.Wifi.Enabled": "True",
+                    "Configuration.NetworkServices.XMLAPI.Mode": "On"
+                }
+            }
+        }
+    }
+]

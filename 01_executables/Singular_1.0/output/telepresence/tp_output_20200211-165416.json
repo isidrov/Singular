@@ -1,0 +1,20 @@
+[
+    {
+        "number of endpoints": "1",
+        "execution time": "3.33"
+    },
+    {
+        "10.18.8.254": {
+            "enable macro(Untitled1)": {
+                "status": 200,
+                "response": {
+                    "Command": {
+                        "MacroActivateResult": {
+                            "@status": "OK"
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

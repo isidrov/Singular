@@ -1,0 +1,54 @@
+[
+    {
+        "number of endpoints": "1",
+        "execution time": "0.32"
+    },
+    {
+        "10.18.8.254": {
+            "show config(Audio)": {
+                "status": 200,
+                "response": {
+                    "Configuration.Audio.DefaultVolume": "50",
+                    "Configuration.Audio.Input.HDMI.1.Level": "0",
+                    "Configuration.Audio.Input.HDMI.1.Mode": "On",
+                    "Configuration.Audio.Input.HDMI.1.VideoAssociation.MuteOnInactiveVideo": "On",
+                    "Configuration.Audio.Input.HDMI.2.Level": "0",
+                    "Configuration.Audio.Input.HDMI.2.Mode": "On",
+                    "Configuration.Audio.Input.HDMI.2.VideoAssociation.MuteOnInactiveVideo": "On",
+                    "Configuration.Audio.Input.Microphone.1.Mode": "On",
+                    "Configuration.Audio.Input.Microphone.2.EchoControl.Dereverberation": "Off",
+                    "Configuration.Audio.Input.Microphone.2.EchoControl.Mode": "On",
+                    "Configuration.Audio.Input.Microphone.2.EchoControl.NoiseReduction": "On",
+                    "Configuration.Audio.Input.Microphone.2.Level": "14",
+                    "Configuration.Audio.Input.Microphone.2.Mode": "On",
+                    "Configuration.Audio.Input.Microphone.3.EchoControl.Dereverberation": "Off",
+                    "Configuration.Audio.Input.Microphone.3.EchoControl.Mode": "On",
+                    "Configuration.Audio.Input.Microphone.3.EchoControl.NoiseReduction": "On",
+                    "Configuration.Audio.Input.Microphone.3.Level": "14",
+                    "Configuration.Audio.Input.Microphone.3.Mode": "On",
+                    "Configuration.Audio.KeyClickDetector.Attenuate": "True",
+                    "Configuration.Audio.KeyClickDetector.Enabled": "True",
+                    "Configuration.Audio.Microphones.Mute.Enabled": "True",
+                    "Configuration.Audio.Microphones.PhantomPower": "On",
+                    "Configuration.Audio.Output.InternalSpeaker.Mode": "On",
+                    "Configuration.Audio.Output.Line.Mode": "On",
+                    "Configuration.Audio.Output.Line.OutputType": "Loudspeaker",
+                    "Configuration.Audio.SoundsAndAlerts.RingTone": "Sunrise",
+                    "Configuration.Audio.SoundsAndAlerts.RingVolume": "50",
+                    "Configuration.Audio.Ultrasound.MaxVolume": "70",
+                    "Configuration.Audio.Ultrasound.Mode": "Dynamic",
+                    "Configuration.Experimental.Audio.Panning.Limited": "False",
+                    "Configuration.Experimental.Audio.Panning.MaxAngle": "30",
+                    "Configuration.Experimental.Audio.Panning.Mode": "Auto",
+                    "Configuration.Experimental.Audio.Panning.RemoteMetadata": "False",
+                    "Configuration.Experimental.Audio.Ultrasound.MotionDetectorSignalVolume": "70",
+                    "Configuration.Experimental.Audio.Ultrasound.Ru1Protocol": "On",
+                    "Configuration.Experimental.Audio.Ultrasound.RzssProtocol": "Off",
+                    "Configuration.Experimental.Conference.MultistreamAudio": "Off",
+                    "Configuration.Network.QoS.Diffserv.Audio": "0",
+                    "Configuration.Standby.Signage.Audio": "Off"
+                }
+            }
+        }
+    }
+]

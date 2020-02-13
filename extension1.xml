@@ -1,0 +1,32 @@
+<Extensions>
+  <Version>1.5</Version>
+  <Panel>
+    <PanelId>panel_1</PanelId>
+    <Type>Home</Type>
+    <Icon>Handset</Icon>
+    <Order>1</Order>
+    <Color>#07C1E4</Color>
+    <Name>Press me to dial</Name>
+    <Page>
+      <Name>Dialling</Name>
+      <Row>
+        <Name>Row</Name>
+        <Widget>
+          <WidgetId>text</WidgetId>
+          <Name>Number is being dialled</Name>
+          <Type>Text</Type>
+          <Options>size=4;align=center;fontSize=normal</Options>
+        </Widget>
+      </Row>
+      <PageId>speed_dial</PageId>
+      <Options>hideRowNames=1</Options>
+    </Page>
+    <Page>
+      <Name>Page</Name>
+      <Row>
+        <Name>Row</Name>
+      </Row>
+      <Options/>
+    </Page>
+  </Panel>
+</Extensions>

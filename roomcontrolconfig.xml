@@ -1,0 +1,25 @@
+<Extensions>
+  <Version>1.5</Version>
+  <Panel>
+    <PanelId>panel_2</PanelId>
+    <Type>Home</Type>
+    <Icon>Helpdesk</Icon>
+    <Order>1</Order>
+    <Color>#00D6A2</Color>
+    <Name>Help Desk</Name>
+    <Page>
+      <Name>Dialing</Name>
+      <Row>
+        <Name/>
+        <Widget>
+          <WidgetId>Dialing</WidgetId>
+          <Name>Help Desk</Name>
+          <Type>Text</Type>
+          <Options>size=4;fontSize=normal;align=center</Options>
+        </Widget>
+      </Row>
+      <PageId>help_desk</PageId>
+      <Options>hideRowNames=1</Options>
+    </Page>
+  </Panel>
+</Extensions>

@@ -1,0 +1,16 @@
+[
+    {
+        "number of endpoints": "1",
+        "execution time": "0.34"
+    },
+    {
+        "10.18.8.254": {
+            "show config(CustomMessage)": {
+                "status": 200,
+                "response": {
+                    "Configuration.UserInterface.CustomMessage": "Go Sens Go"
+                }
+            }
+        }
+    }
+]

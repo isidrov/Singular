@@ -1,0 +1,12 @@
+{
+  "SQL": [
+    {
+      "name": "phones",
+      "query": "select name, description, pkid from device where name like 'SEP%'"
+    },
+    {
+      "name": "endusers",
+      "query": "select firstname, lastname, userid from enduser"
+    }
+  ]
+}

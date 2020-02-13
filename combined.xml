@@ -1,0 +1,237 @@
+<Extensions><Version>1.5</Version>
+	<Panel>
+		<PanelId>panel_1</PanelId>
+		<Type>Statusbar</Type>
+		<Icon>Help</Icon>
+		<Order>5</Order>
+		<Color>#FF503C</Color>
+		<Name>How To's</Name>
+		<Page>
+		<Name>Call</Name>
+		<Row>
+			<Name>To place a call</Name>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_21</WidgetId>
+			<Name>Use the Cisco Touch Panel.</Name>
+			<Type>Text</Type>
+			<Options>size=3;fontSize=normal;align=left</Options>
+			</Widget>
+			<Widget>
+			<WidgetId>widget_22</WidgetId>
+			<Type>Spacer</Type>
+			<Options>size=1</Options>
+			</Widget>
+			<Widget>
+			<WidgetId>widget_23</WidgetId>
+			<Name>Tap the call button and the search field to invoke the virtual keyboard.</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_24</WidgetId>
+			<Name>Dial 9 then 1 followed by the 10 digit phone number.</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_25</WidgetId>
+			<Name>Tap Call</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name>To dial an audio bridge</Name>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_26</WidgetId>
+			<Name>Follow the steps above.</Name>
+			<Type>Text</Type>
+			<Options>size=3;fontSize=normal;align=left</Options>
+			</Widget>
+			<Widget>
+			<WidgetId>widget_28</WidgetId>
+			<Type>Spacer</Type>
+			<Options>size=1</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_27</WidgetId>
+			<Name>Tap the keypad button to dial the Access Code.</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Options>hideRowNames=0</Options>
+		</Page>
+		<Page>
+		<Name>Meetings</Name>
+		<Row>
+			<Name>To join a Webex/Video meeting</Name>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_29</WidgetId>
+			<Name>Tap the meetings button and join the meeting.</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name>To manually join a meeting.</Name>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_31</WidgetId>
+			<Name>Tap the call button and the search or dial field.</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_32</WidgetId>
+			<Name>Enter the Webex sip address found in the meeting invite sip.</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_33</WidgetId>
+			<Name>Tap Call</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Options/>
+		</Page>
+		<Page>
+		<Name>Share</Name>
+		<Row>
+			<Name>To share in the room.</Name>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_38</WidgetId>
+			<Name>Plug ClickShare button (USB Dongle) into your laptop. The LED will flash white.</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_39</WidgetId>
+			<Name>Your laptop will display a popup stating:</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_40</WidgetId>
+			<Name>&gt; Connecting to base unit</Name>
+			<Type>Text</Type>
+			<Options>size=3;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_41</WidgetId>
+			<Name>&gt; Ready to share in conference room</Name>
+			<Type>Text</Type>
+			<Options>size=3;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_42</WidgetId>
+			<Name>Tap share on the Cisco Touch Panel and then tap ClickShare.</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_43</WidgetId>
+			<Name>Push the ClickShare button to display your screen on the monitor (LED will turn red).</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name>To share during a video call.</Name>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_44</WidgetId>
+			<Name>Follow the steps above.</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+			<Widget>
+			<WidgetId>widget_45</WidgetId>
+			<Name>On the Cisco Touch Panel. Tap the share button and share in call.</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<Row>
+			<Name/>
+		</Row>
+		<Options/>
+		</Page>
+		<Page>
+		<Name>Exit</Name>
+		<Row>
+			<Name/>
+		</Row>
+		<Row>
+			<Name/>
+		</Row>
+		<Row>
+			<Name/>
+			<Widget>
+			<WidgetId>widget_54</WidgetId>
+			<Name>To exit this menu, touch outside the box.</Name>
+			<Type>Text</Type>
+			<Options>size=4;fontSize=normal;align=left</Options>
+			</Widget>
+		</Row>
+		<PageId>Exit</PageId>
+		<Options>hideRowNames=0</Options>
+		</Page>
+  </Panel>
+  <Panel>
+    <PanelId>webexdialler</PanelId>
+    <Type>Home</Type>
+    <Icon>Webex</Icon>
+    <Order>3</Order>
+    <Color>#30D557</Color>
+    <Name>Join Webex</Name>
+  </Panel>
+</Extensions>

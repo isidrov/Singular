@@ -1,0 +1,70 @@
+[
+    {
+        "number of endpoints": "1",
+        "execution time": "0.02"
+    },
+    {
+        "Supported commands are": {
+            "help": [
+                "help()"
+            ],
+            "run": [
+                "run migrate2cloud()",
+                "run tp backup()",
+                "run tp restore()"
+            ],
+            "show": [
+                "show status(<optional_filter>)",
+                "show config(<optional_filter>)",
+                "show favorites()",
+                "show users()",
+                "show panels()"
+            ],
+            "test": [
+                "test migrate2cloud()"
+            ],
+            "set": [
+                "set config(<configuration as shown by show config>)",
+                "set password(<new_password>)",
+                "set systemName()"
+            ],
+            "add": [
+                "add contact(<name>,<number>)",
+                "add user(<username>,<password>,<role>)",
+                "add userRole(<username>,<role>)",
+                "add exp searchRules()"
+            ],
+            "upload": [
+                "upload brandingAwake(<image_file_name.ext>)",
+                "upload brandingHalfwake(<image_file_name.ext>)",
+                "upload brandingBackground(<image_file_name.ext>)",
+                "upload macro(<macro file>)",
+                "upload panel(<panel_file>)",
+                "upload wallpaper(<wallpaper_file>)"
+            ],
+            "list": [
+                "list webexPlaces(<optional place name>)"
+            ],
+            "delete": [
+                "delete itl()",
+                "delete webexPlaces(<place name>)",
+                "delete webexPlaces(<palace name>)",
+                "delete macro(<macro_name>)",
+                "delete user(<username>)",
+                "delete userRole(<username>,<role>)"
+            ],
+            "enable": [
+                "enable macroEditor()",
+                "enable macro(<macro_name>)"
+            ],
+            "disable": [
+                "disable macroEditor()",
+                "disable macro(<macro_name>)"
+            ],
+            "misc": [
+                "restart()",
+                "factoryReset()"
+            ]
+        }
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "number of endpoints": "1",
+        "execution time": "0.21"
+    },
+    {
+        "10.18.8.254": {
+            "show status(olume)": {
+                "status": 200,
+                "response": {
+                    "Status.Audio.Volume": "60",
+                    "Status.Audio.VolumeHandsetUsb": "50",
+                    "Status.Audio.VolumeHeadsetUsb": "50",
+                    "Status.Audio.VolumeInternal": "60",
+                    "Status.Audio.VolumeMute": "Off"
+                }
+            }
+        }
+    }
+]
