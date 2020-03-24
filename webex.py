@@ -18,14 +18,14 @@ class Webex:
         self.headers = {'accept': 'application/json', 'Content-Type': 'application/json',
                    'Authorization': 'Bearer ' + self.token}
         self.concurrent = concurrent
+        self.data = []
+        self.arguments = []
 
-
-
-    def runIt(self,command, argument1 = ''): # Entry point and EVENT LOOP
+    def runIt(self,command, argument1 = ''): #TODO consider removing argument1
 
         try:
 
-            response = asyncio.run(self.run_webex_command( command = command, argument1 = argument1))  # Event Loop
+            response = asyncio.run(self.run_webex_command( command = command, argument1 = argument1))  #TODO consider removing argument1
 
         except Exception as err:
 
@@ -36,7 +36,7 @@ class Webex:
         return response
 
 
-    async def run_webex_command(self,command, argument1 = ''):
+    async def run_webex_command(self,command, argument1 = ''): #TODO consider removing argument1
 
         connector = aiohttp.connector.TCPConnector(limit = self.concurrent)
 
@@ -105,12 +105,11 @@ class Webex:
 
             elif rType == 'delete':
 
-                url = self.url + self.obtain_url(command, argument1)
+                for id in self.data:
 
-                task = asyncio.create_task(
-                    self.delete_url(command=command, url=url, session=session, argument1 = argument1))
-
-                tasks.append(task)
+                    url = self.url + self.obtain_url(command, id)
+                    task = asyncio.create_task(self.delete_url(command=command, url=url, session=session, argument1 = argument1))
+                    tasks.append(task)
 
             else:
 
@@ -126,12 +125,14 @@ class Webex:
         map_dict = {
             'run migrate2cloud()': 'post',
             'list webexDevices()' : 'get',
-            'list webexPlaces()' : 'get',
+            'show webex places()' : 'get',
             'get webexPlaces()': 'get',
             'get webexActivationCode4migration()' : 'post',
             'add webexPlaces()' : 'post',
             'add webexPlaces4migration()': 'post',
-            'delete webexPlaces()': 'delete'
+            'delete webex places()': 'delete',
+            'show webex devices status()': 'get'
+
         }
 
         if command in map_dict: # means the key exist
@@ -143,27 +144,28 @@ class Webex:
 
     def obtain_url(self, command, argument1 = ''):
 
-        if argument1:
+        if argument1: #TODO consider removing
 
             map_dict = {
-                'list webexDevices()' : 'devices',
-                'list webexPlaces()' : f'places?displayName={argument1}',
+                'show webex places()' : f'places?displayName={argument1}',
                 'get webexPlace()': 'places',
                 'add webexPlaces()': 'places',
                 'add webexPlaces4migration()': 'places',
-                'delete webexPlaces()': f'places/{argument1}'
+                'delete webex places()': f'places/{argument1}'
             }
 
         else:
 
             map_dict = {
+                'show webex devices()': 'devices',
                 'list webexDevices()' : 'devices',
-                'list webexPlaces()' : f'places',
+                'show webex places()' : 'places',
                 'get webexPlace()': 'places',
                 'add webexPlaces()': 'places',
                 'add webexPlaces4migration()': 'places',
                 'delete webexPlaces()': 'places',
                 'get webexActivationCode4migration()': 'devices/activationCode'
+                'show webex devices status()'
             }
 
 

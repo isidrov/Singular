@@ -11,6 +11,8 @@ import sys
 from tabulate import tabulate
 import logging.config
 from AXLPlugin import UcmAXLConnection
+from AXLPlugin import UcmRisPortToolkit
+
 from webex import Webex
 from axapi import Axapi
 from PawsPlugin import PawsPlugin
@@ -45,7 +47,7 @@ import os
 #from test import PerhapsMyHttpServer
 from helper_functions import calc_sha512
 
-
+from csv import reader
 
 # Paths initialization
 
@@ -173,10 +175,13 @@ logging.info("Logging initializated")
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
+
+
 class Ui_Nautilus(object):
     def setupUi(self, Nautilus):
         Nautilus.setObjectName("Nautilus")
-        Nautilus.resize(1404, 694)
+        Nautilus.resize(1187, 819)
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(254, 254, 254))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -356,7 +361,7 @@ class Ui_Nautilus(object):
         self.toolBox = QtWidgets.QToolBox(self.tab_cli)
         self.toolBox.setObjectName("toolBox")
         self.page_VOS = QtWidgets.QWidget()
-        self.page_VOS.setGeometry(QtCore.QRect(0, 0, 1362, 605))
+        self.page_VOS.setGeometry(QtCore.QRect(0, 0, 1145, 700))
         self.page_VOS.setObjectName("page_VOS")
         self.horizontalLayout_30 = QtWidgets.QHBoxLayout(self.page_VOS)
         self.horizontalLayout_30.setObjectName("horizontalLayout_30")
@@ -1378,12 +1383,235 @@ class Ui_Nautilus(object):
         self.widget_18.setObjectName("widget_18")
         self.verticalLayout_5.addWidget(self.widget_18)
         self.globalwidget.addTab(self.tab_cms, "")
+        self.tab_UCM_AXL = QtWidgets.QWidget()
+        self.tab_UCM_AXL.setEnabled(True)
+        self.tab_UCM_AXL.setObjectName("tab_UCM_AXL")
+        self.horizontalLayout_18 = QtWidgets.QHBoxLayout(self.tab_UCM_AXL)
+        self.horizontalLayout_18.setObjectName("horizontalLayout_18")
+        self.widget_UCM_AXL_Global = QtWidgets.QWidget(self.tab_UCM_AXL)
+        self.widget_UCM_AXL_Global.setObjectName("widget_UCM_AXL_Global")
+        self.verticalLayout_33 = QtWidgets.QVBoxLayout(self.widget_UCM_AXL_Global)
+        self.verticalLayout_33.setObjectName("verticalLayout_33")
+        self.widget_UCM_AXL_Credentials = QtWidgets.QWidget(self.widget_UCM_AXL_Global)
+        self.widget_UCM_AXL_Credentials.setMinimumSize(QtCore.QSize(0, 0))
+        self.widget_UCM_AXL_Credentials.setMaximumSize(QtCore.QSize(275, 108))
+        self.widget_UCM_AXL_Credentials.setObjectName("widget_UCM_AXL_Credentials")
+        self.horizontalLayout_21 = QtWidgets.QHBoxLayout(self.widget_UCM_AXL_Credentials)
+        self.horizontalLayout_21.setObjectName("horizontalLayout_21")
+        self.widget_31 = QtWidgets.QWidget(self.widget_UCM_AXL_Credentials)
+        self.widget_31.setObjectName("widget_31")
+        self.verticalLayout_24 = QtWidgets.QVBoxLayout(self.widget_31)
+        self.verticalLayout_24.setObjectName("verticalLayout_24")
+        self.label_ip_address_axl = QtWidgets.QLabel(self.widget_31)
+        self.label_ip_address_axl.setObjectName("label_ip_address_axl")
+        self.verticalLayout_24.addWidget(self.label_ip_address_axl)
+        self.label_username_axl = QtWidgets.QLabel(self.widget_31)
+        self.label_username_axl.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_username_axl.setObjectName("label_username_axl")
+        self.verticalLayout_24.addWidget(self.label_username_axl)
+        self.label_password_axl = QtWidgets.QLabel(self.widget_31)
+        self.label_password_axl.setObjectName("label_password_axl")
+        self.verticalLayout_24.addWidget(self.label_password_axl)
+        self.horizontalLayout_21.addWidget(self.widget_31)
+        self.widget_32 = QtWidgets.QWidget(self.widget_UCM_AXL_Credentials)
+        self.widget_32.setObjectName("widget_32")
+        self.verticalLayout_25 = QtWidgets.QVBoxLayout(self.widget_32)
+        self.verticalLayout_25.setObjectName("verticalLayout_25")
+        self.lineEdit_ipaddress_axl = QtWidgets.QLineEdit(self.widget_32)
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        self.lineEdit_ipaddress_axl.setPalette(palette)
+        self.lineEdit_ipaddress_axl.setText("")
+        self.lineEdit_ipaddress_axl.setObjectName("lineEdit_ipaddress_axl")
+        self.verticalLayout_25.addWidget(self.lineEdit_ipaddress_axl)
+        self.lineEdit_username_axl = QtWidgets.QLineEdit(self.widget_32)
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        self.lineEdit_username_axl.setPalette(palette)
+        self.lineEdit_username_axl.setText("")
+        self.lineEdit_username_axl.setObjectName("lineEdit_username_axl")
+        self.verticalLayout_25.addWidget(self.lineEdit_username_axl)
+        self.lineEdit_password_axl = QtWidgets.QLineEdit(self.widget_32)
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        self.lineEdit_password_axl.setPalette(palette)
+        self.lineEdit_password_axl.setText("")
+        self.lineEdit_password_axl.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.lineEdit_password_axl.setObjectName("lineEdit_password_axl")
+        self.verticalLayout_25.addWidget(self.lineEdit_password_axl)
+        self.horizontalLayout_21.addWidget(self.widget_32)
+        self.verticalLayout_33.addWidget(self.widget_UCM_AXL_Credentials)
+        self.widget_13 = QtWidgets.QWidget(self.widget_UCM_AXL_Global)
+        self.widget_13.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.widget_13.setObjectName("widget_13")
+        self.formLayout_2 = QtWidgets.QFormLayout(self.widget_13)
+        self.formLayout_2.setObjectName("formLayout_2")
+        self.pushButton_run_AXL_commands = QtWidgets.QPushButton(self.widget_13)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_run_AXL_commands.sizePolicy().hasHeightForWidth())
+        self.pushButton_run_AXL_commands.setSizePolicy(sizePolicy)
+        self.pushButton_run_AXL_commands.setMinimumSize(QtCore.QSize(0, 30))
+        self.pushButton_run_AXL_commands.setMaximumSize(QtCore.QSize(141, 16777215))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(179, 255, 207))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(179, 255, 207))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(179, 255, 207))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        self.pushButton_run_AXL_commands.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        self.pushButton_run_AXL_commands.setFont(font)
+        self.pushButton_run_AXL_commands.setObjectName("pushButton_run_AXL_commands")
+        self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.pushButton_run_AXL_commands)
+        self.verticalLayout_33.addWidget(self.widget_13)
+        self.groupBox_42 = QtWidgets.QGroupBox(self.widget_UCM_AXL_Global)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.groupBox_42.sizePolicy().hasHeightForWidth())
+        self.groupBox_42.setSizePolicy(sizePolicy)
+        self.groupBox_42.setObjectName("groupBox_42")
+        self.horizontalLayout_29 = QtWidgets.QHBoxLayout(self.groupBox_42)
+        self.horizontalLayout_29.setObjectName("horizontalLayout_29")
+        self.splitter_3 = QtWidgets.QSplitter(self.groupBox_42)
+        self.splitter_3.setOrientation(QtCore.Qt.Horizontal)
+        self.splitter_3.setObjectName("splitter_3")
+        self.splitter_4 = QtWidgets.QSplitter(self.splitter_3)
+        self.splitter_4.setOrientation(QtCore.Qt.Horizontal)
+        self.splitter_4.setObjectName("splitter_4")
+        self.layoutWidget_4 = QtWidgets.QWidget(self.splitter_4)
+        self.layoutWidget_4.setObjectName("layoutWidget_4")
+        self.verticalLayout_26 = QtWidgets.QVBoxLayout(self.layoutWidget_4)
+        self.verticalLayout_26.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_26.setObjectName("verticalLayout_26")
+        self.label_3 = QtWidgets.QLabel(self.layoutWidget_4)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.verticalLayout_26.addWidget(self.label_3)
+        self.plainTextEdit_axl_data = QtWidgets.QPlainTextEdit(self.layoutWidget_4)
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(50, 50, 50))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(50, 50, 50))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(240, 240, 240))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        self.plainTextEdit_axl_data.setPalette(palette)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.plainTextEdit_axl_data.setFont(font)
+        self.plainTextEdit_axl_data.setObjectName("plainTextEdit_axl_data")
+        self.verticalLayout_26.addWidget(self.plainTextEdit_axl_data)
+        self.layoutWidget_5 = QtWidgets.QWidget(self.splitter_4)
+        self.layoutWidget_5.setObjectName("layoutWidget_5")
+        self.verticalLayout_31 = QtWidgets.QVBoxLayout(self.layoutWidget_5)
+        self.verticalLayout_31.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_31.setObjectName("verticalLayout_31")
+        self.label_5 = QtWidgets.QLabel(self.layoutWidget_5)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.verticalLayout_31.addWidget(self.label_5)
+        self.plainTextEdit_axl_commands = QtWidgets.QPlainTextEdit(self.layoutWidget_5)
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(50, 50, 50))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(50, 50, 50))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(240, 240, 240))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        self.plainTextEdit_axl_commands.setPalette(palette)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.plainTextEdit_axl_commands.setFont(font)
+        self.plainTextEdit_axl_commands.setPlainText("")
+        self.plainTextEdit_axl_commands.setObjectName("plainTextEdit_axl_commands")
+        self.verticalLayout_31.addWidget(self.plainTextEdit_axl_commands)
+        self.layoutWidget_6 = QtWidgets.QWidget(self.splitter_4)
+        self.layoutWidget_6.setObjectName("layoutWidget_6")
+        self.verticalLayout_32 = QtWidgets.QVBoxLayout(self.layoutWidget_6)
+        self.verticalLayout_32.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_32.setObjectName("verticalLayout_32")
+        self.label_6 = QtWidgets.QLabel(self.layoutWidget_6)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_6.setFont(font)
+        self.label_6.setObjectName("label_6")
+        self.verticalLayout_32.addWidget(self.label_6)
+        self.textEdit_axl_output = QtWidgets.QPlainTextEdit(self.layoutWidget_6)
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(50, 50, 50))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(50, 50, 50))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(240, 240, 240))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        self.textEdit_axl_output.setPalette(palette)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.textEdit_axl_output.setFont(font)
+        self.textEdit_axl_output.setObjectName("textEdit_axl_output")
+        self.verticalLayout_32.addWidget(self.textEdit_axl_output)
+        self.horizontalLayout_29.addWidget(self.splitter_3)
+        self.verticalLayout_33.addWidget(self.groupBox_42)
+        self.horizontalLayout_18.addWidget(self.widget_UCM_AXL_Global)
+        self.globalwidget.addTab(self.tab_UCM_AXL, "")
         self.gridLayout_2.addWidget(self.globalwidget, 0, 0, 1, 1)
 
         self.retranslateUi(Nautilus)
-        self.globalwidget.setCurrentIndex(2)
+        self.globalwidget.setCurrentIndex(4)
         self.toolBox.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(Nautilus)
+
 
 
         #### MANUAL ADDITIONS ###
@@ -1417,11 +1645,44 @@ class Ui_Nautilus(object):
 
         QtWidgets.QApplication.setFont(font, "QPlainTextEdit")
 
-        # Copying Release Notes to executable folder
+        # Copying neccesary files and folders to where executable is:
 
+
+        def myCopy(source,destination):
+
+            for dirpath, dirnames, filenames in os.walk(source):
+
+                structure = os.path.join(destination, os.path.relpath(dirpath, source))
+
+                if not os.path.isdir(structure):
+
+                    os.mkdir(structure)
+
+                else:
+                    print("Folder does already exits!")
+
+                for file in filenames:
+
+                    destination_filePath = os.path.join(structure,file)
+
+                    if not os.path.isfile(destination_filePath):
+
+                        copyfile(os.path.join(dirpath,file), destination_filePath )
+
+        #myCopy(os.path.join(dir_project, 'ReadMe'),dir_executable)
+
+        myCopy(os.path.join(dir_project, 'static'), os.path.join(dir_executable,'octopussy'))
+
+        myCopy(os.path.join(dir_project, 'static'), os.path.join(dir_executable))
+
+
+
+        # Copying Release Notes to executable folder
+        '''
         ReadMe_path = os.path.join(dir_project, 'ReadMe')
         readme_file = os.path.join(ReadMe_path, 'Release_Notes.txt')
         copyfile(readme_file, os.path.join(dir_executable, 'Release_Notes.txt'))
+        '''
 
         # Default loading of CLI commands
 
@@ -1468,14 +1729,14 @@ class Ui_Nautilus(object):
 
         self.globalwidget.removeTab(3)
 
-
     def retranslateUi(self, Nautilus):
         _translate = QtCore.QCoreApplication.translate
-        Nautilus.setWindowTitle(_translate("Nautilus", "Singular 1.0"))
+        Nautilus.setWindowTitle(_translate("Nautilus", "Singular 1.2 - By Pelea Networks - "))
         self.label_ip_address_sql.setText(_translate("Nautilus", "UCM publisher IP"))
         self.label_username_sql.setText(_translate("Nautilus", "AXL username    "))
         self.label_password_sql.setText(_translate("Nautilus", "AXL password     "))
-        self.SQLquery.setPlainText(_translate("Nautilus", "select name, description from device where name like \'SEP%\'"))
+        self.SQLquery.setPlainText(
+            _translate("Nautilus", "select name, description from device where name like \'SEP%\'"))
         self.pushButton_sql_execute.setText(_translate("Nautilus", "Execute Query"))
         self.globalwidget.setTabText(self.globalwidget.indexOf(self.tab_SQL), _translate("Nautilus", "SQL"))
         self.UCMPub_Label.setText(_translate("Nautilus", "UCM Pub"))
@@ -1516,9 +1777,11 @@ class Ui_Nautilus(object):
         self.label_concurrent_tp.setText(_translate("Nautilus", "Concurrency"))
         self.lineEdit_concurrent_tp.setText(_translate("Nautilus", "20"))
         self.label_9.setText(_translate("Nautilus", "Webex Authentication"))
-        self.label_10.setText(_translate("Nautilus", "<html><head/><body><p><a href=\"http://localhost:10060/\"><span style=\" text-decoration: underline; color:#0000ff;\">Webex login</span></a></p></body></html>"))
+        self.label_10.setText(_translate("Nautilus",
+                                         "<html><head/><body><p><a href=\"http://localhost:10060/\"><span style=\" text-decoration: underline; color:#0000ff;\">Webex login</span></a></p></body></html>"))
         self.label_12.setText(_translate("Nautilus", "       OR ENTER ACCESS TOKEN MANUALLY      "))
-        self.label_11.setText(_translate("Nautilus", "<html><head/><body><p><a href=\"https://github.com/isidrov/Nautilus\"><span style=\" text-decoration: underline; color:#0000ff;\">Readme</span></a></p></body></html>"))
+        self.label_11.setText(_translate("Nautilus",
+                                         "<html><head/><body><p><a href=\"https://github.com/isidrov/Nautilus\"><span style=\" text-decoration: underline; color:#0000ff;\">Readme</span></a></p></body></html>"))
         self.pushButton_run_TP_commands.setText(_translate("Nautilus", "Run"))
         self.label.setText(_translate("Nautilus", "Data"))
         self.label_2.setText(_translate("Nautilus", "Commands"))
@@ -1527,7 +1790,17 @@ class Ui_Nautilus(object):
         self.label_username_tp_2.setText(_translate("Nautilus", "  username    "))
         self.label_password_tp_2.setText(_translate("Nautilus", "  password     "))
         self.pushButton.setText(_translate("Nautilus", "Run"))
-        self.globalwidget.setTabText(self.globalwidget.indexOf(self.tab_cms), _translate("Nautilus", "Cisco Meeting Server"))
+        self.globalwidget.setTabText(self.globalwidget.indexOf(self.tab_cms),
+                                     _translate("Nautilus", "Cisco Meeting Server"))
+        self.label_ip_address_axl.setText(_translate("Nautilus", "UCM publisher IP"))
+        self.label_username_axl.setText(_translate("Nautilus", "AXL username    "))
+        self.label_password_axl.setText(_translate("Nautilus", "AXL password     "))
+        self.pushButton_run_AXL_commands.setText(_translate("Nautilus", "Run"))
+        self.label_3.setText(_translate("Nautilus", "Data"))
+        self.label_5.setText(_translate("Nautilus", "Commands"))
+        self.label_6.setText(_translate("Nautilus", "JSON Output"))
+        self.globalwidget.setTabText(self.globalwidget.indexOf(self.tab_UCM_AXL), _translate("Nautilus", "UCM AXL"))
+
 
 
 
@@ -1539,6 +1812,7 @@ class Ui_Nautilus(object):
         self.pushButton_refresh_cli_ucm.clicked.connect(self.refresh_cli_commands)
         self.pushButton_stop_cli_ucm.clicked.connect(self.destroy_cli_connection)
         self.pushButton_run_TP_commands.clicked.connect(self.run_tp_commands) # Run on TP pane
+        self.pushButton_run_AXL_commands.clicked.connect(self.run_axl_commands)
         #self.pushButton_stop_vos_gen.clicked.connect(self.destroy_cli_connection)
         self.pushButton_add_node.clicked.connect(self.add_node_to_vos_gen)
         #self.pushButton_execute_vos_gen.clicked.connect(self.execute_cli_vos_gen)
@@ -1616,7 +1890,7 @@ class Ui_Nautilus(object):
 
         except Exception as ex:
 
-            logging.error(ex)
+            logging.info(ex)
 
             return False
 
@@ -2079,6 +2353,190 @@ class Ui_Nautilus(object):
 
                 json.dump(temp_dict, file, indent=4)
 
+    def run_axl_commands(self):
+
+        logging.info('Pressed "run commands" under UCM AXL tab')
+
+        s = time.perf_counter()
+        result = []
+        axl_output_list = []
+        all_good = True
+
+        try:
+
+            axl_username = self.lineEdit_username_axl.text()
+            axl_password = self.lineEdit_password_axl.text()
+            ucm_ipaddress = self.lineEdit_ipaddress_axl.text()
+
+
+            axl = UcmAXLConnection(ip=ucm_ipaddress, usr=axl_username, psw=axl_password)
+            ris = UcmRisPortToolkit(ip=ucm_ipaddress, usr=axl_username, psw=axl_password)
+            logging.info('Default version: ' + axl.version)
+            logging.info('WSDL ' + axl.wsdl)
+            # get SQL query from UI box
+            logging.info('UCMAXLConnection created! ')
+            logging.info('UCMRisConnection created! ')
+
+        except Exception as err:
+
+            logging.error(err)
+
+        # axl_dirty_data is a list of rows (each row is data in csv format)
+        axl_dirty_data = self.plainTextEdit_axl_data.toPlainText().splitlines()
+
+        axlinJsondata = self.csv2json_axl(axl_dirty_data)
+
+        axl_cmd_list_dirty = self.plainTextEdit_axl_commands.toPlainText().splitlines()
+        axl_cmd_list = []
+        data_type = self.find_data_type(axl_dirty_data)
+
+        if data_type == 'csv':
+
+            column_size = len(axl_dirty_data[0].split(",")) # check csv number of values (columns)
+
+            for row in axl_dirty_data:
+
+                # confirm all rows have the same column values
+                if column_size != len(row.split(",")):
+                    result += [{'The following row does not have the same columns as the first row': row}]
+                    all_good = False
+                    break
+
+        else:
+
+            pass
+            '''
+            result = [f': Error classifying data field, execution will not start until corrected']
+
+            axl_output_list = self.merge_tp_output_results(original=axl_output_list, addition=result)
+
+            logging.error('Data is invalid, execution will not start until corrected')
+
+            all_good = False
+            '''
+
+        if all_good:
+
+            # we convert axl_dirty_data  to a list of lists, each value is a list item
+            csv_reader = reader(axl_dirty_data)
+            axl_data = list(csv_reader)
+
+            for c in axl_cmd_list_dirty:
+                if not c or c.startswith('#') or c.startswith(' '):
+                    logging.info("ignoring the following command while cleaning the list :" + c)
+                else:
+                    axl_cmd_list.append(c)
+
+            # supported commands below
+
+            supported_commands = {
+                'help': [
+                    'update devicePoolInPhone()',
+                    'add phone()',
+                    'load addPhone()',
+                    'show rejectedPhones()'
+                ]
+            }
+
+            cmd_validation = self.validate_tp_command(supported_commands, axl_cmd_list)
+
+            if cmd_validation['valid'] == False:
+
+                all_good = False
+
+                result = [{
+                    cmd_validation['offendingCommand'] + ' not recognized , supported commands are': supported_commands}]
+
+                logging.info(json.dumps(result , indent = 4))
+
+                axl_output_list = self.merge_tp_output_results(original=axl_output_list, addition=result)
+
+            else:
+
+                logging.info('List of commands validated successfully')
+
+        if all_good:
+
+            for command in axl_cmd_list:
+
+                logging.info('current command: ' + command)
+
+                if command == 'help()':
+                    result = [{'Supported commands are': supported_commands}]
+                    axl_output_list = self.merge_tp_output_results(original=axl_output_list, addition=result)
+                    break
+
+                elif command.startswith('update'):
+
+                    if command == "update devicePoolInPhone()":
+
+                        for row in axl_data:
+
+                            result.append(axl.update_dp_in_phone(row[0],row[1]))
+
+                elif command.startswith('load'):
+
+                    if command == "load addPhone()":
+
+                        result.append(axl.load_phone())
+
+                elif command.startswith('add'):
+
+                    if command == "add phone()":
+
+                        result.append(axl.add_phone(axlinJsondata))
+
+                elif command.startswith('show'):
+
+                    if command == "show rejectedPhones()":
+
+                        selection_criteria = {
+                            'DeviceClass': 'Any',
+                            'SelectBy': 'Name',
+                            'MaxReturnedDevices': '1000',
+                            'Model': 255,
+                            'Status': "Rejected",
+                            'SelectItems': [
+                                {
+                                    'item': [
+                                        'CSF*',  # Replace these with the devices you want to retrieve
+                                    ]
+                                }
+                            ]
+                        }
+
+                        temp = ris.get_service().selectCmDevice(StateInfo='', CmSelectionCriteria=selection_criteria)
+
+                else:
+                    logging.error('Command ' + command + ' not recognized on TP execution')
+                    result = [{command + ' not recognized , supported commands are': supported_commands}]
+
+                axl_output_list = self.merge_tp_output_results(original=axl_output_list, addition=result)
+
+            elapsed_paralell = time.perf_counter() - s  # Parallel execution comes here after commands are run
+            elap = f'{elapsed_paralell:0.2f}'
+            try:
+                axl_output_list.insert(0, {'number of records': str(len(axl_dirty_data)), 'execution time': elap})
+                logging.info(f'execution time: {elap}')
+            except Exception as e:
+                logging.error(str(e))
+        else:
+            axl_output_list = self.merge_tp_output_results(original=axl_output_list, addition=result)
+
+        try:
+
+            self.textEdit_axl_output.setPlainText(json.dumps(axl_output_list,indent = 4))
+            self.write_tp_output(axl_output_list)
+
+        except Exception as e:
+            logging.error('Unable to write JSON in output pane')
+            logging.error(str(e))
+
+        logging.info('###### EXECUTION COMPLETED ######')
+
+
+
+
     def run_tp_commands(self):
 
         logging.info('Pressed "run commands" under Telepresence tab')
@@ -2091,6 +2549,7 @@ class Ui_Nautilus(object):
             tp_password = self.lineEdit_password_tp.text()
             tp_concurrent = int(self.lineEdit_concurrent_tp.text())
             data = self.plainTextEdit_tp_data.toPlainText().splitlines()
+            webex_data = self.plainTextEdit_tp_data.toPlainText().splitlines()
             tp_cmd_list_dirty = self.plainTextEdit_tp_commands.toPlainText().splitlines()
 
             logging.debug('Collected IPs and credentials from GUI')
@@ -2185,11 +2644,15 @@ class Ui_Nautilus(object):
                     'run tp restore()'
                 ],
                 'show': [
-                    'show status(<optional_filter>)',
+                    'show status(<optional_status_item_filter>)',
+                    'show commands(<optional_status_item_filter>)',
+                    'show webex devices()',
+                    'show webex devices status(<optional_filters, comma separated>)',
                     'show config(<optional_filter>)',
                     'show favorites()',
                     'show users()',
-                    'show panels()'
+                    'show panels()',
+                    'show webex places(<optional Place name>)'
                 ],
                 'test': [
                     'test migrate2cloud()'
@@ -2209,18 +2672,16 @@ class Ui_Nautilus(object):
                     'upload brandingAwake(<image_file_name.ext>)',
                     'upload brandingHalfwake(<image_file_name.ext>)',
                     'upload brandingBackground(<image_file_name.ext>)',
+                    'upload background(<image_file_name.ext>)',
                     'upload macro(<macro file>)',
                     'upload panel(<panel_file>)',
                     'upload wallpaper(<wallpaper_file>)'
 
                 ],
-                'list': [
-                    'list webexPlaces(<optional place name>)'
-                ],
+
                 'delete': [
                     'delete itl()',
-                    'delete webexPlaces(<place name>)',
-                    'delete webexPlaces(<palace name>)',
+                    'delete webex places(<add place names, one on each line in the DATA pane>)',
                     'delete macro(<macro_name>)',
                     'delete user(<username>)',
                     'delete userRole(<username>,<role>)'
@@ -2287,6 +2748,14 @@ class Ui_Nautilus(object):
                         command = 'show status()'
                         result = axapi.runIt(command = command, argument = filter) # returns a List of dicts, each item is the result for each IP
 
+                    elif re.match('show commands\((.*)\)', command) is not None:
+
+                        logging.info('commands() command matched')
+                        regex_result = re.search('show commands\((.*)\)', command)
+                        filter = regex_result.group(1)
+                        command = self.remove_arguments(command)
+                        result = axapi.runIt(command = command, argument = filter) # returns a List of dicts, each item is the result for each IP
+
                     elif command == 'show favorites()':
 
                         logging.info('show favorites() command matched')
@@ -2295,7 +2764,7 @@ class Ui_Nautilus(object):
 
                     elif re.match('show users\((.*)\)', command) is not None:
 
-                        logging.info('show users() command matched')
+                        logging.info(f"{command} command matched")
                         regex_result = re.search('show users\((.*)\)', command)
                         filter = [regex_result.group(1)]
                         axapi.runIt(command='init sw()', argument='internal')
@@ -2304,10 +2773,75 @@ class Ui_Nautilus(object):
 
                     elif command == 'show panels()':
 
-                        logging.info('show panels() command matched')
+                        logging.info(f"{command} command matched")
                         axapi.runIt(command='init sw()', argument='internal')
                         command = self.remove_arguments(command)
                         result = axapi.runIt(command=command)
+
+                    elif re.match('show webex places\((.*)\)', command) is not None:
+
+                        logging.info('show webex places() command matched')
+                        webexAccessToken = self.getwebexToken()
+
+                        if webexAccessToken:
+
+                            regex_result = re.search('show webex places\((.*)\)', command)
+                            place = regex_result.group(1)
+                            webex = Webex(webexAccessToken)
+                            result = webex.runIt('show webex places()', place)
+
+                        else:
+                            result = [{'result': 'No Access token found, click on oAuth Webex link'}]
+
+                    elif re.match('show webex devices\((.*)\)', command) is not None:
+
+                        logging.info(f'{command} matched')
+                        regex_result = re.search('show webex devices status\((.*)\)', command)
+                        command = self.remove_arguments(command)
+                        webexAccessToken = self.getwebexToken()
+
+                        if webexAccessToken:
+
+                            filters = []
+
+                            if regex_result:
+
+                                filter = regex_result.group(1)
+
+                                if ',' in filter:
+                                    filters = filter.split(',')
+
+                                else:
+                                    filters.append(filter)
+
+                            webex = Webex(webexAccessToken)
+                            webex.arguments =filters
+                            result = webex.runIt(command)
+
+                        else:
+                            result = [{'result': 'No Access token found, click on oAuth Webex link'}]
+
+                        pass
+
+                    elif re.match('show webex devices status\((.*)\)', command) is not None:
+
+                        logging.info(f'{command} matched')
+                        regex_result = re.search('show webex devices status\((.*)\)', command)
+                        command = self.remove_arguments(command)
+                        webexAccessToken = self.getwebexToken()
+
+                        if webexAccessToken:
+
+                            filters = regex_result.group(1).split(',')
+                            webex = Webex(webexAccessToken)
+                            webex.filters =filters
+                            result = webex.runIt(command)
+
+                        else:
+                            result = [{'result': 'No Access token found, click on oAuth Webex link'}]
+
+                        pass
+
 
                 elif command.startswith('set'):
 
@@ -2357,28 +2891,18 @@ class Ui_Nautilus(object):
                         logging.info(f'sw versions discovered, running {command}')
                         result = axapi.runIt(command=command)
 
-                    elif re.match('delete webexPlaces\((.*)\)', command) is not None:
+                    elif command == 'delete webex places()':
 
                         logging.info('delete webexPlaces() command matched')
+
                         webexAccessToken = self.getwebexToken()
 
                         if webexAccessToken:
 
-                            regex_result = re.search('delete webexPlaces\((.*)\)', command)
-                            place = regex_result.group(1)
                             webex = Webex(webexAccessToken)
-                            places = webex.runIt('list webexPlaces()', place)
-                            places_id_toDelete = []
+                            webex.data = webex_data
+                            result = webex.runIt('delete webex places()')
 
-                            for place in places:
-                                for k,v in place.items():
-                                   if v['status'] == 200:
-                                       for item in v['response']['items']:
-                                           places_id_toDelete.append(item['id'])
-                                   else:
-                                       result.append(place)
-                            for id in places_id_toDelete:
-                                result.append(webex.runIt('delete webexPlaces()', id))
                         else:
                             result = [{'result':'No Access token found'}]
 
@@ -2505,9 +3029,6 @@ class Ui_Nautilus(object):
                             logging.info(error)
                             result =[error]
 
-
-
-
                     elif command == 'run migrate2cloud()' or command == 'test migrate2cloud()':
 
                         if command == 'test migrate2cloud()':
@@ -2524,11 +3045,11 @@ class Ui_Nautilus(object):
                             axapi.runIt(command='init sw()', argument='internal')
                             logging.info(f'sw versions discovered, running {command}')
                             webex = Webex(webexAccessToken)
-                            existing_webex_places = webex.runIt('list webexPlaces()')[0]
+                            existing_webex_places = webex.runIt('show webex places()')[0]
 
                             try:
-                                if existing_webex_places['list webexPlaces()']['status'] != 'Error':
-                                    axapi.canMigrate2cloud(existing_webex_places['list webexPlaces()']['response']['items'])
+                                if existing_webex_places['show webex places()']['status'] != 'Error':
+                                    axapi.canMigrate2cloud(existing_webex_places['show webex places()']['response']['items'])
 
                                     if not test:
                                         places = webex.runIt('add webexPlaces4migration()', axapi)
@@ -2570,31 +3091,21 @@ class Ui_Nautilus(object):
                         else:
                             result = [{command: 'No valid Webex token found'}]
 
-                elif command.startswith('list'):
-
-                    if re.match('list webexPlaces\((.*)\)', command) is not None:
-
-                        logging.info('list webexPlaces() command matched')
-                        webexAccessToken = self.getwebexToken()
-
-                        if webexAccessToken:
-
-                            regex_result = re.search('list webexPlaces\((.*)\)', command)
-                            place = regex_result.group(1)
-                            webex = Webex(webexAccessToken)
-                            result = webex.runIt('list webexPlaces()', place)
-
-                        else:
-                            result = [{'result': 'No Access token found, click on oAuth Webex link'}]
-
                 elif command.startswith('upload'):
 
-                    if re.match('upload branding([^(]+)\((.*)\)',command):
-                        regex_result = re.search("upload branding([^(]+)\((.*)\)", command)
-                        # Another solution to catch the file name between parenthesis
-                        # string_result = command[command.find("(") + 1:command.rfind(")")]
-                        type_tmp = regex_result.group(1)
-                        file_name = regex_result.group(2)
+                    if re.match('upload branding([^(]+)\((.*)\)',command) or re.match('upload background\((.*)\)', command) :
+
+                        if re.match('upload branding([^(]+)\((.*)\)', command):
+                            regex_result = re.search("upload branding([^(]+)\((.*)\)", command)
+                            # Another solution to catch the file name between parenthesis
+                            # string_result = command[command.find("(") + 1:command.rfind(")")]
+                            type_tmp = regex_result.group(1)
+                            file_name = regex_result.group(2)
+
+                        else:
+                            regex_result = re.search('upload background\((.*)\)', command)
+                            file_name = regex_result.group(1)
+                            type_tmp = 'background'
 
                         if type_tmp == 'Awake':
                             logging.info('upload brandingAwake command matched')
@@ -2607,6 +3118,10 @@ class Ui_Nautilus(object):
                         elif type_tmp == 'Background':
                             logging.info('upload brandingBackground command matched')
                             command = 'upload brandingBackground()'
+
+                        elif type_tmp == 'background':
+                            logging.info('upload background() command matched')
+                            command = 'upload background()'
 
                         else:
                             type = ''
@@ -2700,7 +3215,6 @@ class Ui_Nautilus(object):
                             axapi.runIt(command='init sw()', argument='internal')
 #
                             result = axapi.runIt(command=command, argument = file_name, argument2=cleaned_code)
-
 
                         else:
                             err = 'Panel XML file not found in path : ' + config_path
@@ -2841,11 +3355,14 @@ class Ui_Nautilus(object):
         if len(data) == 0:
             return 'empty'
 
+        elif self.validate_ip(data[0]): # check if the first entry from data is an IP
+            return 'ip'
+
         elif "," in data[0]:
             return 'csv'
 
-        elif self.validate_ip(data[0]): # check if the first entry from data is an IP
-            return 'ip'
+        elif not " " in data[0]:
+            return 'csv'
 
         else:
             return 'unknown'
@@ -2954,10 +3471,42 @@ class Ui_Nautilus(object):
 
         return False
 
+    def csv2json_axl(self,data):#TODO re-do when a different tab for expressways is don
+
+        keyStr = data[0] #first line are always the headers
+        keyList = keyStr.split(",")
+
+        dict_data_list =[]
+        row_counter = 0
+
+        for row in data:
+            if row_counter == 0:
+                row_counter = row_counter + 1
+            else:
+
+                row_list = row.split(",")
+                timer= len(keyList)
+                data_counter = 0
+                 #first row are headers
+                temp_dict = {}
+
+                while timer > 0:
+
+                    key = keyList[data_counter]
+                    value = row_list[data_counter]
+
+                    timer = timer - 1
+                    data_counter = data_counter +1
+
+                    temp_dict[key] = value
+
+                dict_data_list.append(temp_dict)
+
+        return dict_data_list
 
     def csv2json(self,data):#TODO re-do when a different tab for expressways is don
 
-        keyStr = data[0] #first line are always the heathers
+        keyStr = data[0] #first line are always the headers
         keyList = keyStr.split(",")
         data.pop(0) #we won't need the heathers in data
         keyList.pop(0) #first item is the ipAddress, which we won't need here
@@ -3083,7 +3632,7 @@ class Ui_Nautilus(object):
 
             zp = UcmAXLConnection(ip = ucm_ip_address, usr = ucm_username,psw = ucm_password)
 
-            logging.info('version: ' + zp.version)
+            logging.info('Default version: ' + zp.version)
 
             logging.info('WSDL ' + zp.wsdl)
 
@@ -3096,6 +3645,20 @@ class Ui_Nautilus(object):
             logging.info('SQL query is: ' + sql_query_text)
 
             sql_response = zp.run_sql_query(sql_query_text)
+
+            '''
+            sql_result format
+            {
+                'num_rows': 19,
+                'rows': [
+                	{'name': 'CSF207CDBBE1F01',
+                	'description': 'user1@canada.ca'},
+                	{'name': 'CSF207CDBBE1F0D',
+                	'description': 'user2@canada.ca'}
+                	]
+            }
+            
+            '''
 
             if sql_response != None:
                 try:
@@ -3113,7 +3676,11 @@ class Ui_Nautilus(object):
                     elif 'The specified table' in sql_response['rows']:
                         self.SQLresponse.setPlainText(sql_response['rows'])
 
+                    elif 'not found' in sql_response['rows']:
+                        self.SQLresponse.setPlainText(sql_response['rows'])
+
                     else:
+                        #show
                         self.SQLresponse.setPlainText(tabulate(sql_response['rows'], headers="keys"))
 
                 except Exception as e:
@@ -3533,7 +4100,7 @@ thread.start()
 if __name__ == "__main__":
 
     # Remove encrypted webex token if it exists, this forces new webex authentication each time the application is launched.
-
+    print("Starting execution")
     try:
         os.remove(file_path)
     except OSError:

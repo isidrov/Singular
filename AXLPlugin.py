@@ -27,6 +27,7 @@ import logging
 import math
 import xmltodict
 from lxml import etree
+import lxml.etree as ET
 
 logger = logging.getLogger(__name__)
 
@@ -80,7 +81,11 @@ logging.config.dictConfig({
 '''
 
 class UcmAXLConnection:
-    def __init__(self, ip='', usr='', psw='', timeout=30):
+
+    last_exception = None
+    history = HistoryPlugin()
+
+    def __init__(self, ip='', usr='', psw='', version = '12.5', timeout=30):
 
         self.failure = False
         self.cucm_ip = ip
@@ -89,11 +94,9 @@ class UcmAXLConnection:
         self.schemaPath = os.path.join(dir_project, 'schema')
         self.cucm_url = 'https://' + self.cucm_ip + ':8443/axl/'
         self.long_version = ''
-        self.version = '11.5'
+        self.version = version
         #self.long_version = self.getCucmVersion() # TODO consider not having this at constructor, for SQL we don't care about the version
         #self.version = self.getShortVersion(self.long_version)
-
-
 
         self.wsdl = os.path.join(os.path.join(self.schemaPath, self.version), 'AXLAPI.wsdl')
 
@@ -104,8 +107,6 @@ class UcmAXLConnection:
         transport = Transport(session=self.session, timeout=timeout, operation_timeout=timeout, cache=self.cache)
 
         #self.history = HistoryPlugin()
-
-
 
         self.client = Client(self.wsdl, transport=transport)
         self.service = self.client.create_service("{http://www.cisco.com/AXLAPIService/}AXLAPIBinding",
@@ -134,6 +135,113 @@ class UcmAXLConnection:
 
         return result
     '''
+
+    def update_dp_in_phone(self, deviceName, DevicePool):
+
+        try:
+
+            result = self.service.updatePhone(name=deviceName, devicePoolName=DevicePool)
+
+            return { deviceName : result["return"]}
+
+        except Exception as fault:
+            self.last_exception = fault
+            return {'result': str(fault)}
+
+        return None
+
+    def add_phone(self, phone_info_list):
+
+        result = []
+
+        for phone_info in phone_info_list:
+            try:
+
+                vendor_config_temp = phone_info['vendorConfig']
+                if vendor_config_temp:
+                    vendor_config = ET.fromstring(vendor_config_temp)
+                else:
+                    vendor_config = ET.fromstring('<ciscoSupportField></ciscoSupportField>')
+
+                phone_data = {
+                    'name': phone_info['name'],
+                    'description': phone_info['description'],
+                    'product': phone_info['product'],
+                    'class': 'Phone',
+                    'protocol': 'SIP',
+                    'protocolSide': 'User',
+                    'callingSearchSpaceName': phone_info['callingSearchSpaceName'],
+                    'devicePoolName': phone_info['devicePoolName'],
+                    'commonPhoneConfigName': 'Standard Common Phone Profile',
+                    'locationName': phone_info['locationName'],
+                    'securityProfileName': phone_info['securityProfileName'],
+                    'sipProfileName': phone_info['sipProfileName'],
+                    'ownerUserName': phone_info['ownerUserName'],
+                    'vendorConfig': vendor_config,
+                    'lines': {
+                        'line': {
+                            'index': '1',
+                            'dirn': {
+                                'pattern': phone_info['pattern'],
+                                'routePartitionName': phone_info['routePartitionName']
+                            },
+                            'associatedEndusers': {
+                                'enduser': {
+                                    'userId': phone_info['ownerUserName']
+                                }
+                            }
+                        }
+                    }
+                }
+
+                temp = self.service.addPhone(phone=phone_data)
+                temp2 =f"{phone_info['name']},{temp['return']}"
+                result.append(temp2)
+
+            except Exception as ex:
+
+                logging.error(ex)
+                return str(ex)
+
+        return result
+
+
+    """
+    def add_phone(self, data):
+
+        try:
+
+            deviceName = data['deviceName']
+            devicedescription = data['devicedescription']
+            modelname = data['modelname']
+            phoneclass = data['phoneclass']
+            protocol = data['protocol']
+            css = data['css']
+            devicePool = data['devicePool']
+            location = data['location']
+            dn = data['dn']
+            securityProfileName = data['securityProfileName']
+            sipProfile = data['sipProfile']
+
+
+
+
+
+            result = self.service.addPhone(name=deviceName, devicePoolName=DevicePool)
+
+            return { deviceName : result["return"]}
+
+        except Exception as fault:
+            self.last_exception = fault
+            return {'result': str(fault)}
+
+        return None
+
+        """
+
+    def load_add_phone(self):
+        data = []
+        headers = []
 
     def list_process_nodes(self):
 
@@ -225,8 +333,8 @@ class UcmAXLConnection:
                 # catch cases where it fails before being put on the wire
                 pass
             '''
-
-            return self.sql_decode(sql_result)
+            decoded_result = self.sql_decode(sql_result)
+            return decoded_result
 
 
         except ConnectTimeoutError as timeout:
@@ -258,22 +366,34 @@ class UcmAXLConnection:
 
         except Fault as fault:
 
-            strFault = str(fault.detail, 'utf-8')
+            logging.error(fault.message)
 
-            dict_error = xmltodict.parse(strFault)
-
+            '''
             try:
-                http_response = dict_error['html']['body']['div'][1]['div']['#text']
+
+                for r in fault:
+                    logging.info(r)
+                    pass
+
+                for k,v in fault.items():
+
+                    logging.info(k)
+                    logging.info(v)
+
+
+                
+                
+                #dict_error = xmltodict.parse(strFault)
+
+                http_response = fault['detail']['html']['body']['div'][1]['div']['#text']
 
                 if '401' in http_response:
 
                     return '401'
                 else:
                     return http_response
+                '''
 
-            except KeyError as e:
-
-                logging.error(dict_error)
 
             '''
             results returned are > 8mb, we need to break out the output
@@ -282,84 +402,82 @@ class UcmAXLConnection:
 
             '''
 
-            error = fault
 
             logging.warning('Zeep fault caught! error 198')
 
-            if 'The specified table' in fault.message:
+            if not 'Query request too large' in fault.message:
 
-                logging.error(fault.message)
                 sql_full_result['rows'] = fault.message
                 return sql_full_result
 
-            logging.info('result to be returned > 8mb, we need to break out the output')
-
-            rows_dict = self.process_axl_response(str(fault))
-
-            logging.info(json.dumps(rows_dict, indent=2))
-
-
-
-
-            if rows_dict is not None:
-
-                total_rows = int(rows_dict['total_rows'])
-
-                suggested_rows = int(rows_dict['suggested_rows'])
-
-                round_up = math.ceil(total_rows / suggested_rows)
-
-                better_suggestion = int(total_rows / round_up)
-
-                logging.info('BETTER_SUGGESTION:' + str((better_suggestion)))
-
-                skip = 0
-                first = better_suggestion
-
-                while skip < total_rows:
-
-                    try:
-
-                        logging.info('skip: ' + str(skip))
-                        logging.info('first: ' + str(first))
-
-                        batch_addition = 'Select SKIP ' + str(skip) + ' First ' + str(first)
-
-                        select_insensitive = re.compile("select", re.IGNORECASE)
-
-                        query_replaced = select_insensitive.sub(batch_addition, query)
-
-                        logging.info('Original Query: ')
-                        logging.info(query)
-
-                        logging.info('Query replaced: ')
-                        logging.info(query_replaced)
-
-                        sql_partial_result = self.service.executeSQLQuery(sql=query_replaced)
-
-                        decoded_partial_result = self.sql_decode(sql_partial_result)
-
-                        sql_full_result['num_rows'] += decoded_partial_result['num_rows']
-                        sql_full_result['rows'] += decoded_partial_result['rows']
-
-                        skip += suggested_rows
-                        first += skip
-
-                        if first > total_rows:
-                            first = total_rows
-
-
-                    except Exception as gen:
-
-                        logging.error('Exception executeSQL broken down before looping')
-                        logging.error(gen)
-                        self.last_exception = gen
-                        self.failure = True
-                        return None
-
             else:
 
-                logging.error('Rows_dict returned from process axl resopnse = None')
+                logging.info('result to be returned > 8mb, we need to break out the output')
+
+                rows_dict = self.process_axl_response(fault.message)
+
+                logging.info(json.dumps(rows_dict, indent=2))
+
+
+                if rows_dict is not None:
+
+                    total_rows = int(rows_dict['total_rows'])
+
+                    suggested_rows = int(rows_dict['suggested_rows'])
+
+                    round_up = math.ceil(total_rows / suggested_rows)
+
+                    better_suggestion = int(total_rows / round_up)
+
+                    logging.info('BETTER_SUGGESTION:' + str((better_suggestion)))
+
+                    skip = 0
+                    first = better_suggestion
+
+                    while skip < total_rows:
+
+                        try:
+
+                            logging.info('skip: ' + str(skip))
+                            logging.info('first: ' + str(first))
+
+                            batch_addition = 'Select SKIP ' + str(skip) + ' First ' + str(first)
+
+                            select_insensitive = re.compile("select", re.IGNORECASE)
+
+                            query_replaced = select_insensitive.sub(batch_addition, query)
+
+                            logging.info('Original Query: ')
+                            logging.info(query)
+
+                            logging.info('Query replaced: ')
+                            logging.info(query_replaced)
+
+                            sql_partial_result = self.service.executeSQLQuery(sql=query_replaced)
+
+                            decoded_partial_result = self.sql_decode(sql_partial_result)
+
+                            sql_full_result['num_rows'] += decoded_partial_result['num_rows']
+                            sql_full_result['rows'] += decoded_partial_result['rows']
+
+                            skip += suggested_rows
+                            first += skip
+
+                            if first > total_rows:
+                                first = total_rows
+
+
+                        except Exception as gen:
+
+                            logging.error('Exception executeSQL broken down before looping')
+                            logging.error(gen)
+                            self.last_exception = gen
+                            self.failure = True
+                            return None
+
+                else:
+
+                    logging.error('Rows_dict returned from process axl resopnse = None')
 
 
         except Exception as gen:
@@ -716,6 +834,51 @@ LEFT JOIN typeproduct on device.tkproduct = typeproduct.enum
 
         return sql_result
 
+    def massage_data(self,phone_info):
+
+        massaged_data = []
+
+        phone_dict = {}
+
+        headers = phone_info[0]
+
+        phone_info.pop(0)
+
+        counter = 0
+
+        for phone in phone_info:
+
+            for header in headers:
+                #phone_dict[header] = phone[counter]
+                counter = counter + 1
+
+
+class UcmRisPortToolkit:
+    last_exception = None
+
+    '''
+    Constructor - Create new instance 
+    '''
+
+    def __init__(self, ip='', usr='', psw='', tls_verify=False):
+        wsdl = 'https://{0}:8443/realtimeservice2/services/RISService70?wsdl'.format(ip)
+
+        self.session = Session()
+        self.session.auth = HTTPBasicAuth(usr, psw)
+        self.session.verify = tls_verify
+
+        self.cache = SqliteCache(path='sqlite_risport.db', timeout=60)
+
+        self.client = Client(wsdl=wsdl, transport=Transport(cache=self.cache, session=self.session))
+
+        self.service = self.client.create_service("{http://schemas.cisco.com/ast/soap}RisBinding",
+                                                  "https://{0}:8443/realtimeservice2/services/RISService70".format(ip))
+
+        # enable_logging()
+
+    def get_service(self):
+
+        return self.service
 
 '''
 

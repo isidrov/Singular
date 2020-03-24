@@ -39,6 +39,12 @@ class Axapi:
             logging.error('Error in async loop')
             logging.error(err)
 
+        '''
+        treat mainly how the output will be presented after the command results are returned
+            show commands will show in flattened way
+            init sw will only initialize axapi.endpoints with different attributes
+        '''
+
         treated_response = self.treat_commands(command, response,argument)
 
         return treated_response
@@ -345,7 +351,7 @@ class Axapi:
             else:
 
                 filtered = sanitized
-
+            # Add the arguments back to the root command
             command_w_filter = command.replace('()',f'({filter})')
 
             response = { ip : { command_w_filter : {
@@ -679,6 +685,7 @@ class Axapi:
         map_dict = {
             'show status()': 'get_url',
             'show config()': 'get_url',
+            'show commands()': 'get_url',
             'init sw()': 'get_url',
             'show favorites()': 'post_xml',
             'show users()': 'post_xml',
@@ -726,6 +733,7 @@ class Axapi:
 
         map_dict = {
             'show status()': '/status.xml',
+            'show commands()': '/command.xml',
             'init sw()': '/getxml?location=Configuration/', #populate endpoint info in axapi object
             'show config()': '/getxml?location=/Configuration/&internal=true',
             'restart()' : '/api/restart',
@@ -898,7 +906,8 @@ class Axapi:
                             <Command>
                 	            <UserManagement>
                 	            	<User>
-                	            		<Add>
+                	            		<Add>,
+                	            		
                 	            			<Active>True</Active>
                 	            			<Passphrase>''' + argument[1] + '''</Passphrase>
                 	            			<Role>''' + argument[2] + '''</Role>
@@ -997,6 +1006,9 @@ class Axapi:
                     type = 'HalfwakeBranding'
                 elif command == 'upload brandingBackground()':
                     type = 'HalfwakeBackground'
+                elif command == 'upload background()':
+                    type = 'Background'
+
                 else:
                     type = ''
 
@@ -1340,57 +1352,61 @@ class Axapi:
 
         status = {}
 
-        for k, v in d.items(): # looping dictionary
+        try:
 
-            keyList.append(k) # We save each key which will be shown as a flat result
+            for k, v in d.items(): # looping dictionary
 
-            if isinstance(v, dict): # we check if the value is a dict
+                keyList.append(k) # We save each key which will be shown as a flat result
 
-                st = self.digger(v, keyList) #if v is a dict, we want to get into it recursevely and keep storing its jey lists
+                if isinstance(v, dict): # we check if the value is a dict
 
-                status.update(st)
-
-                if len(keyList) > 0:
-
-                    keyList.pop()
-
-            elif isinstance(v, list):
-
-                n = 1
-
-                for i in v:
-
-                    keyList.append(str(n)) # we append the item number in the key list to make sure we capture all items in a list,
-
-                    st = self.digger(i, keyList)
+                    st = self.digger(v, keyList) #if v is a dict, we want to get into it recursevely and keep storing its jey lists
 
                     status.update(st)
 
-                    n += 1
+                    if len(keyList) > 0:
+
+                        keyList.pop()
+
+                elif isinstance(v, list):
+
+                    n = 1
+
+                    for i in v:
+
+                        keyList.append(str(n)) # we append the item number in the key list to make sure we capture all items in a list,
+
+                        st = self.digger(i, keyList)
+
+                        status.update(st)
+
+                        n += 1
+
+                        keyList.pop()
+
+                    if len(keyList) > 0:
+
+                        keyList.pop()
+
+                else:
+
+                    stringy = ''
+
+                    for k in keyList:
+
+                        if len(stringy) == 0:
+
+                            stringy = k
+
+                        else:
+
+                            stringy = stringy + '.' + k
+
+                    status[stringy] = v
 
                     keyList.pop()
-
-                if len(keyList) > 0:
-
-                    keyList.pop()
-
-            else:
-
-                stringy = ''
-
-                for k in keyList:
-
-                    if len(stringy) == 0:
-
-                        stringy = k
-
-                    else:
-
-                        stringy = stringy + '.' + k
-
-                status[stringy] = v
-
-                keyList.pop()
+        except Exception as e:
+            logging.error(e)
 
         return status
 
