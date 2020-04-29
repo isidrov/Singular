@@ -150,6 +150,33 @@ class UcmAXLConnection:
 
         return None
 
+    def update_phone_vendorConfig(self, deviceName, vendorConfig):
+
+        try:
+
+            et_vendor_config = ET.fromstring(vendorConfig)
+
+            result = self.service.updatePhone(name=deviceName, vendorConfig=et_vendor_config)
+
+            return { deviceName : result["return"]}
+
+        except Exception as fault:
+            self.last_exception = fault
+            return {'result': str(fault)}
+
+
+    def update_enduser_primaryExtension(self, userid, extension, partition):
+
+        try:
+            primaryExtension = { 'pattern': extension, 'routePartitionName': partition}
+            result = self.service.updateUser(userid=userid, primaryExtension = primaryExtension)
+            return { userid : result["return"]}
+
+        except Exception as fault:
+            self.last_exception = fault
+            return {'result': str(fault)}
+
+
     def add_phone(self, phone_info_list):
 
         result = []
@@ -242,6 +269,11 @@ class UcmAXLConnection:
     def load_add_phone(self):
         data = []
         headers = []
+
+    def load_enduser_primaryExtension(self):
+
+        sample = '''userid,extension,partition\nJohnSmith,123456,Internal_PT\nLGomez,98765,Internal_PT'''
+        return sample
 
     def list_process_nodes(self):
 

@@ -1,7 +1,0 @@
-ReadMe @ https://github.com/isidrov/Nautilus
-
-Software developed and maintained by Isidro Fernandez
-
-isidro@peleanet.com
-https://www.linkedin.com/in/isidrofernandez/
-@isidrov

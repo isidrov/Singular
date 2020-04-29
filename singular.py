@@ -12,7 +12,7 @@ from tabulate import tabulate
 import logging.config
 from AXLPlugin import UcmAXLConnection
 from AXLPlugin import UcmRisPortToolkit
-
+import io
 from webex import Webex
 from axapi import Axapi
 from PawsPlugin import PawsPlugin
@@ -176,12 +176,10 @@ logging.info("Logging initializated")
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-
-
 class Ui_Nautilus(object):
     def setupUi(self, Nautilus):
         Nautilus.setObjectName("Nautilus")
-        Nautilus.resize(1187, 819)
+        Nautilus.resize(1000, 916)
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(254, 254, 254))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -194,8 +192,8 @@ class Ui_Nautilus(object):
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
         Nautilus.setPalette(palette)
         Nautilus.setInputMethodHints(QtCore.Qt.ImhSensitiveData)
-        self.gridLayout_2 = QtWidgets.QGridLayout(Nautilus)
-        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.horizontalLayout_25 = QtWidgets.QHBoxLayout(Nautilus)
+        self.horizontalLayout_25.setObjectName("horizontalLayout_25")
         self.globalwidget = QtWidgets.QTabWidget(Nautilus)
         self.globalwidget.setMaximumSize(QtCore.QSize(16777215, 16777215))
         palette = QtGui.QPalette()
@@ -226,9 +224,31 @@ class Ui_Nautilus(object):
         self.globalwidget.setObjectName("globalwidget")
         self.tab_SQL = QtWidgets.QWidget()
         self.tab_SQL.setObjectName("tab_SQL")
-        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.tab_SQL)
+        self.verticalLayout_35 = QtWidgets.QVBoxLayout(self.tab_SQL)
+        self.verticalLayout_35.setObjectName("verticalLayout_35")
+        self.widget_35 = QtWidgets.QWidget(self.tab_SQL)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.widget_35.sizePolicy().hasHeightForWidth())
+        self.widget_35.setSizePolicy(sizePolicy)
+        self.widget_35.setObjectName("widget_35")
+        self.verticalLayout_34 = QtWidgets.QVBoxLayout(self.widget_35)
+        self.verticalLayout_34.setObjectName("verticalLayout_34")
+        self.widget_14 = QtWidgets.QWidget(self.widget_35)
+        self.widget_14.setObjectName("widget_14")
+        self.horizontalLayout_23 = QtWidgets.QHBoxLayout(self.widget_14)
+        self.horizontalLayout_23.setObjectName("horizontalLayout_23")
+        self.widget_34 = QtWidgets.QWidget(self.widget_14)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.widget_34.sizePolicy().hasHeightForWidth())
+        self.widget_34.setSizePolicy(sizePolicy)
+        self.widget_34.setObjectName("widget_34")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.widget_34)
         self.verticalLayout_4.setObjectName("verticalLayout_4")
-        self.widget_5 = QtWidgets.QWidget(self.tab_SQL)
+        self.widget_5 = QtWidgets.QWidget(self.widget_34)
         self.widget_5.setMinimumSize(QtCore.QSize(0, 0))
         self.widget_5.setMaximumSize(QtCore.QSize(275, 16777215))
         self.widget_5.setObjectName("widget_5")
@@ -301,7 +321,7 @@ class Ui_Nautilus(object):
         self.verticalLayout_2.addWidget(self.lineEdit_password_sql)
         self.horizontalLayout_7.addWidget(self.widget_4)
         self.verticalLayout_4.addWidget(self.widget_5)
-        self.widget_6 = QtWidgets.QWidget(self.tab_SQL)
+        self.widget_6 = QtWidgets.QWidget(self.widget_34)
         self.widget_6.setObjectName("widget_6")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.widget_6)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
@@ -343,16 +363,54 @@ class Ui_Nautilus(object):
         self.horizontalLayout_3.addWidget(self.SQLresponse)
         self.verticalLayout_3.addWidget(self.widget_2)
         self.verticalLayout_4.addWidget(self.widget_6)
-        self.widget_executeSql = QtWidgets.QWidget(self.tab_SQL)
+        self.widget_executeSql = QtWidgets.QWidget(self.widget_34)
+        self.widget_executeSql.setMinimumSize(QtCore.QSize(0, 50))
         self.widget_executeSql.setObjectName("widget_executeSql")
-        self.horizontalLayout_6 = QtWidgets.QHBoxLayout(self.widget_executeSql)
+        self.widget_36 = QtWidgets.QWidget(self.widget_executeSql)
+        self.widget_36.setGeometry(QtCore.QRect(340, 0, 207, 49))
+        self.widget_36.setObjectName("widget_36")
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout(self.widget_36)
+        self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
-        self.pushButton_sql_execute = QtWidgets.QPushButton(self.widget_executeSql)
+        self.pushButton_sql_execute = QtWidgets.QPushButton(self.widget_36)
         self.pushButton_sql_execute.setMinimumSize(QtCore.QSize(0, 31))
         self.pushButton_sql_execute.setMaximumSize(QtCore.QSize(141, 16777215))
         self.pushButton_sql_execute.setObjectName("pushButton_sql_execute")
         self.horizontalLayout_6.addWidget(self.pushButton_sql_execute)
+        self.radioButton_Beauty = QtWidgets.QRadioButton(self.widget_36)
+        self.radioButton_Beauty.setChecked(True)
+        self.radioButton_Beauty.setObjectName("radioButton_Beauty")
+        self.horizontalLayout_6.addWidget(self.radioButton_Beauty)
+        self.radioButton_2 = QtWidgets.QRadioButton(self.widget_36)
+        self.radioButton_2.setObjectName("radioButton_2")
+        self.horizontalLayout_6.addWidget(self.radioButton_2)
         self.verticalLayout_4.addWidget(self.widget_executeSql)
+        self.horizontalLayout_23.addWidget(self.widget_34)
+        self.widget_33 = QtWidgets.QWidget(self.widget_14)
+        self.widget_33.setMinimumSize(QtCore.QSize(0, 0))
+        self.widget_33.setMaximumSize(QtCore.QSize(250, 16777215))
+        self.widget_33.setObjectName("widget_33")
+        self.verticalLayout_36 = QtWidgets.QVBoxLayout(self.widget_33)
+        self.verticalLayout_36.setObjectName("verticalLayout_36")
+        self.treeWidget_SQL_queries = QtWidgets.QTreeWidget(self.widget_33)
+        self.treeWidget_SQL_queries.setObjectName("treeWidget_SQL_queries")
+        item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget_SQL_queries)
+        item_1 = QtWidgets.QTreeWidgetItem(item_0)
+        item_1 = QtWidgets.QTreeWidgetItem(item_0)
+        item_1 = QtWidgets.QTreeWidgetItem(item_0)
+        item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget_SQL_queries)
+        item_1 = QtWidgets.QTreeWidgetItem(item_0)
+        item_1 = QtWidgets.QTreeWidgetItem(item_0)
+        item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget_SQL_queries)
+        item_1 = QtWidgets.QTreeWidgetItem(item_0)
+        item_1 = QtWidgets.QTreeWidgetItem(item_0)
+        self.verticalLayout_36.addWidget(self.treeWidget_SQL_queries)
+        self.pushButton_LoadQuery = QtWidgets.QPushButton(self.widget_33)
+        self.pushButton_LoadQuery.setObjectName("pushButton_LoadQuery")
+        self.verticalLayout_36.addWidget(self.pushButton_LoadQuery)
+        self.horizontalLayout_23.addWidget(self.widget_33)
+        self.verticalLayout_34.addWidget(self.widget_14)
+        self.verticalLayout_35.addWidget(self.widget_35)
         self.globalwidget.addTab(self.tab_SQL, "")
         self.tab_cli = QtWidgets.QWidget()
         self.tab_cli.setObjectName("tab_cli")
@@ -361,7 +419,7 @@ class Ui_Nautilus(object):
         self.toolBox = QtWidgets.QToolBox(self.tab_cli)
         self.toolBox.setObjectName("toolBox")
         self.page_VOS = QtWidgets.QWidget()
-        self.page_VOS.setGeometry(QtCore.QRect(0, 0, 1145, 700))
+        self.page_VOS.setGeometry(QtCore.QRect(0, 0, 975, 327))
         self.page_VOS.setObjectName("page_VOS")
         self.horizontalLayout_30 = QtWidgets.QHBoxLayout(self.page_VOS)
         self.horizontalLayout_30.setObjectName("horizontalLayout_30")
@@ -1399,6 +1457,7 @@ class Ui_Nautilus(object):
         self.horizontalLayout_21 = QtWidgets.QHBoxLayout(self.widget_UCM_AXL_Credentials)
         self.horizontalLayout_21.setObjectName("horizontalLayout_21")
         self.widget_31 = QtWidgets.QWidget(self.widget_UCM_AXL_Credentials)
+        self.widget_31.setMinimumSize(QtCore.QSize(130, 0))
         self.widget_31.setObjectName("widget_31")
         self.verticalLayout_24 = QtWidgets.QVBoxLayout(self.widget_31)
         self.verticalLayout_24.setObjectName("verticalLayout_24")
@@ -1414,6 +1473,7 @@ class Ui_Nautilus(object):
         self.verticalLayout_24.addWidget(self.label_password_axl)
         self.horizontalLayout_21.addWidget(self.widget_31)
         self.widget_32 = QtWidgets.QWidget(self.widget_UCM_AXL_Credentials)
+        self.widget_32.setMinimumSize(QtCore.QSize(140, 0))
         self.widget_32.setObjectName("widget_32")
         self.verticalLayout_25 = QtWidgets.QVBoxLayout(self.widget_32)
         self.verticalLayout_25.setObjectName("verticalLayout_25")
@@ -1605,10 +1665,10 @@ class Ui_Nautilus(object):
         self.verticalLayout_33.addWidget(self.groupBox_42)
         self.horizontalLayout_18.addWidget(self.widget_UCM_AXL_Global)
         self.globalwidget.addTab(self.tab_UCM_AXL, "")
-        self.gridLayout_2.addWidget(self.globalwidget, 0, 0, 1, 1)
+        self.horizontalLayout_25.addWidget(self.globalwidget)
 
         self.retranslateUi(Nautilus)
-        self.globalwidget.setCurrentIndex(4)
+        self.globalwidget.setCurrentIndex(0)
         self.toolBox.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(Nautilus)
 
@@ -1728,16 +1788,31 @@ class Ui_Nautilus(object):
         #self.tab_cli.setVisible(False)
 
         self.globalwidget.removeTab(3)
-
     def retranslateUi(self, Nautilus):
         _translate = QtCore.QCoreApplication.translate
-        Nautilus.setWindowTitle(_translate("Nautilus", "Singular 1.2 - By Pelea Networks - "))
+        Nautilus.setWindowTitle(_translate("Nautilus", "Singular 1.3 - By Pelea Networks - "))
         self.label_ip_address_sql.setText(_translate("Nautilus", "UCM publisher IP"))
         self.label_username_sql.setText(_translate("Nautilus", "AXL username    "))
         self.label_password_sql.setText(_translate("Nautilus", "AXL password     "))
-        self.SQLquery.setPlainText(
-            _translate("Nautilus", "select name, description from device where name like \'SEP%\'"))
+        self.SQLquery.setPlainText(_translate("Nautilus", "select name, description from device where name like \'SEP%\'"))
         self.pushButton_sql_execute.setText(_translate("Nautilus", "Execute Query"))
+        self.radioButton_Beauty.setText(_translate("Nautilus", "Beauty"))
+        self.radioButton_2.setText(_translate("Nautilus", "CSV"))
+        self.treeWidget_SQL_queries.headerItem().setText(0, _translate("Nautilus", "Queries"))
+        __sortingEnabled = self.treeWidget_SQL_queries.isSortingEnabled()
+        self.treeWidget_SQL_queries.setSortingEnabled(False)
+        self.treeWidget_SQL_queries.topLevelItem(0).setText(0, _translate("Nautilus", "Phones"))
+        self.treeWidget_SQL_queries.topLevelItem(0).child(0).setText(0, _translate("Nautilus", "Basic phone info by users"))
+        self.treeWidget_SQL_queries.topLevelItem(0).child(1).setText(0, _translate("Nautilus", "Full phone details by primary extension"))
+        self.treeWidget_SQL_queries.topLevelItem(0).child(2).setText(0, _translate("Nautilus", "Shared Lines"))
+        self.treeWidget_SQL_queries.topLevelItem(1).setText(0, _translate("Nautilus", "Users"))
+        self.treeWidget_SQL_queries.topLevelItem(1).child(0).setText(0, _translate("Nautilus", "Users without primary extension"))
+        self.treeWidget_SQL_queries.topLevelItem(1).child(1).setText(0, _translate("Nautilus", "User Primary Lines"))
+        self.treeWidget_SQL_queries.topLevelItem(2).setText(0, _translate("Nautilus", "User Device Profiles"))
+        self.treeWidget_SQL_queries.topLevelItem(2).child(0).setText(0, _translate("Nautilus", "UDP by Primary Line"))
+        self.treeWidget_SQL_queries.topLevelItem(2).child(1).setText(0, _translate("Nautilus", "Extension Mobility - Logged In"))
+        self.treeWidget_SQL_queries.setSortingEnabled(__sortingEnabled)
+        self.pushButton_LoadQuery.setText(_translate("Nautilus", "Load query"))
         self.globalwidget.setTabText(self.globalwidget.indexOf(self.tab_SQL), _translate("Nautilus", "SQL"))
         self.UCMPub_Label.setText(_translate("Nautilus", "UCM Pub"))
         self.UCMPubCLI_username_label.setText(_translate("Nautilus", "OS user"))
@@ -1777,11 +1852,9 @@ class Ui_Nautilus(object):
         self.label_concurrent_tp.setText(_translate("Nautilus", "Concurrency"))
         self.lineEdit_concurrent_tp.setText(_translate("Nautilus", "20"))
         self.label_9.setText(_translate("Nautilus", "Webex Authentication"))
-        self.label_10.setText(_translate("Nautilus",
-                                         "<html><head/><body><p><a href=\"http://localhost:10060/\"><span style=\" text-decoration: underline; color:#0000ff;\">Webex login</span></a></p></body></html>"))
+        self.label_10.setText(_translate("Nautilus", "<html><head/><body><p><a href=\"http://localhost:10060/\"><span style=\" text-decoration: underline; color:#0000ff;\">Webex login</span></a></p></body></html>"))
         self.label_12.setText(_translate("Nautilus", "       OR ENTER ACCESS TOKEN MANUALLY      "))
-        self.label_11.setText(_translate("Nautilus",
-                                         "<html><head/><body><p><a href=\"https://github.com/isidrov/Nautilus\"><span style=\" text-decoration: underline; color:#0000ff;\">Readme</span></a></p></body></html>"))
+        self.label_11.setText(_translate("Nautilus", "<html><head/><body><p><a href=\"https://github.com/isidrov/Nautilus\"><span style=\" text-decoration: underline; color:#0000ff;\">Readme</span></a></p></body></html>"))
         self.pushButton_run_TP_commands.setText(_translate("Nautilus", "Run"))
         self.label.setText(_translate("Nautilus", "Data"))
         self.label_2.setText(_translate("Nautilus", "Commands"))
@@ -1790,8 +1863,7 @@ class Ui_Nautilus(object):
         self.label_username_tp_2.setText(_translate("Nautilus", "  username    "))
         self.label_password_tp_2.setText(_translate("Nautilus", "  password     "))
         self.pushButton.setText(_translate("Nautilus", "Run"))
-        self.globalwidget.setTabText(self.globalwidget.indexOf(self.tab_cms),
-                                     _translate("Nautilus", "Cisco Meeting Server"))
+        self.globalwidget.setTabText(self.globalwidget.indexOf(self.tab_cms), _translate("Nautilus", "Cisco Meeting Server"))
         self.label_ip_address_axl.setText(_translate("Nautilus", "UCM publisher IP"))
         self.label_username_axl.setText(_translate("Nautilus", "AXL username    "))
         self.label_password_axl.setText(_translate("Nautilus", "AXL password     "))
@@ -1800,8 +1872,6 @@ class Ui_Nautilus(object):
         self.label_5.setText(_translate("Nautilus", "Commands"))
         self.label_6.setText(_translate("Nautilus", "JSON Output"))
         self.globalwidget.setTabText(self.globalwidget.indexOf(self.tab_UCM_AXL), _translate("Nautilus", "UCM AXL"))
-
-
 
 
     def buttonEvents(self, Nautilus):
@@ -1813,9 +1883,27 @@ class Ui_Nautilus(object):
         self.pushButton_stop_cli_ucm.clicked.connect(self.destroy_cli_connection)
         self.pushButton_run_TP_commands.clicked.connect(self.run_tp_commands) # Run on TP pane
         self.pushButton_run_AXL_commands.clicked.connect(self.run_axl_commands)
+        self.pushButton_LoadQuery.clicked.connect(self.load_sql_query)
+        #self.treeWidget_SQL_queries.DoubleClicked()
         #self.pushButton_stop_vos_gen.clicked.connect(self.destroy_cli_connection)
         self.pushButton_add_node.clicked.connect(self.add_node_to_vos_gen)
         #self.pushButton_execute_vos_gen.clicked.connect(self.execute_cli_vos_gen)
+
+    def load_sql_query(self):
+        logging.info('loading query')
+        getSelected = self.treeWidget_SQL_queries.selectedItems()
+        selectedText = getSelected[0].text(0)
+        sql_query = ''
+        with open(os.path.join(axlCollectorPath, 'sqlQueries.json')) as queries:
+            q = json.load(queries)
+        try:
+            sql_query = q[selectedText]
+            self.SQLquery.setPlainText(sql_query)
+            logging.info("SQL query loaded")
+        except Exception as ex:
+            logging.error(ex)
+
+
 
     def refresh_cli_commands(self):
 
@@ -2361,65 +2449,45 @@ class Ui_Nautilus(object):
         result = []
         axl_output_list = []
         all_good = True
+        data_input = ""
 
         try:
+
+            user_data = False
 
             axl_username = self.lineEdit_username_axl.text()
             axl_password = self.lineEdit_password_axl.text()
             ucm_ipaddress = self.lineEdit_ipaddress_axl.text()
 
+            if axl_username and axl_password and ucm_ipaddress:
+                user_data = True
+                axl = UcmAXLConnection(ip=ucm_ipaddress, usr=axl_username, psw=axl_password)
+                ris = UcmRisPortToolkit(ip=ucm_ipaddress, usr=axl_username, psw=axl_password)
+                logging.info('Default version: ' + axl.version)
+                logging.info('WSDL ' + axl.wsdl)
+                # get SQL query from UI box
+                logging.info('UCMAXLConnection created! ')
+                logging.info('UCMRisConnection created! ')
 
-            axl = UcmAXLConnection(ip=ucm_ipaddress, usr=axl_username, psw=axl_password)
-            ris = UcmRisPortToolkit(ip=ucm_ipaddress, usr=axl_username, psw=axl_password)
-            logging.info('Default version: ' + axl.version)
-            logging.info('WSDL ' + axl.wsdl)
-            # get SQL query from UI box
-            logging.info('UCMAXLConnection created! ')
-            logging.info('UCMRisConnection created! ')
 
         except Exception as err:
 
             logging.error(err)
 
         # axl_dirty_data is a list of rows (each row is data in csv format)
+
         axl_dirty_data = self.plainTextEdit_axl_data.toPlainText().splitlines()
 
-        axlinJsondata = self.csv2json_axl(axl_dirty_data)
-
         axl_cmd_list_dirty = self.plainTextEdit_axl_commands.toPlainText().splitlines()
-        axl_cmd_list = []
-        data_type = self.find_data_type(axl_dirty_data)
 
-        if data_type == 'csv':
-
-            column_size = len(axl_dirty_data[0].split(",")) # check csv number of values (columns)
-
-            for row in axl_dirty_data:
-
-                # confirm all rows have the same column values
-                if column_size != len(row.split(",")):
-                    result += [{'The following row does not have the same columns as the first row': row}]
-                    all_good = False
-                    break
-
-        else:
-
-            pass
-            '''
-            result = [f': Error classifying data field, execution will not start until corrected']
-
-            axl_output_list = self.merge_tp_output_results(original=axl_output_list, addition=result)
-
-            logging.error('Data is invalid, execution will not start until corrected')
-
+        if not axl_cmd_list_dirty:
             all_good = False
-            '''
 
         if all_good:
 
-            # we convert axl_dirty_data  to a list of lists, each value is a list item
-            csv_reader = reader(axl_dirty_data)
-            axl_data = list(csv_reader)
+            axl_cmd_list = []
+
+            # Cleaning commands from commented (#) and spaces
 
             for c in axl_cmd_list_dirty:
                 if not c or c.startswith('#') or c.startswith(' '):
@@ -2427,13 +2495,18 @@ class Ui_Nautilus(object):
                 else:
                     axl_cmd_list.append(c)
 
+            # Validate supported commands and get data column fields
+
             # supported commands below
 
             supported_commands = {
                 'help': [
                     'update devicePoolInPhone()',
+                    'update phone vendorConfig()',
+                    'update enduser primaryExtension()',
                     'add phone()',
-                    'load addPhone()',
+                    'load add phone()',
+                    'load update enduser primaryExtension()',
                     'show rejectedPhones()'
                 ]
             }
@@ -2455,7 +2528,31 @@ class Ui_Nautilus(object):
 
                 logging.info('List of commands validated successfully')
 
-        if all_good:
+        if axl_dirty_data and all_good:
+            #Convert to list of dicts
+            axlinJsondata = self.csv2json_axl(axl_dirty_data) # List of dicts
+            data_type = self.find_data_type(axl_dirty_data)
+
+            if data_type == 'csv':
+
+                column_size = len(axl_dirty_data[0].split(","))  # check csv number of values (columns)
+
+                for row in axl_dirty_data:
+
+                    # confirm all rows have the same column values
+                    if column_size != len(row.split(",")):
+                        result += [{'The following row does not have the same columns as the first row': row}]
+                        all_good = False
+                        break
+
+                if all_good:
+                    # we convert axl_dirty_data  to a list of lists, each value is a list item
+                    csv_reader = reader(axl_dirty_data) #probably not needed
+                    axl_data = list(csv_reader) #probably not needed
+
+
+
+        if all_good and user_data:
 
             for command in axl_cmd_list:
 
@@ -2473,12 +2570,42 @@ class Ui_Nautilus(object):
                         for row in axl_data:
 
                             result.append(axl.update_dp_in_phone(row[0],row[1]))
+                    #update enduser primaryExtension()
+                    if command == "update phone vendorConfig()":
 
+                        headers = True
+                        for row in axl_data:
+                            if headers: # skip first row as are the CSV headers
+                                headers = False
+                            else:
+                                result.append(axl.update_phone_vendorConfig(row[0],row[1]))
+
+                    if command == "update enduser primaryExtension()":
+
+                        for userInfo in axlinJsondata:
+                            result.append(axl.update_enduser_primaryExtension(userInfo['userid'], userInfo['extension'], userInfo['partition']))
+
+                        '''
+                        headers = True
+                        for row in axl_data:
+                            if headers: # skip first row as are the CSV headers
+                                headers = False
+                            else:
+                                result.append(axl.update_enduser_primaryExtension(row[0],row[1],row[2]))
+                        '''
                 elif command.startswith('load'):
+
+                    logging.info('data headers validated succesfully')
 
                     if command == "load addPhone()":
 
                         result.append(axl.load_phone())
+
+                    elif command == "load update enduser primaryExtension()":
+                        cmd_headers = self.getCmdHeaders(command)
+                        # TODO consider removing the below
+                        #data_input = axl.load_enduser_primaryExtension()
+                        self.plainTextEdit_axl_data.setPlainText(cmd_headers)
 
                 elif command.startswith('add'):
 
@@ -2521,11 +2648,19 @@ class Ui_Nautilus(object):
             except Exception as e:
                 logging.error(str(e))
         else:
+            if not user_data:
+                result.append('No connection information found')
+            if not axl_dirty_data:
+                result.append('No data found')
+            if not axl_cmd_list_dirty:
+                result.append('No commands found')
+
             axl_output_list = self.merge_tp_output_results(original=axl_output_list, addition=result)
 
         try:
 
             self.textEdit_axl_output.setPlainText(json.dumps(axl_output_list,indent = 4))
+
             self.write_tp_output(axl_output_list)
 
         except Exception as e:
@@ -2534,8 +2669,18 @@ class Ui_Nautilus(object):
 
         logging.info('###### EXECUTION COMPLETED ######')
 
+    def getCmdHeaders(self, command):
 
+        map = {
+            'update enduser primaryExtension()':'userid,extension,partition',
+            'load update enduser primaryExtension()': 'userid,extension,partition'
+        }
+        try:
+            return map[command]
 
+        except Exception as e:
+            logging.error(e)
+            return None
 
     def run_tp_commands(self):
 
@@ -2549,6 +2694,7 @@ class Ui_Nautilus(object):
             tp_password = self.lineEdit_password_tp.text()
             tp_concurrent = int(self.lineEdit_concurrent_tp.text())
             data = self.plainTextEdit_tp_data.toPlainText().splitlines()
+            exp_data = self.plainTextEdit_tp_data.toPlainText().splitlines()
             webex_data = self.plainTextEdit_tp_data.toPlainText().splitlines()
             tp_cmd_list_dirty = self.plainTextEdit_tp_commands.toPlainText().splitlines()
 
@@ -2593,7 +2739,7 @@ class Ui_Nautilus(object):
 
             if all_good:
 
-                axapi.exp_data = self.csv2json(data)
+                axapi.exp_data = self.csv2json_exp(exp_data)
 
                 for row in data:
 
@@ -2656,6 +2802,12 @@ class Ui_Nautilus(object):
                 ],
                 'test': [
                     'test migrate2cloud()'
+                ],
+                'call': [
+                    'call dial()',
+                    'call status()',
+                    'call disconnect()',
+                    'call sendDTMF()'
                 ],
                 'set': [
                     'set config(<configuration as shown by show config>)',
@@ -3091,6 +3243,23 @@ class Ui_Nautilus(object):
                         else:
                             result = [{command: 'No valid Webex token found'}]
 
+                elif command.startswith('call'):
+
+                    if command == 'call dial()':
+
+                        logging.info('call dial() matched')
+                        result = axapi.runIt(command=command)
+
+                    elif command == 'call sendDTMF()':
+
+                        logging.info(f"{command} command matched")
+                        result = axapi.runIt(command=command)
+
+                    elif command == 'call disconnect()':
+
+                        logging.info(f"{command} command matched")
+                        result = axapi.runIt(command=command)
+
                 elif command.startswith('upload'):
 
                     if re.match('upload branding([^(]+)\((.*)\)',command) or re.match('upload background\((.*)\)', command) :
@@ -3471,6 +3640,31 @@ class Ui_Nautilus(object):
 
         return False
 
+    def csv2json(self,data):
+
+        dict_data_list =[]
+
+        for row in data:
+
+            row_list = row.split(",")
+            counter = 0
+
+            ip = row_list[0]
+            temp_dict = {}
+            temp_dict[ip] = {}
+            while timer > 0:
+
+                key = keyList[counter]
+                value = row_list[counter]
+
+                temp_dict[ip][key] = value
+                timer = timer - 1
+                counter = counter +1
+
+            dict_data_list.append(temp_dict)
+
+        return dict_data_list
+
     def csv2json_axl(self,data):#TODO re-do when a different tab for expressways is don
 
         keyStr = data[0] #first line are always the headers
@@ -3504,7 +3698,7 @@ class Ui_Nautilus(object):
 
         return dict_data_list
 
-    def csv2json(self,data):#TODO re-do when a different tab for expressways is don
+    def csv2json_exp(self,data):#TODO re-do when a different tab for expressways is don
 
         keyStr = data[0] #first line are always the headers
         keyList = keyStr.split(",")
@@ -3681,7 +3875,30 @@ class Ui_Nautilus(object):
 
                     else:
                         #show
-                        self.SQLresponse.setPlainText(tabulate(sql_response['rows'], headers="keys"))
+                        if self.radioButton_Beauty.isChecked():
+                            self.SQLresponse.setPlainText(tabulate(sql_response['rows'], headers="keys"))
+                        else: #CSV output format radio button is checked
+                            # we convert the list of dicts sql_response['rows'] to CSV
+
+                            logging.info("converting response to CSV")
+                            keys = sql_response['rows'][0].keys()
+
+                            #convert dict to CSV and store on a string variable
+                            output_io = io.StringIO()
+                            dict_writer = csv.DictWriter(output_io, keys, delimiter=',')
+                            dict_writer.writeheader()
+                            dict_writer.writerows(sql_response['rows'])
+                            self.SQLresponse.setPlainText(output_io.getvalue())
+
+                            '''
+                            with open('out_temp.csv', 'w') as output_file:
+                                dict_writer = csv.DictWriter(output_file, keys)
+                                dict_writer.writeheader()
+                                dict_writer.writerows(sql_response['rows'])
+                                self.SQLresponse.setPlainText(output_file)
+                            '''
+
+
 
                 except Exception as e:
 

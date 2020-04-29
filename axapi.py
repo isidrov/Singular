@@ -155,6 +155,7 @@ class Axapi:
                 '''
                 use needs_sw_type if XML body is different depending of the type of sw (TC, CE, roomOS)
                 also when the command is supported in CE and not TC or viceversa
+                If CE/TC XML matches, no need to populate anything un this method, by default returns False
                 '''
 
                 needs_sw = self.needs_sw_type(command)
@@ -718,7 +719,10 @@ class Axapi:
             'disable macroEditor()': 'post_xml',
             'restart()': 'post_url',
             'restart macroRuntime()':'post_xml',
-            'init nextPanelOrder()': 'post_xml'
+            'init nextPanelOrder()': 'post_xml',
+            'call dial()': 'post_xml',
+            'call sendDTMF()': 'post_xml',
+            'call disconnect()': 'post_xml'
         }
 
         if command in map_dict: # means the key exist
@@ -808,7 +812,7 @@ class Axapi:
 
     def customXML(self, command):
 
-        custom_xml = ['set systemName()','run tp restore()','future command()']
+        custom_xml = ['set systemName()','run tp restore()','call dial()', 'call sendDTMF()']
 
         for c in custom_xml:
             if command == c:
@@ -863,6 +867,45 @@ class Axapi:
                         '''
 
             return xml_string
+
+        elif command == 'call dial()':
+
+            xml_string = '''
+                        <Command>
+            	            <Dial>
+            	            	<Number>''' + argument[0] + '''</Number>
+            	            </Dial>
+                        </Command>
+                        '''
+
+            return xml_string
+
+        elif command == 'call sendDTMF()':
+
+            xml_string = '''
+                         <Command>
+             	            <Call>
+             	            	<DTMFSend>
+             	            	    <DTMFString>''' + argument[0] + '''</DTMFString>
+             	            	</DTMFSend>
+             	            </Call>
+                         </Command>
+                         '''
+
+            return xml_string
+
+        elif command == 'call disconnect()':
+
+            xml_string = '''
+                         <Command>
+             	            <Call>
+             	            	<Disconnect>
+             	            	</Disconnect>
+             	            </Call>
+                         </Command>
+                         '''
+            return xml_string
+
 
         elif command == 'set password()':
 
