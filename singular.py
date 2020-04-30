@@ -3247,12 +3247,13 @@ class Ui_Nautilus(object):
 
                     if command == 'call dial()':
 
-                        logging.info('call dial() matched')
+                        logging.info(f"{command} command matched")
                         result = axapi.runIt(command=command)
 
                     elif command == 'call sendDTMF()':
 
                         logging.info(f"{command} command matched")
+                        axapi.runIt(command='init sw()', argument='internal')
                         result = axapi.runIt(command=command)
 
                     elif command == 'call disconnect()':

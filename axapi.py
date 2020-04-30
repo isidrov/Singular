@@ -789,7 +789,7 @@ class Axapi:
                     'enable macroEditor()', 'disable macroEditor()','delete macro()', 'enable macro()',
                     'disable macro()','upload panel()','restart macroRuntime()', 'add user()', 'delete user()',
                     'show users()','add userRole()', 'delete userRole()','init nextPanelOrder()', 'show panels()',
-                    'run tp restore()']
+                    'run tp restore()','call disconnect()', 'call sendDTMF()']
 
         for c in needs_sw:
             if command == c:
@@ -882,15 +882,27 @@ class Axapi:
 
         elif command == 'call sendDTMF()':
 
-            xml_string = '''
-                         <Command>
-             	            <Call>
-             	            	<DTMFSend>
-             	            	    <DTMFString>''' + argument[0] + '''</DTMFString>
-             	            	</DTMFSend>
-             	            </Call>
-                         </Command>
-                         '''
+            if sw == 'CE' or sw == 'RoomOS':
+
+                xml_string = '''
+                             <Command>
+                 	            <Call>
+                 	            	<DTMFSend>
+                 	            	    <DTMFString>''' + argument[0] + '''</DTMFString>
+                 	            	</DTMFSend>
+                 	            </Call>
+                             </Command>
+                             '''
+
+            elif sw == 'TC':
+
+                xml_string = '''
+                            <Command>
+                	            <DTMFSend>
+                	                <DTMFString>''' + argument[0] + '''</DTMFString>
+                	            </DTMFSend>
+                            </Command> 
+                            '''
 
             return xml_string
 
