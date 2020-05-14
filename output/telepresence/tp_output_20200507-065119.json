@@ -1,0 +1,8 @@
+[
+    {
+        "number of endpoints": "0",
+        "execution time": "0.51"
+    },
+    "10.18.8.245,status,200,@status,OK,CallId,24,ConferenceId,23",
+    "10.18.8.254,status,200,@status,OK,CallId,242,ConferenceId,137"
+]

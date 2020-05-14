@@ -1,0 +1,1112 @@
+[
+    {
+        "number of endpoints": "254",
+        "execution time": "253.27"
+    },
+    {
+        "ip": "10.18.8.1",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.2",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.3",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.4",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.5",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.6",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.7",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.8",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.9",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.10",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.11",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.12",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.13",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.14",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.15",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.16",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.17",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.18",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.19",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.20",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.21",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.22",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.23",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.24",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.25",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.26",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.27",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.28",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.29",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.30",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.31",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.32",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.33",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.34",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.35",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.36",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.37",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.38",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.39",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.40",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.41",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.42",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.43",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.44",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.45",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.46",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.47",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.48",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.49",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.50",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.51",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.52",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.53",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.54",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.55",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.56",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.57",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.58",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.59",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.60",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.61",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.62",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.63",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.64",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.65",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.66",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.67",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.68",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.69",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.70",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.71",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.72",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.73",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.74",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.75",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.76",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.77",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.78",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.79",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.80",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.81",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.82",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.83",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.84",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.85",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.86",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.87",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.88",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.89",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.90",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.91",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.92",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.93",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.94",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.95",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.96",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.97",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.98",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.99",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.100",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.101",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.102",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.103",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.104",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.105",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.106",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.107",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.108",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.109",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.110",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.111",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.112",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.113",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.114",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.115",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.116",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.117",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.118",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.119",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.120",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.121",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.122",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.123",
+        "result": "ERROR"
+    },
+    {
+        "10.18.8.124": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.7.1.30bff6140aa"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.125": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.7.1.30bff6140aa"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.126": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.7.1.30bff6140aa"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.127": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.7.1.30bff6140aa"
+                }
+            }
+        }
+    },
+    {
+        "ip": "10.18.8.128",
+        "result": "ERROR"
+    },
+    {
+        "10.18.8.129": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.7.1.30bff6140aa"
+                }
+            }
+        }
+    },
+    {
+        "ip": "10.18.8.130",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.131",
+        "result": "ERROR"
+    },
+    {
+        "10.18.8.132": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.10.0.50f5888d087"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.133": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.7.1.30bff6140aa"
+                }
+            }
+        }
+    },
+    {
+        "ip": "10.18.8.134",
+        "result": "ERROR"
+    },
+    {
+        "10.18.8.135": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.7.1.30bff6140aa"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.136": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.8.3.0a0afcf64cb"
+                }
+            }
+        }
+    },
+    {
+        "ip": "10.18.8.137",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.138",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.139",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.140",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.141",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.142",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.143",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.144",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.145",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.146",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.147",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.148",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.149",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.150",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.151",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.152",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.153",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.154",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.155",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.156",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.157",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.158",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.159",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.160",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.161",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.162",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.163",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.164",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.165",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.166",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.167",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.168",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.169",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.170",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.171",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.172",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.173",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.174",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.175",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.176",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.177",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.178",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.179",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.180",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.181",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.182",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.183",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.184",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.185",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.186",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.187",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.188",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.189",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.190",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.191",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.192",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.193",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.194",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.195",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.196",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.197",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.198",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.199",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.200",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.201",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.202",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.203",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.204",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.205",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.206",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.207",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.208",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.209",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.210",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.211",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.212",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.213",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.214",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.215",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.216",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.217",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.218",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.219",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.220",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.221",
+        "result": "ERROR"
+    },
+    {
+        "10.18.8.222": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.7.1.30bff6140aa"
+                }
+            }
+        }
+    },
+    {
+        "ip": "10.18.8.223",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.224",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.225",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.226",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.227",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.228",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.229",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.230",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.231",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.232",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.233",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.234",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.235",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.236",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.237",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.238",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.239",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.240",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.241",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.242",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.243",
+        "result": "ERROR"
+    },
+    {
+        "10.18.8.244": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.7.1.30bff6140aa"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.245": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.10.0.50f5888d087"
+                }
+            }
+        }
+    },
+    {
+        "ip": "10.18.8.246",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.247",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.248",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.249",
+        "result": "ERROR"
+    },
+    {
+        "10.18.8.250": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.7.1.30bff6140aa"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.251": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.10.0.50f5888d087"
+                }
+            }
+        }
+    },
+    {
+        "ip": "10.18.8.252",
+        "result": "ERROR"
+    },
+    {
+        "ip": "10.18.8.253",
+        "result": "ERROR"
+    },
+    {
+        "10.18.8.254": {
+            "show status(@version)": {
+                "status": 200,
+                "response": {
+                    "Status.@version": "ce9.10.0.50f5888d087"
+                }
+            }
+        }
+    }
+]

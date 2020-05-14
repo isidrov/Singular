@@ -7,6 +7,7 @@ from PyQt5.QtCore import QRunnable,QObject,pyqtSignal, pyqtSlot, QThreadPool,Qt
 import traceback
 import os
 import time
+import collections
 import sys
 from tabulate import tabulate
 import logging.config
@@ -3248,17 +3249,42 @@ class Ui_Nautilus(object):
                     if command == 'call dial()':
 
                         logging.info(f"{command} command matched")
-                        result = axapi.runIt(command=command)
+                        temp_results = axapi.runIt(command=command)
+                        # we convert the list of dicts sql_response['rows'] to CSV
+                        result = []
+                        for temp_result in temp_results:
+                            res = self.flatten(temp_result)
+                            #self.init_callid(res,axapi)
+                            ret = self.prettify_tp(res)
+                            result.append(ret)
+
+
+                    elif command == 'call status()':
+
+                        logging.info(f"{command} command matched")
+                        temp_results = axapi.runIt(command=command)
+                        result = []
+                        for temp_result in temp_results:
+                            res = self.flatten(temp_result)
+                            ret = self.prettify_call(res)
+                            result.append(ret)
 
                     elif command == 'call sendDTMF()':
 
                         logging.info(f"{command} command matched")
                         axapi.runIt(command='init sw()', argument='internal')
-                        result = axapi.runIt(command=command)
+                        temp_results = axapi.runIt(command=command)
+
+                        result = []
+                        for temp_result in temp_results:
+                            res = self.flatten(temp_result)
+                            ret = self.prettify_tp(res)
+                            result.append(ret)
 
                     elif command == 'call disconnect()':
 
                         logging.info(f"{command} command matched")
+                        axapi.runIt(command='init sw()', argument='internal')
                         result = axapi.runIt(command=command)
 
                 elif command.startswith('upload'):
@@ -3499,6 +3525,67 @@ class Ui_Nautilus(object):
             logging.error(str(e))
 
         logging.info('###### EXECUTION COMPLETED ######')
+
+    def flatten(self,d, parent_key='', sep='/'):
+        items = []
+        for k, v in d.items():
+            new_key = parent_key + sep + k if parent_key else k
+            if isinstance(v, collections.MutableMapping):
+                items.extend(self.flatten(v, new_key, sep=sep).items())
+            else:
+                items.append((new_key, v))
+        return dict(items)
+
+    def init_callid(self,res,axapi):
+
+        callId = ''
+        ip = ''
+        item = int()
+
+        for k,v in res.items():
+            list_key = k.split('/')
+            ip = list_key[0]
+            if 'CallId' in list_key:
+                if '#text' in list_key:
+                    callId = v
+
+        axapi.endpoints[ip][item - 1][callId]
+
+    def prettify_tp(self,res):
+
+        final_string = ''
+        ip = ''
+
+        for k,v in res.items():
+            list_key = k.split('/')
+            ip = list_key[0]
+            if list_key[len(list_key)-1] == '#text':
+                final_string += f',{list_key[len(list_key) - 2]},{v}'
+            else:
+                final_string+=f',{list_key[len(list_key)-1]},{v}'
+
+        return f'{ip}{final_string}'
+
+    def prettify_call(self,res):
+
+        final_string = ''
+        ip = ''
+
+        for k,v in res.items():
+            list_key = k.split('/')
+            ip = list_key[0]
+            if 'Status/Call' in k:
+                if 'result/Status/Call/@item' in k:
+                    final_string += f',callId,{v}'
+                else:
+                    if list_key[len(list_key)-1] == '#text':
+                        final_string += f',{list_key[len(list_key) - 2]},{v}'
+                    elif ('@item' or '@func_get' or '@func_item') in list_key:
+                        pass
+                    else:
+                        final_string += f',{list_key[len(list_key) - 1]},{v}'
+
+        return f'{ip}{final_string}'
 
     def clean_ips(self, ip_list): #clean spaces and newlines
 

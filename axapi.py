@@ -194,11 +194,13 @@ class Axapi:
 
                                 data = [argument,k] # k = ip. We needit to pass the XML specific information about the endpoint
 
-                                tcData = self.obtain_data(command=command, argument=data, sw='TC')
+                                tcData = self.obtain_data(command=command, argument=v['data'], sw='TC')
 
-                                ceData = self.obtain_data(command=command, argument=data, sw='CE')
+                                ceData = self.obtain_data(command=command, argument=v['data'], sw='CE')
 
-                                roomData = self.obtain_data(command=command, argument=data, sw='RoomOS')
+                                roomData = self.obtain_data(command=command, argument=v['data'], sw='RoomOS')
+
+
 
 
                             if (v['sw'] == 'CE') and (ceData is not None):
@@ -337,7 +339,7 @@ class Axapi:
 
             #dict_response_debugging = json.dumps(dict_response, indent = 4)
 
-            if filter == 'internal':
+            if filter == 'internal' or command == 'call status()':
 
                 return {'ip': ip, 'result': dict_response}
 
@@ -722,7 +724,8 @@ class Axapi:
             'init nextPanelOrder()': 'post_xml',
             'call dial()': 'post_xml',
             'call sendDTMF()': 'post_xml',
-            'call disconnect()': 'post_xml'
+            'call disconnect()': 'post_xml',
+            'call status()': 'get_url'
         }
 
         if command in map_dict: # means the key exist
@@ -742,7 +745,8 @@ class Axapi:
             'show config()': '/getxml?location=/Configuration/&internal=true',
             'restart()' : '/api/restart',
             'upload wallpaper()': '/api/wallpapers',
-            'run tp restore()' : '/api/backup'
+            'run tp restore()' : '/api/backup',
+            'call status()': '/status.xml'
         }
 
         if command == 'run tp backup()':
@@ -895,14 +899,16 @@ class Axapi:
                              '''
 
             elif sw == 'TC':
-
                 xml_string = '''
                             <Command>
-                	            <DTMFSend>
-                	                <DTMFString>''' + argument[0] + '''</DTMFString>
-                	            </DTMFSend>
-                            </Command> 
+                               	<DTMFSend>
+                               	    <DTMFString>''' + argument[0] + '''</DTMFString>
+                               	</DTMFSend>
+                            </Command>
                             '''
+
+            else:
+                return None
 
             return xml_string
 

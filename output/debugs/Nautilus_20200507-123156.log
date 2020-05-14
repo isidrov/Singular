@@ -1,0 +1,12 @@
+05-07 12:31 root  INFO  installPath C:\Users\FernandI\Development\Projects\Singular
+05-07 12:31 root  INFO  executablePath C:\Users\FernandI\Development\Projects\Singular
+05-07 12:31 root  INFO  debugsPath C:\Users\FernandI\Development\Projects\Singular\output\debugs
+05-07 12:31 root  INFO  logFileName Nautilus_20200507-123156.log
+05-07 12:31 root  INFO  logFilePath C:\Users\FernandI\Development\Projects\Singular\output\debugs\Nautilus_20200507-123156.log
+05-07 12:31 root  INFO  schema pathC:\Users\FernandI\Development\Projects\Singular\schema
+05-07 12:31 root  INFO  Logging initializated
+05-07 12:31 root  INFO  Executing
+05-07 12:31 werkzeug INFO   * Running on http://localhost:10060/ (Press CTRL+C to quit)
+05-07 12:31 root  INFO  YAML command file found with executable!
+05-07 12:31 root  INFO  Openning YAML command file in directoryC:\Users\FernandI\Development\Projects\Singular\list_of_commands.yaml
+05-07 12:31 root  INFO  Multithreading with maximum 1 threads

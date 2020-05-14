@@ -1,0 +1,135 @@
+05-13 21:56 root  INFO  installPath C:\Users\FernandI\Development\Projects\Singular
+05-13 21:56 root  INFO  executablePath C:\Users\FernandI\Development\Projects\Singular
+05-13 21:56 root  INFO  debugsPath C:\Users\FernandI\Development\Projects\Singular\output\debugs
+05-13 21:56 root  INFO  logFileName Nautilus_20200513-215643.log
+05-13 21:56 root  INFO  logFilePath C:\Users\FernandI\Development\Projects\Singular\output\debugs\Nautilus_20200513-215643.log
+05-13 21:56 root  INFO  schema pathC:\Users\FernandI\Development\Projects\Singular\schema
+05-13 21:56 root  INFO  Logging initializated
+05-13 21:56 root  INFO  Executing
+05-13 21:56 werkzeug INFO   * Running on http://localhost:10060/ (Press CTRL+C to quit)
+05-13 21:56 root  INFO  YAML command file found with executable!
+05-13 21:56 root  INFO  Openning YAML command file in directoryC:\Users\FernandI\Development\Projects\Singular\list_of_commands.yaml
+05-13 21:56 root  INFO  Multithreading with maximum 1 threads
+05-13 22:00 root  INFO  Pressed "run commands" under Telepresence tab
+05-13 22:00 root  INFO  '10.9.35.233,886133805011' does not appear to be an IPv4 or IPv6 address
+05-13 22:00 root  INFO  Validating commands...
+05-13 22:00 root  INFO  List of commands validated successfully
+05-13 22:00 root  INFO  current command: call dial()
+05-13 22:00 root  INFO  call dial() command matched
+05-13 22:00 axapi INFO  Got response 200 for call dial() in 10.18.8.245
+05-13 22:00 axapi INFO  Got response 200 for call dial() in 10.18.8.254
+05-13 22:00 axapi INFO  Got response 200 for call dial() in 10.9.35.233
+05-13 22:00 root  INFO  treating command
+05-13 22:00 root  INFO  execution time: 1.48
+05-13 22:00 root  INFO  ###### EXECUTION COMPLETED ######
+05-13 22:00 root  INFO  Pressed "run commands" under Telepresence tab
+05-13 22:00 root  INFO  '10.9.35.233,75149178181#' does not appear to be an IPv4 or IPv6 address
+05-13 22:00 root  INFO  Validating commands...
+05-13 22:00 root  INFO  List of commands validated successfully
+05-13 22:00 root  INFO  current command: call sendDTMF()
+05-13 22:00 root  INFO  call sendDTMF() command matched
+05-13 22:00 root  INFO  Discovering sw versions
+05-13 22:00 axapi INFO  Got response 200 for init sw() in 10.18.8.245
+05-13 22:00 axapi INFO  Got response 200 for init sw() in 10.18.8.254
+05-13 22:00 axapi INFO  Got response 200 for init sw() in 10.9.35.233
+05-13 22:00 root  INFO  treating command
+05-13 22:00 axapi INFO  Got response 200 for call sendDTMF() in 10.18.8.245
+05-13 22:00 axapi INFO  Got response 200 for call sendDTMF() in 10.18.8.254
+05-13 22:00 axapi INFO  Got response 200 for call sendDTMF() in 10.9.35.233
+05-13 22:00 root  INFO  treating command
+05-13 22:00 root  INFO  execution time: 1.70
+05-13 22:00 root  INFO  ###### EXECUTION COMPLETED ######
+05-13 22:01 root  INFO  Pressed "run commands" under Telepresence tab
+05-13 22:01 root  INFO  '10.9.35.233,75149178181#' does not appear to be an IPv4 or IPv6 address
+05-13 22:01 root  INFO  Validating commands...
+05-13 22:01 root  INFO  [
+    {
+        "10.9.35.233,3629# not recognized , supported commands are": {
+            "help": [
+                "help()"
+            ],
+            "run": [
+                "run migrate2cloud()",
+                "run tp backup()",
+                "run tp restore()"
+            ],
+            "show": [
+                "show status(<optional_status_item_filter>)",
+                "show commands(<optional_status_item_filter>)",
+                "show webex devices()",
+                "show webex devices status(<optional_filters, comma separated>)",
+                "show config(<optional_filter>)",
+                "show favorites()",
+                "show users()",
+                "show panels()",
+                "show webex places(<optional Place name>)"
+            ],
+            "test": [
+                "test migrate2cloud()"
+            ],
+            "call": [
+                "call dial()",
+                "call status()",
+                "call disconnect()",
+                "call sendDTMF()"
+            ],
+            "set": [
+                "set config(<configuration as shown by show config>)",
+                "set password(<new_password>)",
+                "set systemName()"
+            ],
+            "add": [
+                "add contact(<name>,<number>)",
+                "add user(<username>,<password>,<role>)",
+                "add userRole(<username>,<role>)",
+                "add exp searchRules()"
+            ],
+            "upload": [
+                "upload brandingAwake(<image_file_name.ext>)",
+                "upload brandingHalfwake(<image_file_name.ext>)",
+                "upload brandingBackground(<image_file_name.ext>)",
+                "upload background(<image_file_name.ext>)",
+                "upload macro(<macro file>)",
+                "upload panel(<panel_file>)",
+                "upload wallpaper(<wallpaper_file>)"
+            ],
+            "delete": [
+                "delete itl()",
+                "delete webex places(<add place names, one on each line in the DATA pane>)",
+                "delete macro(<macro_name>)",
+                "delete user(<username>)",
+                "delete userRole(<username>,<role>)"
+            ],
+            "enable": [
+                "enable macroEditor()",
+                "enable macro(<macro_name>)"
+            ],
+            "disable": [
+                "disable macroEditor()",
+                "disable macro(<macro_name>)"
+            ],
+            "misc": [
+                "restart()",
+                "factoryReset()"
+            ]
+        }
+    }
+]
+05-13 22:01 root  INFO  ###### EXECUTION COMPLETED ######
+05-13 22:01 root  INFO  Pressed "run commands" under Telepresence tab
+05-13 22:01 root  INFO  '10.9.35.233,3629#' does not appear to be an IPv4 or IPv6 address
+05-13 22:01 root  INFO  Validating commands...
+05-13 22:01 root  INFO  List of commands validated successfully
+05-13 22:01 root  INFO  current command: call sendDTMF()
+05-13 22:01 root  INFO  call sendDTMF() command matched
+05-13 22:01 root  INFO  Discovering sw versions
+05-13 22:01 axapi INFO  Got response 200 for init sw() in 10.18.8.245
+05-13 22:01 axapi INFO  Got response 200 for init sw() in 10.18.8.254
+05-13 22:01 axapi INFO  Got response 200 for init sw() in 10.9.35.233
+05-13 22:01 root  INFO  treating command
+05-13 22:01 axapi INFO  Got response 200 for call sendDTMF() in 10.18.8.245
+05-13 22:01 axapi INFO  Got response 200 for call sendDTMF() in 10.18.8.254
+05-13 22:01 axapi INFO  Got response 200 for call sendDTMF() in 10.9.35.233
+05-13 22:01 root  INFO  treating command
+05-13 22:01 root  INFO  execution time: 1.77
+05-13 22:01 root  INFO  ###### EXECUTION COMPLETED ######

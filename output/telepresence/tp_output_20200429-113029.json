@@ -1,0 +1,17 @@
+[
+    {
+        "number of endpoints": "1",
+        "execution time": "0.86"
+    },
+    {
+        "10.18.8.124": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134048@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-4-214 SPC 1636134048"
+                }
+            }
+        }
+    }
+]

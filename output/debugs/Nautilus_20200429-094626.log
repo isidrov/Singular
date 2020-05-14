@@ -1,0 +1,16 @@
+04-29 09:46 root  INFO  installPath C:\Users\FernandI\Development\Projects\Singular
+04-29 09:46 root  INFO  executablePath C:\Users\FernandI\Development\Projects\Singular
+04-29 09:46 root  INFO  debugsPath C:\Users\FernandI\Development\Projects\Singular\output\debugs
+04-29 09:46 root  INFO  logFileName Nautilus_20200429-094626.log
+04-29 09:46 root  INFO  logFilePath C:\Users\FernandI\Development\Projects\Singular\output\debugs\Nautilus_20200429-094626.log
+04-29 09:46 root  INFO  schema pathC:\Users\FernandI\Development\Projects\Singular\schema
+04-29 09:46 root  INFO  Logging initializated
+04-29 09:46 root  INFO  Executing
+04-29 09:46 werkzeug INFO   * Running on http://localhost:10060/ (Press CTRL+C to quit)
+04-29 09:46 root  INFO  YAML command file found with executable!
+04-29 09:46 root  INFO  Openning YAML command file in directoryC:\Users\FernandI\Development\Projects\Singular\list_of_commands.yaml
+04-29 09:46 root  INFO  Multithreading with maximum 1 threads
+04-29 09:48 root  INFO  Pressed "run commands" under Telepresence tab
+04-29 09:49 root  INFO  Validating commands...
+04-29 09:49 root  INFO  List of commands validated successfully
+04-29 09:49 root  INFO  current command: call dial(75149178181)

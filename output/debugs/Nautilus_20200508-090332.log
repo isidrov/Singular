@@ -1,0 +1,40 @@
+05-08 09:03 root  INFO  installPath C:\Users\FernandI\Development\Projects\Singular
+05-08 09:03 root  INFO  executablePath C:\Users\FernandI\Development\Projects\Singular
+05-08 09:03 root  INFO  debugsPath C:\Users\FernandI\Development\Projects\Singular\output\debugs
+05-08 09:03 root  INFO  logFileName Nautilus_20200508-090332.log
+05-08 09:03 root  INFO  logFilePath C:\Users\FernandI\Development\Projects\Singular\output\debugs\Nautilus_20200508-090332.log
+05-08 09:03 root  INFO  schema pathC:\Users\FernandI\Development\Projects\Singular\schema
+05-08 09:03 root  INFO  Logging initializated
+05-08 09:03 root  INFO  Executing
+05-08 09:03 werkzeug INFO   * Running on http://localhost:10060/ (Press CTRL+C to quit)
+05-08 09:03 root  INFO  YAML command file found with executable!
+05-08 09:03 root  INFO  Openning YAML command file in directoryC:\Users\FernandI\Development\Projects\Singular\list_of_commands.yaml
+05-08 09:03 root  INFO  Multithreading with maximum 1 threads
+05-08 09:03 root  INFO  Pressed "run commands" under Telepresence tab
+05-08 09:03 root  INFO  '10.9.35.233,886137295408' does not appear to be an IPv4 or IPv6 address
+05-08 09:03 root  INFO  Validating commands...
+05-08 09:03 root  INFO  List of commands validated successfully
+05-08 09:03 root  INFO  current command: call dial()
+05-08 09:03 root  INFO  call dial() command matched
+05-08 09:03 axapi INFO  Got response 200 for call dial() in 10.9.35.233
+05-08 09:03 root  INFO  treating command
+05-08 09:03 root  INFO  execution time: 1.12
+05-08 09:03 root  INFO  ###### EXECUTION COMPLETED ######
+05-08 09:05 root  INFO  Pressed "run commands" under Telepresence tab
+05-08 09:05 root  INFO  '10.9.35.233,886137295408' does not appear to be an IPv4 or IPv6 address
+05-08 09:05 root  INFO  Validating commands...
+05-08 09:05 root  INFO  List of commands validated successfully
+05-08 09:05 root  INFO  current command: call dial()
+05-08 09:05 root  INFO  call dial() command matched
+05-08 09:05 axapi INFO  Got response 200 for call dial() in 10.18.8.245
+05-08 09:05 axapi INFO  Got response 200 for call dial() in 10.9.35.233
+05-08 09:05 root  INFO  treating command
+05-08 09:05 root  INFO  execution time: 3.62
+05-08 09:05 root  INFO  ###### EXECUTION COMPLETED ######
+05-08 09:08 root  INFO  Pressed "run commands" under Telepresence tab
+05-08 09:08 root  INFO  '10.9.35.233,886137295408' does not appear to be an IPv4 or IPv6 address
+05-08 09:08 root  INFO  Validating commands...
+05-08 09:08 root  INFO  List of commands validated successfully
+05-08 09:08 root  INFO  current command: help()
+05-08 09:08 root  INFO  execution time: 0.00
+05-08 09:08 root  INFO  ###### EXECUTION COMPLETED ######

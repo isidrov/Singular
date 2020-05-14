@@ -1,0 +1,110 @@
+05-07 06:55 root  INFO  installPath C:\Users\FernandI\Development\Projects\Singular
+05-07 06:55 root  INFO  executablePath C:\Users\FernandI\Development\Projects\Singular
+05-07 06:55 root  INFO  debugsPath C:\Users\FernandI\Development\Projects\Singular\output\debugs
+05-07 06:55 root  INFO  logFileName Nautilus_20200507-065534.log
+05-07 06:55 root  INFO  logFilePath C:\Users\FernandI\Development\Projects\Singular\output\debugs\Nautilus_20200507-065534.log
+05-07 06:55 root  INFO  schema pathC:\Users\FernandI\Development\Projects\Singular\schema
+05-07 06:55 root  INFO  Logging initializated
+05-07 06:55 root  INFO  Executing
+05-07 06:55 werkzeug INFO   * Running on http://localhost:10060/ (Press CTRL+C to quit)
+05-07 06:55 root  INFO  YAML command file found with executable!
+05-07 06:55 root  INFO  Openning YAML command file in directoryC:\Users\FernandI\Development\Projects\Singular\list_of_commands.yaml
+05-07 06:55 root  INFO  Multithreading with maximum 1 threads
+05-07 07:01 root  INFO  Pressed "run commands" under Telepresence tab
+05-07 07:01 root  INFO  '10.18.8.245,886137295408' does not appear to be an IPv4 or IPv6 address
+05-07 07:01 root  INFO  Validating commands...
+05-07 07:01 root  INFO  List of commands validated successfully
+05-07 07:01 root  INFO  current command: call dial()
+05-07 07:01 root  INFO  call dial() command matched
+05-07 07:01 axapi INFO  Got response 200 for call dial() in 10.18.8.245
+05-07 07:01 root  INFO  treating command
+05-07 07:01 root  INFO  execution time: 1.88
+05-07 07:01 root  INFO  ###### EXECUTION COMPLETED ######
+05-07 07:01 root  INFO  Pressed "run commands" under Telepresence tab
+05-07 07:01 root  INFO  '10.18.8.245,75149178181#' does not appear to be an IPv4 or IPv6 address
+05-07 07:01 root  INFO  Validating commands...
+05-07 07:01 root  INFO  List of commands validated successfully
+05-07 07:01 root  INFO  current command: call sendDTMF()
+05-07 07:01 root  INFO  call sendDTMF() command matched
+05-07 07:01 root  INFO  Discovering sw versions
+05-07 07:01 axapi INFO  Got response 200 for init sw() in 10.18.8.245
+05-07 07:01 root  INFO  treating command
+05-07 07:01 axapi INFO  Got response 200 for call sendDTMF() in 10.18.8.245
+05-07 07:01 root  INFO  treating command
+05-07 07:01 root  INFO  execution time: 32.97
+05-07 07:01 root  INFO  ###### EXECUTION COMPLETED ######
+05-07 07:02 root  INFO  Pressed "run commands" under Telepresence tab
+05-07 07:02 root  INFO  '10.18.8.245,75149178181#' does not appear to be an IPv4 or IPv6 address
+05-07 07:02 root  INFO  Validating commands...
+05-07 07:02 root  INFO  List of commands validated successfully
+05-07 07:02 root  INFO  current command: call sendDTMF()
+05-07 07:02 root  INFO  call sendDTMF() command matched
+05-07 07:02 root  INFO  Discovering sw versions
+05-07 07:02 axapi INFO  Got response 200 for init sw() in 10.18.8.245
+05-07 07:02 root  INFO  treating command
+05-07 07:04 axapi INFO  Got response 200 for call sendDTMF() in 10.18.8.245
+05-07 07:04 root  INFO  treating command
+05-07 07:04 root  INFO  execution time: 135.00
+05-07 07:04 root  INFO  ###### EXECUTION COMPLETED ######
+05-07 07:04 root  INFO  Pressed "run commands" under Telepresence tab
+05-07 07:04 root  INFO  '10.18.8.245,886137295408' does not appear to be an IPv4 or IPv6 address
+05-07 07:04 root  INFO  Validating commands...
+05-07 07:04 root  INFO  List of commands validated successfully
+05-07 07:04 root  INFO  current command: call dial()
+05-07 07:04 root  INFO  call dial() command matched
+05-07 07:05 axapi INFO  Got response 200 for call dial() in 10.18.8.245
+05-07 07:05 root  INFO  treating command
+05-07 07:05 root  INFO  execution time: 52.64
+05-07 07:05 root  INFO  ###### EXECUTION COMPLETED ######
+05-07 07:05 root  INFO  Pressed "run commands" under Telepresence tab
+05-07 07:05 root  INFO  '10.18.8.245,75149178181#' does not appear to be an IPv4 or IPv6 address
+05-07 07:05 root  INFO  Validating commands...
+05-07 07:05 root  INFO  List of commands validated successfully
+05-07 07:05 root  INFO  current command: call sendDTMF()
+05-07 07:06 root  INFO  call sendDTMF() command matched
+05-07 07:06 root  INFO  Discovering sw versions
+05-07 07:06 axapi INFO  Got response 200 for init sw() in 10.18.8.245
+05-07 07:06 root  INFO  treating command
+05-07 07:07 axapi INFO  Got response 200 for call sendDTMF() in 10.18.8.245
+05-07 07:07 root  INFO  treating command
+05-07 07:07 root  INFO  execution time: 106.71
+05-07 07:07 root  INFO  ###### EXECUTION COMPLETED ######
+05-07 07:07 root  INFO  Pressed "run commands" under Telepresence tab
+05-07 07:07 root  INFO  '10.18.8.245,886137295408' does not appear to be an IPv4 or IPv6 address
+05-07 07:08 root  INFO  Validating commands...
+05-07 07:08 root  INFO  List of commands validated successfully
+05-07 07:08 root  INFO  current command: call dial()
+05-07 07:08 root  INFO  call dial() command matched
+05-07 07:08 axapi INFO  Got response 200 for call dial() in 10.18.8.245
+05-07 07:08 root  INFO  treating command
+05-07 07:08 root  INFO  execution time: 51.47
+05-07 07:08 root  INFO  ###### EXECUTION COMPLETED ######
+05-07 07:09 root  INFO  Pressed "run commands" under Telepresence tab
+05-07 07:09 root  INFO  '10.18.8.245,75149178181#' does not appear to be an IPv4 or IPv6 address
+05-07 07:09 root  INFO  Validating commands...
+05-07 07:09 root  INFO  List of commands validated successfully
+05-07 07:09 root  INFO  current command: call sendDTMF()
+05-07 07:09 root  INFO  call sendDTMF() command matched
+05-07 07:09 root  INFO  Discovering sw versions
+05-07 07:09 axapi INFO  Got response 200 for init sw() in 10.18.8.245
+05-07 07:09 root  INFO  treating command
+05-07 07:11 axapi INFO  Got response 200 for call sendDTMF() in 10.18.8.245
+05-07 07:11 root  INFO  treating command
+05-07 07:11 root  INFO  execution time: 168.71
+05-07 07:11 root  INFO  ###### EXECUTION COMPLETED ######
+05-07 07:12 root  INFO  Pressed "run commands" under Telepresence tab
+05-07 07:12 root  INFO  '10.18.8.245,886137295408' does not appear to be an IPv4 or IPv6 address
+05-07 07:12 root  INFO  Validating commands...
+05-07 07:12 root  INFO  List of commands validated successfully
+05-07 07:12 root  INFO  current command: call dial()
+05-07 07:12 root  INFO  call dial() command matched
+05-07 07:12 axapi INFO  Got response 200 for call dial() in 10.18.8.245
+05-07 07:12 root  INFO  treating command
+05-07 07:12 root  INFO  execution time: 13.02
+05-07 07:12 root  INFO  ###### EXECUTION COMPLETED ######
+05-07 07:12 root  INFO  Pressed "run commands" under Telepresence tab
+05-07 07:12 root  INFO  '10.18.8.245,886137295408' does not appear to be an IPv4 or IPv6 address
+05-07 07:12 root  INFO  Validating commands...
+05-07 07:12 root  INFO  List of commands validated successfully
+05-07 07:12 root  INFO  current command: call dial()
+05-07 07:12 root  INFO  call dial() command matched

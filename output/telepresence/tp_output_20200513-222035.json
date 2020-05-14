@@ -1,0 +1,44 @@
+[
+    {
+        "number of endpoints": "3",
+        "execution time": "101.52"
+    },
+    {
+        "10.9.35.233": {
+            "call disconnect()": {
+                "status": 200,
+                "response": {
+                    "Command": null
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.245": {
+            "call disconnect()": {
+                "status": 200,
+                "response": {
+                    "Command": {
+                        "CallDisconnectResult": {
+                            "@status": "OK"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.254": {
+            "call disconnect()": {
+                "status": 200,
+                "response": {
+                    "Command": {
+                        "CallDisconnectResult": {
+                            "@status": "OK"
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

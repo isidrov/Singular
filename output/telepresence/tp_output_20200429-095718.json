@@ -1,0 +1,28 @@
+[
+    {
+        "number of endpoints": "0",
+        "execution time": "194.58"
+    },
+    {
+        "10.9.35.233": {
+            "call dial()": {
+                "status": 200,
+                "response": {
+                    "Command": {
+                        "DialResult": {
+                            "@status": "OK",
+                            "CallId": {
+                                "@item": "1",
+                                "#text": "3"
+                            },
+                            "ConferenceId": {
+                                "@item": "1",
+                                "#text": "2"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

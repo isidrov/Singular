@@ -1,0 +1,20 @@
+[
+    {
+        "number of endpoints": "0",
+        "execution time": "7.40"
+    },
+    {
+        "10.9.35.233": {
+            "call sendDTMF()": {
+                "status": 200,
+                "response": {
+                    "Command": {
+                        "DTMFSendResult": {
+                            "@status": "OK"
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

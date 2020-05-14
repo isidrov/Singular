@@ -1,0 +1,104 @@
+03-04 09:50 root  INFO  installPath C:\Users\FernandI\AppData\Local\Temp\_MEI157162
+03-04 09:50 root  INFO  executablePath C:\Users\FernandI\Development\Projects\Singular\01_executables\Singular_1.0
+03-04 09:50 root  INFO  debugsPath C:\Users\FernandI\Development\Projects\Singular\01_executables\Singular_1.0\output\debugs
+03-04 09:50 root  INFO  logFileName Nautilus_20200304-095012.log
+03-04 09:50 root  INFO  logFilePath C:\Users\FernandI\Development\Projects\Singular\01_executables\Singular_1.0\output\debugs\Nautilus_20200304-095012.log
+03-04 09:50 root  INFO  schema pathC:\Users\FernandI\AppData\Local\Temp\_MEI157162\schema
+03-04 09:50 root  INFO  Logging initializated
+03-04 09:50 root  INFO  Executing
+03-04 09:50 werkzeug INFO   * Running on http://localhost:10060/ (Press CTRL+C to quit)
+03-04 09:50 root  INFO  YAML command file not found, copying it to script path
+03-04 09:50 root  INFO  Openning YAML command file in directoryC:\Users\FernandI\Development\Projects\Singular\01_executables\Singular_1.0\list_of_commands.yaml
+03-04 09:50 root  INFO  Multithreading with maximum 1 threads
+03-04 09:52 root  INFO  Pressed execute button under SQL tab
+03-04 09:52 root  INFO  username: a-isidro.fernandez
+03-04 09:52 root  INFO  UCM IP address: 205.195.232.205
+03-04 09:52 root  INFO  Creating UcmAXLConnection object for SQL execute 
+03-04 09:52 root  INFO  version: 11.5
+03-04 09:52 root  INFO  WSDL C:\Users\FernandI\AppData\Local\Temp\_MEI157162\schema\11.5\AXLAPI.wsdl
+03-04 09:52 root  INFO  UCMAXLConnection created! 
+03-04 09:52 root  INFO  SQL query is: select *
+from endusernumplanmap
+where fkenduser = '2c43bc06-39ae-ee7b-0179-58d9d86e1e30'
+03-04 09:52 root  INFO  Pressed execute button under SQL tab
+03-04 09:52 root  INFO  username: a-isidro.fernandez
+03-04 09:52 root  INFO  UCM IP address: 205.195.232.205
+03-04 09:52 root  INFO  Creating UcmAXLConnection object for SQL execute 
+03-04 09:52 root  INFO  version: 11.5
+03-04 09:52 root  INFO  WSDL C:\Users\FernandI\AppData\Local\Temp\_MEI157162\schema\11.5\AXLAPI.wsdl
+03-04 09:52 root  INFO  UCMAXLConnection created! 
+03-04 09:52 root  INFO  SQL query is: select *
+from endusernumplanmap
+where fkenduser = '3cba2733-6bac-b309-5df9-ca09e21d2285'
+03-04 09:53 root  INFO  Pressed execute button under SQL tab
+03-04 09:53 root  INFO  username: a-isidro.fernandez
+03-04 09:53 root  INFO  UCM IP address: 205.195.232.205
+03-04 09:53 root  INFO  Creating UcmAXLConnection object for SQL execute 
+03-04 09:53 root  INFO  version: 11.5
+03-04 09:53 root  INFO  WSDL C:\Users\FernandI\AppData\Local\Temp\_MEI157162\schema\11.5\AXLAPI.wsdl
+03-04 09:53 root  INFO  UCMAXLConnection created! 
+03-04 09:53 root  INFO  SQL query is: select *
+from endusernumplanmap
+where fkenduser = '2c43bc06-39ae-ee7b-0179-58d9d86e1e30'
+03-04 09:54 root  INFO  Pressed execute button under SQL tab
+03-04 09:54 root  INFO  username: a-isidro.fernandez
+03-04 09:54 root  INFO  UCM IP address: 205.195.232.205
+03-04 09:54 root  INFO  Creating UcmAXLConnection object for SQL execute 
+03-04 09:54 root  INFO  version: 11.5
+03-04 09:54 root  INFO  WSDL C:\Users\FernandI\AppData\Local\Temp\_MEI157162\schema\11.5\AXLAPI.wsdl
+03-04 09:54 root  INFO  UCMAXLConnection created! 
+03-04 09:54 root  INFO  SQL query is: select *
+from typednusage
+03-04 09:57 root  INFO  Pressed execute button under SQL tab
+03-04 09:57 root  INFO  username: a-isidro.fernandez
+03-04 09:57 root  INFO  UCM IP address: 205.195.232.205
+03-04 09:57 root  INFO  Creating UcmAXLConnection object for SQL execute 
+03-04 09:57 root  INFO  version: 11.5
+03-04 09:57 root  INFO  WSDL C:\Users\FernandI\AppData\Local\Temp\_MEI157162\schema\11.5\AXLAPI.wsdl
+03-04 09:57 root  INFO  UCMAXLConnection created! 
+03-04 09:57 root  INFO  SQL query is: select *
+from endusernumplanmap
+where fkenduser = '3cba2733-6bac-b309-5df9-ca09e21d2285'
+03-04 09:59 root  INFO  Pressed execute button under SQL tab
+03-04 09:59 root  INFO  username: a-isidro.fernandez
+03-04 09:59 root  INFO  UCM IP address: 205.195.232.205
+03-04 09:59 root  INFO  Creating UcmAXLConnection object for SQL execute 
+03-04 09:59 root  INFO  version: 11.5
+03-04 09:59 root  INFO  WSDL C:\Users\FernandI\AppData\Local\Temp\_MEI157162\schema\11.5\AXLAPI.wsdl
+03-04 09:59 root  INFO  UCMAXLConnection created! 
+03-04 09:59 root  INFO  SQL query is: select enduser.userid, numplan.dnorpattern 
+from enduser
+join endusernumplanmap on enduser.pkid = endusernumplanmap.fkenduser
+join numplan on numplan.pkid = endusernumplanmap.fknumplan
+where enduser.firstname like '%Isidro%' and endusernumplanmap.tkdnusage != 0
+03-04 09:59 root  INFO  Pressed execute button under SQL tab
+03-04 09:59 root  INFO  username: a-isidro.fernandez
+03-04 09:59 root  INFO  UCM IP address: 205.195.232.205
+03-04 09:59 root  INFO  Creating UcmAXLConnection object for SQL execute 
+03-04 09:59 root  INFO  version: 11.5
+03-04 09:59 root  INFO  WSDL C:\Users\FernandI\AppData\Local\Temp\_MEI157162\schema\11.5\AXLAPI.wsdl
+03-04 09:59 root  INFO  UCMAXLConnection created! 
+03-04 09:59 root  INFO  SQL query is: select enduser.userid, numplan.dnorpattern 
+from enduser
+join endusernumplanmap on enduser.pkid = endusernumplanmap.fkenduser
+join numplan on numplan.pkid = endusernumplanmap.fknumplan
+where enduser.firstname like '%Isidro%' and endusernumplanmap.tkdnusage != 1
+03-04 10:01 root  INFO  Pressed execute button under SQL tab
+03-04 10:01 root  INFO  username: a-isidro.fernandez
+03-04 10:01 root  INFO  UCM IP address: 205.195.232.205
+03-04 10:01 root  INFO  Creating UcmAXLConnection object for SQL execute 
+03-04 10:01 root  INFO  version: 11.5
+03-04 10:01 root  INFO  WSDL C:\Users\FernandI\AppData\Local\Temp\_MEI157162\schema\11.5\AXLAPI.wsdl
+03-04 10:01 root  INFO  UCMAXLConnection created! 
+03-04 10:01 root  INFO  SQL query is: select *
+from endusernumplanmap
+where fkenduser = '3cba2733-6bac-b309-5df9-ca09e21d2285'
+03-04 10:12 root  INFO  Pressed execute button under SQL tab
+03-04 10:12 root  INFO  username: a-isidro.fernandez
+03-04 10:12 root  INFO  UCM IP address: 205.195.232.205
+03-04 10:12 root  INFO  Creating UcmAXLConnection object for SQL execute 
+03-04 10:12 root  INFO  version: 11.5
+03-04 10:12 root  INFO  WSDL C:\Users\FernandI\AppData\Local\Temp\_MEI157162\schema\11.5\AXLAPI.wsdl
+03-04 10:12 root  INFO  UCMAXLConnection created! 
+03-04 10:12 root  INFO  SQL query is: select e.userid, n.dnorpattern from enduser as e, numplan as n, endusernumplanmap as eunpm 
+where (e.pkid = eunpm.fkenduser and eunpm.fknumplan = n.pkid and tkdnusage=1) and (enduser.userid like '%isidro%')

@@ -1,0 +1,38 @@
+04-29 10:02 root  INFO  installPath C:\Users\FernandI\Development\Projects\Singular
+04-29 10:02 root  INFO  executablePath C:\Users\FernandI\Development\Projects\Singular
+04-29 10:02 root  INFO  debugsPath C:\Users\FernandI\Development\Projects\Singular\output\debugs
+04-29 10:02 root  INFO  logFileName Nautilus_20200429-100259.log
+04-29 10:02 root  INFO  logFilePath C:\Users\FernandI\Development\Projects\Singular\output\debugs\Nautilus_20200429-100259.log
+04-29 10:02 root  INFO  schema pathC:\Users\FernandI\Development\Projects\Singular\schema
+04-29 10:02 root  INFO  Logging initializated
+04-29 10:03 root  INFO  Executing
+04-29 10:03 werkzeug INFO   * Running on http://localhost:10060/ (Press CTRL+C to quit)
+04-29 10:03 root  INFO  YAML command file found with executable!
+04-29 10:03 root  INFO  Openning YAML command file in directoryC:\Users\FernandI\Development\Projects\Singular\list_of_commands.yaml
+04-29 10:03 root  INFO  Multithreading with maximum 1 threads
+04-29 10:05 root  INFO  Pressed "run commands" under Telepresence tab
+04-29 10:05 root  INFO  '10.9.35.233,3629#' does not appear to be an IPv4 or IPv6 address
+04-29 10:05 root  INFO  Validating commands...
+04-29 10:05 root  INFO  List of commands validated successfully
+04-29 10:05 root  INFO  current command: call sendDTMF()
+04-29 10:06 root  INFO  call sendDTMF() command matched
+04-29 10:06 root  INFO  Discovering sw versions
+04-29 10:06 axapi INFO  Got response 200 for init sw() in 10.9.35.233
+04-29 10:06 root  INFO  treating command
+04-29 10:07 axapi INFO  Got response 200 for call sendDTMF() in 10.9.35.233
+04-29 10:07 root  INFO  treating command
+04-29 10:07 root  INFO  execution time: 120.10
+04-29 10:07 root  INFO  ###### EXECUTION COMPLETED ######
+04-29 10:10 root  INFO  Pressed "run commands" under Telepresence tab
+04-29 10:10 root  INFO  '10.9.35.233,3629#' does not appear to be an IPv4 or IPv6 address
+04-29 10:10 root  INFO  Validating commands...
+04-29 10:10 root  INFO  List of commands validated successfully
+04-29 10:10 root  INFO  current command: call sendDTMF()
+04-29 10:10 root  INFO  call sendDTMF() command matched
+04-29 10:10 root  INFO  Discovering sw versions
+04-29 10:10 axapi INFO  Got response 200 for init sw() in 10.9.35.233
+04-29 10:10 root  INFO  treating command
+04-29 10:10 axapi INFO  Got response 200 for call sendDTMF() in 10.9.35.233
+04-29 10:10 root  INFO  treating command
+04-29 10:10 root  INFO  execution time: 7.40
+04-29 10:10 root  INFO  ###### EXECUTION COMPLETED ######

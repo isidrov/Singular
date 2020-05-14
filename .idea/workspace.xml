@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8feea168-adf6-4018-9121-47b861d3dede" name="Default Changelist" comment="" />
+    <list default="true" id="8feea168-adf6-4018-9121-47b861d3dede" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe/Release_Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe/Release_Notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/axapi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log_file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/singular.py" beforeDir="false" afterPath="$PROJECT_DIR$/singular.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/nautilus" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1X7rURYw544l3wsok8yqRSDWsZ0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -19,8 +27,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Environments/singular_env" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PortScanner" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\FernandI\Development\Projects\Singular\AXLCollector" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\FernandI\Development\Projects\Singular\schema\12.5" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="singular" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -76,82 +92,176 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="433" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580485589973">
+    <state x="47" y="98" key="#Notifications" timestamp="1588942128138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="433" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/-477.1080.1368.892/0.0.1920.1040/1920.-18.1920.1040@0.0.1920.1040" timestamp="1580485589973" />
-    <state x="737" y="301" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580932065546">
+    <state x="47" y="98" key="#Notifications/0.0.1920.1040/-367.1080.1368.872@0.0.1920.1040" timestamp="1588942128138" />
+    <state x="737" y="301" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582306987224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="737" y="301" key="#com.intellij.fileTypes.FileTypeChooser/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582306987224" />
     <state x="737" y="301" key="#com.intellij.fileTypes.FileTypeChooser/-477.1080.1368.892/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1580932065546" />
-    <state x="698" y="143" key="#nautilus" timestamp="1580486335159">
+    <state x="407" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588162398736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="698" y="143" key="#nautilus/-477.1080.1368.892/0.0.1920.1040/1920.-18.1920.1040@0.0.1920.1040" timestamp="1580486335159" />
-    <state x="758" y="301" width="440" height="458" key="FileChooserDialogImpl" timestamp="1580484967155">
+    <state x="407" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-423.1080.1368.872@0.0.1920.1040" timestamp="1588162398736" />
+    <state width="532" height="466" key="DebuggerActiveHint" timestamp="1586280741642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="758" y="301" width="440" height="458" key="FileChooserDialogImpl/-477.1080.1368.892/0.0.1920.1040/1920.-18.1920.1040@0.0.1920.1040" timestamp="1580484967155" />
-    <state width="1634" height="306" key="GridCell.Tab.0.bottom" timestamp="1581346802361">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state width="532" height="466" key="DebuggerActiveHint/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1586280741642" />
+    <state x="758" y="301" width="440" height="458" key="FileChooserDialogImpl" timestamp="1585923577578">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="758" y="301" key="FileChooserDialogImpl/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583250176207" />
+    <state x="758" y="301" key="FileChooserDialogImpl/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1585923577578" />
+    <state width="1816" height="203" key="GridCell.Tab.0.bottom" timestamp="1589422669332">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="329" key="GridCell.Tab.0.bottom/-1920.8.1920.1040/0.0.1920.1040/-1397.1088.1368.872@0.0.1920.1040" timestamp="1582142388878" />
+    <state width="1343" height="273" key="GridCell.Tab.0.bottom/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1583766187587" />
+    <state width="1899" height="211" key="GridCell.Tab.0.bottom/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583354331119" />
     <state width="860" height="104" key="GridCell.Tab.0.bottom/-477.1080.1368.892/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1580930859985" />
-    <state width="1362" height="266" key="GridCell.Tab.0.bottom/-477.1080.1368.892/0.0.1920.1040/1920.-18.1920.1040@0.0.1920.1040" timestamp="1580486356719" />
-    <state width="1634" height="306" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1581346802361" />
+    <state width="1335" height="226" key="GridCell.Tab.0.bottom/0.0.1368.872/457.-1080.1920.1040@0.0.1368.872" timestamp="1589241444125" />
+    <state width="1291" height="163" key="GridCell.Tab.0.bottom/0.0.1368.872/457.-1080.1920.1040@457.-1080.1920.1040" timestamp="1588961695780" />
+    <state width="888" height="275" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1588796931660" />
+    <state width="1337" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1586348429473" />
+    <state width="1814" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1040/-350.1080.1368.872@0.0.1920.1040" timestamp="1584041138678" />
+    <state width="1754" height="163" key="GridCell.Tab.0.bottom/0.0.1920.1040/-367.1080.1368.872@0.0.1920.1040" timestamp="1588960427954" />
+    <state width="1806" height="337" key="GridCell.Tab.0.bottom/0.0.1920.1040/-423.1080.1368.872@0.0.1920.1040" timestamp="1588810567221" />
     <state width="1634" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1581099365009" />
-    <state width="1634" height="306" key="GridCell.Tab.0.center" timestamp="1581346802361">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state width="1539" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586440096078" />
+    <state width="1816" height="203" key="GridCell.Tab.0.bottom/0.40.1920.1040/-350.1080.1368.872@0.40.1920.1040" timestamp="1589422669332" />
+    <state width="1816" height="203" key="GridCell.Tab.0.center" timestamp="1589422669331">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
+    <state width="1899" height="329" key="GridCell.Tab.0.center/-1920.8.1920.1040/0.0.1920.1040/-1397.1088.1368.872@0.0.1920.1040" timestamp="1582142388878" />
+    <state width="1343" height="273" key="GridCell.Tab.0.center/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1583766187587" />
+    <state width="1899" height="211" key="GridCell.Tab.0.center/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583354331118" />
     <state width="860" height="104" key="GridCell.Tab.0.center/-477.1080.1368.892/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1580930859985" />
-    <state width="1362" height="266" key="GridCell.Tab.0.center/-477.1080.1368.892/0.0.1920.1040/1920.-18.1920.1040@0.0.1920.1040" timestamp="1580486356719" />
-    <state width="1634" height="306" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1581346802361" />
+    <state width="1335" height="226" key="GridCell.Tab.0.center/0.0.1368.872/457.-1080.1920.1040@0.0.1368.872" timestamp="1589241444125" />
+    <state width="1291" height="163" key="GridCell.Tab.0.center/0.0.1368.872/457.-1080.1920.1040@457.-1080.1920.1040" timestamp="1588961695780" />
+    <state width="888" height="275" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1588796931660" />
+    <state width="1337" height="276" key="GridCell.Tab.0.center/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1586348429472" />
+    <state width="1814" height="313" key="GridCell.Tab.0.center/0.0.1920.1040/-350.1080.1368.872@0.0.1920.1040" timestamp="1584041138678" />
+    <state width="1754" height="163" key="GridCell.Tab.0.center/0.0.1920.1040/-367.1080.1368.872@0.0.1920.1040" timestamp="1588960427953" />
+    <state width="1806" height="337" key="GridCell.Tab.0.center/0.0.1920.1040/-423.1080.1368.872@0.0.1920.1040" timestamp="1588810567221" />
     <state width="1634" height="306" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1581099365009" />
-    <state width="1634" height="306" key="GridCell.Tab.0.left" timestamp="1581346802361">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state width="1539" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586440096078" />
+    <state width="1816" height="203" key="GridCell.Tab.0.center/0.40.1920.1040/-350.1080.1368.872@0.40.1920.1040" timestamp="1589422669331" />
+    <state width="1816" height="203" key="GridCell.Tab.0.left" timestamp="1589422669331">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
+    <state width="1899" height="329" key="GridCell.Tab.0.left/-1920.8.1920.1040/0.0.1920.1040/-1397.1088.1368.872@0.0.1920.1040" timestamp="1582142388877" />
+    <state width="1343" height="273" key="GridCell.Tab.0.left/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1583766187586" />
+    <state width="1899" height="211" key="GridCell.Tab.0.left/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583354331116" />
     <state width="860" height="104" key="GridCell.Tab.0.left/-477.1080.1368.892/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1580930859985" />
-    <state width="1362" height="266" key="GridCell.Tab.0.left/-477.1080.1368.892/0.0.1920.1040/1920.-18.1920.1040@0.0.1920.1040" timestamp="1580486356719" />
-    <state width="1634" height="306" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1581346802361" />
+    <state width="1335" height="226" key="GridCell.Tab.0.left/0.0.1368.872/457.-1080.1920.1040@0.0.1368.872" timestamp="1589241444125" />
+    <state width="1291" height="163" key="GridCell.Tab.0.left/0.0.1368.872/457.-1080.1920.1040@457.-1080.1920.1040" timestamp="1588961695779" />
+    <state width="888" height="275" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1588796931659" />
+    <state width="1337" height="276" key="GridCell.Tab.0.left/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1586348429472" />
+    <state width="1814" height="313" key="GridCell.Tab.0.left/0.0.1920.1040/-350.1080.1368.872@0.0.1920.1040" timestamp="1584041138678" />
+    <state width="1754" height="163" key="GridCell.Tab.0.left/0.0.1920.1040/-367.1080.1368.872@0.0.1920.1040" timestamp="1588960427953" />
+    <state width="1806" height="337" key="GridCell.Tab.0.left/0.0.1920.1040/-423.1080.1368.872@0.0.1920.1040" timestamp="1588810567221" />
     <state width="1634" height="306" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1581099365008" />
-    <state width="1634" height="306" key="GridCell.Tab.0.right" timestamp="1581346802361">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state width="1539" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586440096078" />
+    <state width="1816" height="203" key="GridCell.Tab.0.left/0.40.1920.1040/-350.1080.1368.872@0.40.1920.1040" timestamp="1589422669331" />
+    <state width="1816" height="203" key="GridCell.Tab.0.right" timestamp="1589422669332">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
+    <state width="1899" height="329" key="GridCell.Tab.0.right/-1920.8.1920.1040/0.0.1920.1040/-1397.1088.1368.872@0.0.1920.1040" timestamp="1582142388878" />
+    <state width="1343" height="273" key="GridCell.Tab.0.right/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1583766187587" />
+    <state width="1899" height="211" key="GridCell.Tab.0.right/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583354331118" />
     <state width="860" height="104" key="GridCell.Tab.0.right/-477.1080.1368.892/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1580930859985" />
-    <state width="1362" height="266" key="GridCell.Tab.0.right/-477.1080.1368.892/0.0.1920.1040/1920.-18.1920.1040@0.0.1920.1040" timestamp="1580486356719" />
-    <state width="1634" height="306" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1581346802361" />
+    <state width="1335" height="226" key="GridCell.Tab.0.right/0.0.1368.872/457.-1080.1920.1040@0.0.1368.872" timestamp="1589241444125" />
+    <state width="1291" height="163" key="GridCell.Tab.0.right/0.0.1368.872/457.-1080.1920.1040@457.-1080.1920.1040" timestamp="1588961695780" />
+    <state width="888" height="275" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1588796931660" />
+    <state width="1337" height="276" key="GridCell.Tab.0.right/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1586348429473" />
+    <state width="1814" height="313" key="GridCell.Tab.0.right/0.0.1920.1040/-350.1080.1368.872@0.0.1920.1040" timestamp="1584041138678" />
+    <state width="1754" height="163" key="GridCell.Tab.0.right/0.0.1920.1040/-367.1080.1368.872@0.0.1920.1040" timestamp="1588960427953" />
+    <state width="1806" height="337" key="GridCell.Tab.0.right/0.0.1920.1040/-423.1080.1368.872@0.0.1920.1040" timestamp="1588810567221" />
     <state width="1634" height="306" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1581099365009" />
-    <state width="1634" height="306" key="GridCell.Tab.1.bottom" timestamp="1581346802362">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state width="1539" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586440096078" />
+    <state width="1816" height="203" key="GridCell.Tab.0.right/0.40.1920.1040/-350.1080.1368.872@0.40.1920.1040" timestamp="1589422669332" />
+    <state width="1816" height="203" key="GridCell.Tab.1.bottom" timestamp="1589422729816">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1634" height="306" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1581346802362" />
+    <state width="1899" height="329" key="GridCell.Tab.1.bottom/-1920.8.1920.1040/0.0.1920.1040/-1397.1088.1368.872@0.0.1920.1040" timestamp="1582142412571" />
+    <state width="1899" height="376" key="GridCell.Tab.1.bottom/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583272239649" />
+    <state width="1291" height="163" key="GridCell.Tab.1.bottom/0.0.1368.872/457.-1080.1920.1040@0.0.1368.872" timestamp="1589241444043" />
+    <state width="1291" height="163" key="GridCell.Tab.1.bottom/0.0.1368.872/457.-1080.1920.1040@457.-1080.1920.1040" timestamp="1588961695780" />
+    <state width="888" height="275" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1588796931661" />
+    <state width="1337" height="276" key="GridCell.Tab.1.bottom/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1586348429475" />
+    <state width="1814" height="313" key="GridCell.Tab.1.bottom/0.0.1920.1040/-350.1080.1368.872@0.0.1920.1040" timestamp="1584041114968" />
+    <state width="1754" height="163" key="GridCell.Tab.1.bottom/0.0.1920.1040/-367.1080.1368.872@0.0.1920.1040" timestamp="1588960427954" />
+    <state width="1806" height="337" key="GridCell.Tab.1.bottom/0.0.1920.1040/-423.1080.1368.872@0.0.1920.1040" timestamp="1588810688967" />
     <state width="1634" height="306" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1581099365009" />
-    <state width="1634" height="306" key="GridCell.Tab.1.center" timestamp="1581346802362">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state width="1539" height="276" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586440149797" />
+    <state width="1816" height="203" key="GridCell.Tab.1.bottom/0.40.1920.1040/-350.1080.1368.872@0.40.1920.1040" timestamp="1589422729816" />
+    <state width="1816" height="203" key="GridCell.Tab.1.center" timestamp="1589422729816">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1634" height="306" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1581346802362" />
+    <state width="1899" height="329" key="GridCell.Tab.1.center/-1920.8.1920.1040/0.0.1920.1040/-1397.1088.1368.872@0.0.1920.1040" timestamp="1582142412571" />
+    <state width="1899" height="376" key="GridCell.Tab.1.center/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583272239649" />
+    <state width="1291" height="163" key="GridCell.Tab.1.center/0.0.1368.872/457.-1080.1920.1040@0.0.1368.872" timestamp="1589241444041" />
+    <state width="1291" height="163" key="GridCell.Tab.1.center/0.0.1368.872/457.-1080.1920.1040@457.-1080.1920.1040" timestamp="1588961695780" />
+    <state width="888" height="275" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1588796931660" />
+    <state width="1337" height="276" key="GridCell.Tab.1.center/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1586348429475" />
+    <state width="1814" height="313" key="GridCell.Tab.1.center/0.0.1920.1040/-350.1080.1368.872@0.0.1920.1040" timestamp="1584041114967" />
+    <state width="1754" height="163" key="GridCell.Tab.1.center/0.0.1920.1040/-367.1080.1368.872@0.0.1920.1040" timestamp="1588960427954" />
+    <state width="1806" height="337" key="GridCell.Tab.1.center/0.0.1920.1040/-423.1080.1368.872@0.0.1920.1040" timestamp="1588810688967" />
     <state width="1634" height="306" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1581099365009" />
-    <state width="1634" height="306" key="GridCell.Tab.1.left" timestamp="1581346802361">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state width="1539" height="276" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586440149797" />
+    <state width="1816" height="203" key="GridCell.Tab.1.center/0.40.1920.1040/-350.1080.1368.872@0.40.1920.1040" timestamp="1589422729816" />
+    <state width="1816" height="203" key="GridCell.Tab.1.left" timestamp="1589422729816">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1634" height="306" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1581346802361" />
+    <state width="1899" height="329" key="GridCell.Tab.1.left/-1920.8.1920.1040/0.0.1920.1040/-1397.1088.1368.872@0.0.1920.1040" timestamp="1582142412571" />
+    <state width="1899" height="376" key="GridCell.Tab.1.left/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583272239649" />
+    <state width="1291" height="163" key="GridCell.Tab.1.left/0.0.1368.872/457.-1080.1920.1040@0.0.1368.872" timestamp="1589241444041" />
+    <state width="1291" height="163" key="GridCell.Tab.1.left/0.0.1368.872/457.-1080.1920.1040@457.-1080.1920.1040" timestamp="1588961695780" />
+    <state width="888" height="275" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1588796931660" />
+    <state width="1337" height="276" key="GridCell.Tab.1.left/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1586348429474" />
+    <state width="1814" height="313" key="GridCell.Tab.1.left/0.0.1920.1040/-350.1080.1368.872@0.0.1920.1040" timestamp="1584041114967" />
+    <state width="1754" height="163" key="GridCell.Tab.1.left/0.0.1920.1040/-367.1080.1368.872@0.0.1920.1040" timestamp="1588960427954" />
+    <state width="1806" height="337" key="GridCell.Tab.1.left/0.0.1920.1040/-423.1080.1368.872@0.0.1920.1040" timestamp="1588810688967" />
     <state width="1634" height="306" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1581099365009" />
-    <state width="1634" height="306" key="GridCell.Tab.1.right" timestamp="1581346802362">
+    <state width="1539" height="276" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586440149796" />
+    <state width="1816" height="203" key="GridCell.Tab.1.left/0.40.1920.1040/-350.1080.1368.872@0.40.1920.1040" timestamp="1589422729816" />
+    <state width="1816" height="203" key="GridCell.Tab.1.right" timestamp="1589422729816">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="329" key="GridCell.Tab.1.right/-1920.8.1920.1040/0.0.1920.1040/-1397.1088.1368.872@0.0.1920.1040" timestamp="1582142412571" />
+    <state width="1899" height="376" key="GridCell.Tab.1.right/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583272239649" />
+    <state width="1291" height="163" key="GridCell.Tab.1.right/0.0.1368.872/457.-1080.1920.1040@0.0.1368.872" timestamp="1589241444041" />
+    <state width="1291" height="163" key="GridCell.Tab.1.right/0.0.1368.872/457.-1080.1920.1040@457.-1080.1920.1040" timestamp="1588961695780" />
+    <state width="888" height="275" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1588796931660" />
+    <state width="1337" height="276" key="GridCell.Tab.1.right/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1586348429475" />
+    <state width="1814" height="313" key="GridCell.Tab.1.right/0.0.1920.1040/-350.1080.1368.872@0.0.1920.1040" timestamp="1584041114967" />
+    <state width="1754" height="163" key="GridCell.Tab.1.right/0.0.1920.1040/-367.1080.1368.872@0.0.1920.1040" timestamp="1588960427954" />
+    <state width="1806" height="337" key="GridCell.Tab.1.right/0.0.1920.1040/-423.1080.1368.872@0.0.1920.1040" timestamp="1588810688967" />
+    <state width="1634" height="306" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1581099365009" />
+    <state width="1539" height="276" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586440149797" />
+    <state width="1816" height="203" key="GridCell.Tab.1.right/0.40.1920.1040/-350.1080.1368.872@0.40.1920.1040" timestamp="1589422729816" />
+    <state width="549" height="439" key="XDebugger.FullValuePopup" timestamp="1588849316271">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1634" height="306" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1581346802362" />
-    <state width="1634" height="306" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1581099365009" />
-    <state x="480" y="159" key="SettingsEditor" timestamp="1580485017236">
+    <state width="770" height="523" key="XDebugger.FullValuePopup/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582738277738" />
+    <state width="549" height="439" key="XDebugger.FullValuePopup/0.0.1368.872/457.-1080.1920.1040@0.0.1368.872" timestamp="1588849316271" />
+    <state width="770" height="523" key="XDebugger.FullValuePopup/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1585598946832" />
+    <state width="770" height="523" key="XDebugger.FullValuePopup/0.0.1920.1040/-423.1080.1368.872@0.0.1920.1040" timestamp="1588685618647" />
+    <state x="661" y="385" key="com.intellij.ide.util.TipDialog" timestamp="1589421373800">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="661" y="345" key="com.intellij.ide.util.TipDialog/-1920.8.1920.1040/0.0.1920.1040/-1397.1088.1368.872@0.0.1920.1040" timestamp="1582130681789" />
+    <state x="661" y="345" key="com.intellij.ide.util.TipDialog/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583247851989" />
+    <state x="471" y="289" key="com.intellij.ide.util.TipDialog/0.0.1368.872/457.-1080.1920.1040@0.0.1368.872" timestamp="1588846214882" />
+    <state x="661" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1585674885350" />
+    <state x="661" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-423.1080.1368.872@0.0.1920.1040" timestamp="1588797549417" />
+    <state x="661" y="385" key="com.intellij.ide.util.TipDialog/0.40.1920.1040/-350.1080.1368.872@0.40.1920.1040" timestamp="1589421373800" />
+    <state x="827" y="263" width="672" height="678" key="search.everywhere.popup" timestamp="1586202765824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="480" y="159" key="SettingsEditor/-477.1080.1368.892/0.0.1920.1040/1920.-18.1920.1040@0.0.1920.1040" timestamp="1580485017236" />
-    <state x="661" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1581619411631">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="661" y="345" key="com.intellij.ide.util.TipDialog/-1920.8.1920.1040/0.0.1920.1040/-1397.1088.1368.872@0.0.1920.1040" timestamp="1581619411631" />
-    <state x="661" y="345" key="com.intellij.ide.util.TipDialog/-477.1080.1368.892/0.0.1920.1040/1920.-18.1920.1040@0.0.1920.1040" timestamp="1580483962919" />
-    <state x="827" y="263" width="672" height="678" key="search.everywhere.popup" timestamp="1581008603130">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
+    <state x="827" y="263" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-349.1080.1368.872@0.0.1920.1040" timestamp="1586202765824" />
     <state x="827" y="263" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-17.1920.1040@0.0.1920.1040" timestamp="1581008603130" />
   </component>
   <component name="XDebuggerManager">
@@ -159,105 +269,660 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3472</line>
-          <option name="timeStamp" value="1" />
+          <line>3329</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3470</line>
-          <option name="timeStamp" value="2" />
+          <line>3131</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3481</line>
-          <option name="timeStamp" value="3" />
+          <line>3132</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3482</line>
-          <option name="timeStamp" value="4" />
+          <line>3054</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>146</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3483</line>
-          <option name="timeStamp" value="5" />
+          <line>2935</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3484</line>
-          <option name="timeStamp" value="6" />
+          <line>2933</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>120</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>178</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>245</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>137</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>138</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>180</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>182</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>184</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>186</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3486</line>
-          <option name="timeStamp" value="7" />
+          <line>3048</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3491</line>
-          <option name="timeStamp" value="8" />
+          <line>3056</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webex.py</url>
+          <line>148</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3493</line>
-          <option name="timeStamp" value="9" />
+          <line>2950</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>327</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>329</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>333</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>353</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>357</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>337</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>335</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>1375</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>359</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>1469</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>311</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>314</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>316</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>352</line>
+          <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3499</line>
-          <option name="timeStamp" value="10" />
+          <line>2446</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>117</line>
+          <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3501</line>
-          <option name="timeStamp" value="11" />
+          <line>2568</line>
+          <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3503</line>
-          <option name="timeStamp" value="12" />
+          <line>2572</line>
+          <option name="timeStamp" value="137" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3510</line>
-          <option name="timeStamp" value="13" />
+          <line>2667</line>
+          <option name="timeStamp" value="138" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3513</line>
-          <option name="timeStamp" value="14" />
+          <line>2639</line>
+          <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3537</line>
-          <option name="timeStamp" value="15" />
+          <line>2559</line>
+          <option name="timeStamp" value="142" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3504</line>
-          <option name="timeStamp" value="16" />
+          <line>2641</line>
+          <option name="timeStamp" value="143" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3506</line>
-          <option name="timeStamp" value="17" />
+          <line>2658</line>
+          <option name="timeStamp" value="144" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3474</line>
-          <option name="timeStamp" value="18" />
+          <line>2889</line>
+          <option name="timeStamp" value="145" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3476</line>
-          <option name="timeStamp" value="19" />
+          <line>2897</line>
+          <option name="timeStamp" value="146" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/singular.py</url>
-          <line>3478</line>
-          <option name="timeStamp" value="20" />
+          <line>2859</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>2893</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>2612</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>2614</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>2618</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>2635</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>400</line>
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>599</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>446</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>489</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>181</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>870</line>
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>223</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>2574</line>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>156</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AXLPlugin.py</url>
+          <line>274</line>
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>2589</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3973</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3986</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3974</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>2586</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>2555</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>2674</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3250</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3251</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3021</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>2687</line>
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3734</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3616</line>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>406</line>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3273</line>
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>2855</line>
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>410</line>
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3274</line>
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3275</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3255</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3253</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3258</line>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3566</line>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>890</line>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>876</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>192</line>
+          <option name="timeStamp" value="242" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>194</line>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>269</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3285</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3287</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3540</line>
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3541</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3263</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>351</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3265</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3264</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3555</line>
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3556</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3559</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3560</line>
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3561</line>
+          <option name="timeStamp" value="257" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3562</line>
+          <option name="timeStamp" value="258" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3563</line>
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3564</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3570</line>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3587</line>
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3581</line>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3577</line>
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3578</line>
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3583</line>
+          <option name="timeStamp" value="268" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3585</line>
+          <option name="timeStamp" value="269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/singular.py</url>
+          <line>3268</line>
+          <option name="timeStamp" value="270" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>178</line>
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>182</line>
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>1367</line>
+          <option name="timeStamp" value="273" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>184</line>
+          <option name="timeStamp" value="274" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>186</line>
+          <option name="timeStamp" value="275" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/axapi.py</url>
+          <line>221</line>
+          <option name="timeStamp" value="276" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="row" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

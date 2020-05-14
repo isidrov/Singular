@@ -1,0 +1,179 @@
+[
+    {
+        "number of endpoints": "17",
+        "execution time": "21.05"
+    },
+    {
+        "10.18.8.124": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134048@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-4-214 SPC 1636134048"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.125": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134089@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 4-4-219 SPC 1636134089"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.126": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134047@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-5-219 SPC 1636134047"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.127": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134046@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-5-214 SPC 1636134046"
+                }
+            }
+        }
+    },
+    {
+        "ip": "10.18.8.128",
+        "result": "ERROR"
+    },
+    {
+        "10.18.8.129": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134091@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 4-4-233 SPC 1636134091"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.132": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134044@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-4-207 SPC 1636134044"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.133": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134043@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-5-236 SPC 1636134043"
+                }
+            }
+        }
+    },
+    {
+        "ip": "10.18.8.134",
+        "result": "ERROR"
+    },
+    {
+        "10.18.8.135": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134041@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-3-214 SPC 1636134041"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.136": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134072@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-3-219 SPC 1636134072"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.222": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134088@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-5-207 SPC 1636134088"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.244": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134052@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-3-236 SPC 1636134052"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.245": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134053@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-4-236 SPC 1636134053"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.250": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134090@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 4-4-216 SPC 1636134090"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.251": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134060@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-4-205 SPC 1636134060"
+                }
+            }
+        }
+    },
+    {
+        "10.18.8.254": {
+            "show status(ContactInfo)": {
+                "status": 200,
+                "response": {
+                    "Status.UserInterface.ContactInfo.ContactMethod.Number": "1636134042@video.gc.ca",
+                    "Status.UserInterface.ContactInfo.Name": "SSC OTT 1285 Baseline 3-4-219 SPC 1636134042"
+                }
+            }
+        }
+    }
+]
