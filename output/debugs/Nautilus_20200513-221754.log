@@ -10,3 +10,19 @@
 05-13 22:17 root  INFO  YAML command file found with executable!
 05-13 22:17 root  INFO  Openning YAML command file in directoryC:\Users\FernandI\Development\Projects\Singular\list_of_commands.yaml
 05-13 22:17 root  INFO  Multithreading with maximum 1 threads
+05-13 22:18 root  INFO  Pressed "run commands" under Telepresence tab
+05-13 22:18 root  INFO  Validating commands...
+05-13 22:18 root  INFO  List of commands validated successfully
+05-13 22:18 root  INFO  current command: call disconnect()
+05-13 22:18 root  INFO  call disconnect() command matched
+05-13 22:19 root  INFO  Discovering sw versions
+05-13 22:19 axapi INFO  Got response 200 for init sw() in 10.18.8.245
+05-13 22:19 axapi INFO  Got response 200 for init sw() in 10.9.35.233
+05-13 22:19 axapi INFO  Got response 200 for init sw() in 10.18.8.254
+05-13 22:19 root  INFO  treating command
+05-13 22:20 axapi INFO  Got response 200 for call disconnect() in 10.18.8.245
+05-13 22:20 axapi INFO  Got response 200 for call disconnect() in 10.18.8.254
+05-13 22:20 axapi INFO  Got response 200 for call disconnect() in 10.9.35.233
+05-13 22:20 root  INFO  treating command
+05-13 22:20 root  INFO  execution time: 101.52
+05-13 22:20 root  INFO  ###### EXECUTION COMPLETED ######

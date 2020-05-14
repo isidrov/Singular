@@ -1,8 +1,0 @@
-[
-    {
-        "number of endpoints": "2",
-        "execution time": "102.58"
-    },
-    "result,callId,19,AnswerState,Answered,CallPriority,None,CallType,Video,CallbackNumber,sip:1636134053@video.gc.ca,DeviceType,Endpoint,Direction,Outgoing,DisplayName,1636134053,@func_get,2,@func_item,19,Duration,11067,Type,Aes-128,FacilityServiceId,0,ModifyState,Idle,PlacedOnHold,False,Protocol,sip,ReceiveCallRate,768,RemoteNumber,1636134053@video.gc.ca,Status,Connected,TransmitCallRate,768",
-    "result,callId,39,@maxOccurrence,n,AnswerState,Answered,CallType,Video,CallbackNumber,sip:1636134027@video.gc.ca,DeviceType,Endpoint,Direction,Incoming,DisplayName,Lei Mo (SSC/SPC) 1636134027,Duration,11067,Type,AES-128,FacilityServiceId,0,HoldReason,None,Ice,Disabled,PlacedOnHold,False,Protocol,SIP,ReceiveCallRate,6000,RemoteNumber,1636134027@video.gc.ca,Status,Connected,TransmitCallRate,768"
-]
