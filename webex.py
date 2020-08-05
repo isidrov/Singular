@@ -14,7 +14,7 @@ class Webex:
     def __init__(self, token, concurrent = 20):
 
         self.token = token
-        self.url = 'https://api.ciscospark.com/v1/'
+        self.url = 'https://webexapis.com/v1/'
         self.headers = {'accept': 'application/json', 'Content-Type': 'application/json',
                    'Authorization': 'Bearer ' + self.token}
         self.concurrent = concurrent
@@ -97,6 +97,22 @@ class Webex:
 
                                     tasks.append(task)
 
+                    if command == 'show webex devices favorites()':
+
+                        for device_id in self.arguments:
+
+                            data = {
+	                            "deviceId": device_id,
+                                "arguments": {
+    	                            "phonebooktype": "Local"
+                                }
+
+                            }
+                            task = asyncio.create_task(self.post(url=url, data=data, session=session,
+                                                                 command=command))
+
+                            tasks.append(task)
+
 
                 except Exception as err:
                     logging.error(err)
@@ -126,6 +142,8 @@ class Webex:
             'run migrate2cloud()': 'post',
             'list webexDevices()' : 'get',
             'show webex places()' : 'get',
+            'show webex devices()': 'get',
+            'show webex devices favorites()': 'post',
             'get webexPlaces()': 'get',
             'get webexActivationCode4migration()' : 'post',
             'add webexPlaces()' : 'post',
@@ -144,10 +162,12 @@ class Webex:
 
     def obtain_url(self, command, argument1 = ''):
 
-        if argument1: #TODO consider removing
+        if argument1 or self.arguments: #TODO consider migrating argumet1 to self.arguments
 
             map_dict = {
                 'show webex places()' : f'places?displayName={argument1}',
+                'show webex devices()': f'devices?displayName={self.arguments[0]}',
+                'show webex devices favorites()': 'xapi/command/phonebook.search',
                 'get webexPlace()': 'places',
                 'add webexPlaces()': 'places',
                 'add webexPlaces4migration()': 'places',

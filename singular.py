@@ -2795,6 +2795,7 @@ class Ui_Nautilus(object):
                     'show commands(<optional_status_item_filter>)',
                     'show webex devices()',
                     'show webex devices status(<optional_filters, comma separated>)',
+                    'show webex devices favorites(<optional device name>)',
                     'show config(<optional_filter>)',
                     'show favorites()',
                     'show users()',
@@ -2819,7 +2820,8 @@ class Ui_Nautilus(object):
                     'add contact(<name>,<number>)',
                     'add user(<username>,<password>,<role>)',
                     'add userRole(<username>,<role>)',
-                    'add exp searchRules()'
+                    'add exp searchRules()',
+                    'add webex devices favorites()'
                 ],
                 'upload': [
                     'upload brandingAwake(<image_file_name.ext>)',
@@ -2931,69 +2933,110 @@ class Ui_Nautilus(object):
                         command = self.remove_arguments(command)
                         result = axapi.runIt(command=command)
 
-                    elif re.match('show webex places\((.*)\)', command) is not None:
+                    elif command.startswith('show webex'):
 
-                        logging.info('show webex places() command matched')
-                        webexAccessToken = self.getwebexToken()
+                        if re.match('show webex places\((.*)\)', command) is not None:
 
-                        if webexAccessToken:
+                            logging.info('show webex places() command matched')
+                            webexAccessToken = self.getwebexToken()
 
-                            regex_result = re.search('show webex places\((.*)\)', command)
-                            place = regex_result.group(1)
-                            webex = Webex(webexAccessToken)
-                            result = webex.runIt('show webex places()', place)
+                            if webexAccessToken:
 
-                        else:
-                            result = [{'result': 'No Access token found, click on oAuth Webex link'}]
+                                regex_result = re.search('show webex places\((.*)\)', command)
+                                place = regex_result.group(1)
+                                webex = Webex(webexAccessToken)
+                                result = webex.runIt('show webex places()', place)
 
-                    elif re.match('show webex devices\((.*)\)', command) is not None:
+                            else:
+                                result = [{'result': 'No Access token found, click on oAuth Webex link'}]
 
-                        logging.info(f'{command} matched')
-                        regex_result = re.search('show webex devices status\((.*)\)', command)
-                        command = self.remove_arguments(command)
-                        webexAccessToken = self.getwebexToken()
+                        elif re.match('show webex devices\((.*)\)', command) is not None:
 
-                        if webexAccessToken:
+                            logging.info(f'{command} matched')
+                            regex_result = re.search('show webex devices\((.*)\)', command)
+                            command = self.remove_arguments(command)
+                            webexAccessToken = self.getwebexToken()
 
-                            filters = []
+                            if webexAccessToken:
 
-                            if regex_result:
+                                filters = []
 
-                                filter = regex_result.group(1)
+                                if regex_result:
 
-                                if ',' in filter:
-                                    filters = filter.split(',')
+                                    filter = regex_result.group(1)
 
-                                else:
-                                    filters.append(filter)
+                                    if ',' in filter:
+                                        filters = filter.split(',')
 
-                            webex = Webex(webexAccessToken)
-                            webex.arguments =filters
-                            result = webex.runIt(command)
+                                    else:
+                                        filters.append(filter)
 
-                        else:
-                            result = [{'result': 'No Access token found, click on oAuth Webex link'}]
+                                webex = Webex(webexAccessToken)
+                                webex.arguments =filters
+                                result = webex.runIt(command)
 
-                        pass
+                            else:
+                                result = [{'result': 'No Access token found, click on oAuth Webex link'}]
 
-                    elif re.match('show webex devices status\((.*)\)', command) is not None:
+                            pass
 
-                        logging.info(f'{command} matched')
-                        regex_result = re.search('show webex devices status\((.*)\)', command)
-                        command = self.remove_arguments(command)
-                        webexAccessToken = self.getwebexToken()
+                        elif re.match('show webex devices favorites\((.*)\)', command) is not None:
 
-                        if webexAccessToken:
+                            logging.info(f'{command} matched')
+                            regex_result = re.search('show webex devices favorites\((.*)\)', command)
+                            command = self.remove_arguments(command)
+                            webexAccessToken = self.getwebexToken()
 
-                            filters = regex_result.group(1).split(',')
-                            webex = Webex(webexAccessToken)
-                            webex.filters =filters
-                            result = webex.runIt(command)
+                            if webexAccessToken:
 
-                        else:
-                            result = [{'result': 'No Access token found, click on oAuth Webex link'}]
+                                filters = []
 
-                        pass
+                                if regex_result:
+
+                                    filter = regex_result.group(1)
+
+                                    if ',' in filter:
+                                        filters = filter.split(',')
+
+                                    else:
+                                        filters.append(filter)
+
+                                webex = Webex(webexAccessToken)
+                                webex.arguments = filters
+                                temp_result = webex.runIt('show webex devices()')
+                                device_ID_List = []
+                                try:
+                                    for d in temp_result[0]['show webex devices()']['response']['items']:
+                                        device_ID_List.append(d['id'])
+                                except Exception as err:
+                                    result = 'Error while obtaining webex devices'
+
+                                webex.arguments = device_ID_List
+                                result = webex.runIt(command)
+
+                            else:
+                                result = [{'result': 'No Access token found, click on oAuth Webex link'}]
+
+                            pass
+
+                        elif re.match('show webex devices status\((.*)\)', command) is not None:
+
+                            logging.info(f'{command} matched')
+                            regex_result = re.search('show webex devices status\((.*)\)', command)
+                            command = self.remove_arguments(command)
+                            webexAccessToken = self.getwebexToken()
+
+                            if webexAccessToken:
+
+                                filters = regex_result.group(1).split(',')
+                                webex = Webex(webexAccessToken)
+                                webex.filters =filters
+                                result = webex.runIt(command)
+
+                            else:
+                                result = [{'result': 'No Access token found, click on oAuth Webex link'}]
+
+                            pass
 
 
                 elif command.startswith('set'):
